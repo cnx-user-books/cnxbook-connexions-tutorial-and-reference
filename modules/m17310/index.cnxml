@@ -1,0 +1,228 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Import LaTeX</title>
+  <metadata>
+  <md:content-id>m17310</md:content-id><md:title>Import LaTeX</md:title>
+  <md:abstract>This module is a beginner's guide to using and troubleshooting the LaTeX to CNXML importer. It can be used a companion to the Connexions LaTeX Importer tutorial at http://cnx.org/help/UsingLaTeX .</md:abstract>
+  <md:uuid>a38a6120-dc3f-465e-b90e-0817321be9cc</md:uuid>
+</metadata>
+
+<content>
+
+    <section id="element-278"><title>How to use the LaTeX Importer</title>
+<para id="element-22">One of the first lessons learned when using the LaTeX importer is to abide by the rules. The importer is a rather faithful utility, but it will not function properly unless the LaTeX file is properly prepared. So, the first step to importing your LaTeX document is preparation. 
+</para>
+<para id="element-100">
+Connexions has created a template that will aid you in this process. The template is available for download <link url="http://cnx.org/help/LaTeX_template.tex">here</link>.
+</para><section id="element-725"><title>Using the LaTeX Template</title>
+
+<para id="element-101">The importer uses <link url="http://www-sop.inria.fr/apics/tralics/">Tralics</link> to translate LaTeX to CNXML. Tralics supports a large number of LaTeX packages and commands, but not all of them. Using the <link url="http://cnx.org/help/LaTeX_template.tex">Connexions LaTeX Template</link> will increase your chances for a successful import. Follow the steps below to prepare your document.
+
+<list id="importing" list-type="enumerated"><item>Begin preparing your document by pasting the body of your document between the 
+<code>\begin{document}</code> and <code>\end{document}</code> commands in the template.</item>
+<item>Un-comment (remove the "%" sign) only the <code>\usepackage{}</code> commands required by your LaTeX document. These are located in the preamble of the Connexions LaTeX template.</item>
+<item> If you have any "user-defined macros" you may insert these after the <code>\usepackage{}</code> commands.</item>
+<item>At the end of the document you may supply your .bib files. Make sure these files are at the same directory level as the file that is referencing it.
+<note id="note-1" type="Note"><label>Note</label>An issue has been noted with .bib file names containing capital letters. Ensure that your .bib files are labeled in lower-case letters (including the extensions).</note></item>
+<item> If your document contains images, make sure these files are at the same directory level as the file that is referencing it.</item>
+<item>Save your new template-enhanced file. Make sure to rename the files  and place it in the folder with your .bib and image files.</item>
+<item>Run LaTeX (pdflatex) on the new file using only the <code>\usepackage{}</code> commands allowed by the template.</item>
+<item> Include the new file, all image files and .bib files in a new .zip file with the same name as your template-enhanced .tex file. Their names <emphasis> must</emphasis> match and there should not be any sub-folders!</item>
+</list>
+
+</para></section><section id="element-687"><title>Importing your LaTeX Document</title><para id="element-103">
+Once you have successfully completed the steps above, your document should be properly prepared for import in to the Connexions depository. Follow the steps below:
+<list id="into-cnx" list-type="enumerated"><item> In your workspace or workgroup, create a new blank module.</item>
+<item>Then from the edit tab of that module, select LaTeX from the import drop-down list and click import.<figure id="id42335035">
+<media id="id38586612" alt=""><image src="../../media/LaTeX import.png" mime-type="image/png" print-width="3in"/></media></figure></item>
+<item> Click browse to locate your .zip file.</item>
+<item>Click import to upload your document.</item>
+</list>
+</para></section>
+</section>
+<section id="element-853"><title>Troubleshooting your Import</title>
+<para id="element-12">This section of the module will serve as a consistently updated resource documenting typical importer issues and errors as well as known solutions.
+</para>
+<section id="element-199"><title>The Document Imports but there are Errors with the Content</title>
+<list id="list-3255" list-type="labeled-item"><item><label>Links to outside of the module are missing</label>&lt;link&gt; tags are CNXML's analog to LaTeX \ref links.  When you chop a larger LaTeX document up to make modules, the \ref links pointing to objects still inside the new, smaller document will become &lt;links&gt;.  Those \ref links pointing to objects now outside of the modularized document will be preserved as links, but links will not be pointing to anything.  
+All non-internal links will have to be inserted manually using <link url="http://cnx.org/eip-help/link">&lt;link&gt;</link> tags. Also, it is important to note that inter-module links can not be established until the modules have been published and assigned a module number. 
+</item>
+
+<item><label>Images are too large or small</label>The importer displays the image at the size of the originally imported image, but it is possible to manipulate the image size inside Connexions. Click on the image and the image parameters will be displayed. Where it says 
+<code display="inline">&lt;image mime-type="image/png" src="fig15.png" id="uid4_onlineimage" width="500"/&gt;&lt;image mime-type="application/postscript" src="fig15.eps" id="uid4_printimage"/&gt;</code>,
+you can change the size of the image by adjusting the number.</item>
+
+
+<item>
+<label>Math text does not retain white space</label>
+The importer converts all math into presentation MathML. When text is written within the <code>\begin{equation}</code> and <code>\end{equation}</code> tags in the LaTeX file, the text will often be interpreted as an "identifier" <code display="inline">&lt;m:mi&gt;&lt;/m:mi&gt;</code>). The result of this error will look like the equation below.
+
+<equation id="uid1111"><m:math mode="display">        
+<m:mtable displaystyle="true">
+            <m:mtr>
+              <m:mtd columnalign="right">
+                <m:mi>δ</m:mi>
+              </m:mtd>
+              <m:mtd>
+                <m:mo>=</m:mo>
+              </m:mtd>
+              <m:mtd columnalign="left">
+                <m:mrow>
+                  <m:mi>m</m:mi>
+                  <m:mi>i</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mo>{</m:mo>
+                  <m:msub>
+                    <m:mi>δ</m:mi>
+                    <m:mi>i</m:mi>
+                  </m:msub>
+                  <m:mo>}</m:mo>
+                  <m:mo>,</m:mo>
+                  <m:mi>f</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>r</m:mi>
+                  <m:mi>a</m:mi>
+                  <m:mi>l</m:mi>
+                  <m:mi>l</m:mi>
+                  <m:mi>p</m:mi>
+                  <m:mi>a</m:mi>
+                  <m:mi>s</m:mi>
+                  <m:mi>s</m:mi>
+                  <m:mi>a</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mi>d</m:mi>
+                  <m:mi>s</m:mi>
+                  <m:mi>t</m:mi>
+                  <m:mi>o</m:mi>
+                  <m:mi>p</m:mi>
+                  <m:mi>b</m:mi>
+                  <m:mi>a</m:mi>
+                  <m:mi>n</m:mi>
+                  <m:mi>d</m:mi>
+                  <m:mi>s</m:mi>
+                  <m:mi>i</m:mi>
+                  
+                </m:mrow>
+              </m:mtd>
+            </m:mtr>
+           
+          </m:mtable>
+        </m:math>
+</equation>
+To remedy this error, simply remove the MathML that is "writing" the text and replace it with <code display="inline">&lt;m:mtext&gt;your text here&lt;/m:mtext&gt;</code>.</item>
+
+<item><label>Two equations are referenced as a single equation</label>On occasion, the importer will misinterpret two consecutive equations as a single equation. This occurs quite frequently when there is nothing separating the equations. The solution to this error is to simply copy the MathML for the second equation and pasting it into a new equation box.</item>
+
+<item><label>An equation has assimilated  everything following it into MathMl</label>There is a noted bug with Tralics where the converter can not understand where certain equations end. This is especially common with conditional statements such as this:
+<equation id="uid2593"><m:math>
+
+<m:mi>a</m:mi>
+<m:mo stretchy="false">(</m:mo>
+<m:mi>n</m:mi>
+<m:mo stretchy="false">)</m:mo>
+<m:mo>=</m:mo>
+<m:mo>{</m:mo>
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>2</m:mn>
+<m:mi>h</m:mi>
+<m:mo>(</m:mo>
+<m:mi>n</m:mi>
+<m:mo>)</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mtext> for</m:mtext>
+<m:mspace width="5pt"/>
+<m:mn>0</m:mn>
+<m:mo>≤</m:mo>
+<m:mi>n</m:mi>
+<m:mo>≤</m:mo>
+<m:mi>M</m:mi>
+<m:mo>-</m:mo>
+<m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mi>h</m:mi>
+<m:mo>(</m:mo>
+<m:mi>M</m:mi>
+<m:mo>)</m:mo>
+</m:mtd>
+<m:mtd>
+<m:mtext>for</m:mtext>
+<m:mspace width="5pt"/>
+<m:mi>n</m:mi>
+<m:mo>=</m:mo>
+<m:mi>M</m:mi>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>0</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mtext>otherwise</m:mtext>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:math></equation> 
+Statements like this may LaTeX on your computer, but they often result in errors when used with Tralics. Unfortunately, this issue is not a simple fix. Follow the steps below to fix this issue.
+<list id="tralics-error" list-type="enumerated"><item> Locate the culprit equation in the .tex file and comment it out.</item>
+<item>Save the file, and place the newly saved file back in your .zip file containing your .bib and image files.</item>
+<item> Import the file again.
+<note id="note-23" type="Note"><label>Note</label>
+Warning, importing the content again will overwrite any work that you have done previously!
+</note>  
+</item>
+<item> Make certain that the import was successful, paying special attention to the content following the omitted equation.</item>
+<item> Manually input the MathML for the conditional statement.
+<note id="note-24" type="Note"><label>Note</label>Hint, using the &lt;m:mtable&gt;&lt;/m:mtable&gt; command will help you create this type of conditional statement.
+</note>
+</item>
+</list>
+</item></list></section>
+
+<section id="element-661"><title>The Document Does NOT Import</title>
+
+<para id="element-279">These errors are much more difficult to remedy. As of right now, the error message received when a file does not import is generic and gives very little information about what actually caused the import to fail, but this section will provide you with a few known issues that might result in failure.
+</para>
+<list id="list-239869234" list-type="labeled-item"><item><label>Known Tralics Don'ts</label>Certain practices allowed by LaTeX in general are not supported through Tralics. These must be avoided, as they will break the importer. They include:
+<list id="list-234" list-type="bulleted"><item>Placing tables within other tables</item>
+<item>Ommitting braces for LaTeX commands when they take a single argument. As an example, consider use of the <code>\sqrt{}</code> command without braces, as in <code>\sqrt\pi</code> instead of <code>\sqrt{\pi}</code>. The latter usage is the only supported technique.</item>
+<item>Using different capitalizations on the filenames in <code>\includegraphics{}</code> statements than are used in the actual files they reference in the .zip folder. Though this may work in development on a Windows platform, it will cause an error in the Linux-based importer.</item>
+</list></item>
+
+<item><label>Packages Supported by the Tralics importer</label>As mentioned previously, Tralics supports several LaTeX packages, but not all of them. For a complete list of supported packages and sub-packages, visit the Tralics <link url="http://www-sop.inria.fr/apics/tralics/packages.html">website</link>. You may wish to visit this site to determine what packages might be causing the imports failure.</item>
+<item><label>Use only the packages you need</label>Occasionally, using packages that are not required by your document can result in errors. Make certain that all of the un-commented <code>\usepackage{}</code> commands are actually <emphasis>required</emphasis> by your document. If you locate any that are not necessary comment them out, save your file and attempt to import the file again.  </item>
+<item><label>mbox Issues</label>The <code>\mbox{}</code> command is known to cause issues, especially when more than of these commands occurs in close succession. For example the following lines of LaTeX resulted in the a module's failure to import, even though it was possible to successfully build the file on a Windows platform.
+<code id="id42203007" display="block">
+\be
+                    n\phi  =  2K_1i  \ \ \ \mbox{for  i = 0, 1,
+                    \dots}
+\label{cc24}\ee
+
+From (\ref{cc15}), this gives
+
+\be
+             \omega_{zi} =  sn [2K_1i/n,k] , \ \ \ \mbox{i =
+             0,1,\dots}
+\label{cc25}\ee
+
+This can be reformulated using (\ref{cc18}) so that $n$ and $K_1$ are not
+needed. For $N$ odd, the zero locations are
+
+\be
+             \omega_{zi}  =  sn [2Ki/N,k] , \ \ \ \mbox{i = 0,1,\dots}
+\label{cc26}\ee
+</code>
+Fortunately, commenting out this section of code made it possible to successfully import the module. The MathML for these equations was added manually after the  import of the rest of the module.</item>
+<item><label>Empty Sections</label>An empty section is a portion of the LaTeX file that contains a <code>\section{your text here}</code> command, but lacks any content following it. This sort of empty section is permitted anywhere inside the document except as the final section <emphasis>if the section is followed by a bibliography file</emphasis>. This will break the importer. There is a simple remedy  for this issue. If you do not need the section, simply comment it out and attempt to import again, but if you do need the section header resulting from the command, add text following the marker but before the bibliography. Once you import the file, you can manually delete the text from the paragraph under the section marker, but you can not delete the paragraph. This is prohibited by Connexions. A section <emphasis>must</emphasis> contain something. </item></list></section>
+
+
+</section><section id="element-232"><title>Conclusion</title><para id="element-325235235">Hopefully this short guide has been helpful. Obviously, this list does not cover all of the possible issues, but this module will serve as a living document continuing to be updated and refined as new issues and solutions become known. If you come across an error that you think is a Tralics based error, please let Connexions know using the <link url="http://cnx.org/bug_submit_form">bug submission form</link>. 
+</para></section>
+  
+  </content>
+  
+</document>

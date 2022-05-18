@@ -1,0 +1,724 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+
+<title>Introduction to the MathML Editor</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m24561</md:content-id>
+  <md:title>Introduction to the MathML Editor</md:title>
+  <md:abstract>Reference Manual for the MathML Editor</md:abstract>
+  <md:uuid>c1c13608-4aaa-4f17-97df-94475444f380</md:uuid>
+</metadata>
+
+<content>
+  <section id="eip-917"><title>Math Editor Features</title><para id="eip-273">This module explains how to open the Math Editor, create math, edit existing math, and keyboard shortcuts. There is also a separate <link document="m24560">tutorial page</link> with examples showcasing the features.
+</para><para id="eip-664">At the end of this module are <link target-id="nuances">nuances and limitations</link> of the editor. Please, let us know which ones you'd really like to see incorporated!</para></section><section id="eip-127"><title>Opening the Editor</title><para id="opening">When <link document="m10887" target-id="editinplacesec">editing a Module</link> using using Mozilla's Firefox browser, click on a part of the module to open a blue <link target-id="launch-editor">editing box</link>. On the top-right hand side of the box is a "MathML Editor" link which will open up <link target-id="blank-editor">the editor</link>.
+</para>
+
+<figure id="launch-editor">
+<media id="eip-id7676321" alt="Launching the Math Editor">
+    <image mime-type="image/png" src="../../media/launch.png"/>
+  </media>
+  <caption>
+     Begin editing and in the top-right corner is a MathML Editor link
+  </caption>
+</figure>
+
+<figure id="blank-editor">
+<media id="eip-id1169718914496" alt="An empty Math Editor">
+    <image mime-type="image/jpeg" src="../../media/editor-blank.png"/>
+  </media>
+  <caption>
+     Once clicked, a popup window will appear containing the Math Editor
+  </caption>
+</figure>
+</section><section id="eip-275"><title>Using the Popup Window</title><para id="popup">The <link target-id="blank-editor">popup window</link> can remain open while editing a module and can even stay open while editing several modules. At any point one can close the window, but the contents of the editor will be lost.</para></section><section id="eip-980"><title>User Interface</title><para id="eip-456">
+The Editor has 4 main sections, detailed below. The <link target-id="toolbar">toolbar</link> provides a way to insert new operations, a navigation tree to show where the cursor is located, and standard buttons for undo, preview, and source editing.
+</para>
+
+<para id="eip-id4444999">The main <link target-id="editing">editing area</link> is located below the toolbar and contains the math that is being edited.
+
+</para></section><section id="toolbar"><title>Toolbar</title><para id="fs-id1166157845202">The toolbar contains a row of buttons representing categories of different mathematical operations. These are enabled when something is selected in the <link target-id="editing">editing area</link>. <emphasis>Note:</emphasis> The editor does not infer multiplication and addition. See <link target-id="nuances">Nuances</link> for how to insert next to existing math by <link target-id="wrap">wrapping</link> existing math.
+
+Explain the different sections, when it's enabled, how things get inserted, and <link target-id="keyboard">Keyboard Entry</link> for things.
+</para>
+
+<para id="menu"><title>Menu</title>Clicking a category in the top row of the toolbar will open a menu of mathematical operations to insert. To the right of each operation is a name that can be entered from the keyboard  at the cursor position in the main <link target-id="editing">editing area</link>. For example, instead of using the toolbar to enter the symbol for pi, the user could enter "<code>pi</code>" or "<code>&lt;pi/&gt;</code>" (the MathML version of pi) in the cursor and press the <link target-id="enter">Enter</link> key.</para><para id="path"><title>Path</title>Shows the path to the cursor location. Math is organized in a tree-like hierarchy (see <link target-id="tree">Navigating Math</link>) and the path represents where in the tree the <link target-id="cursor">cursor</link> currently is. The path (and <link target-id="context">context</link>) are important because they define what can be inserted and where it will go.</para>
+
+
+<para id="eip-760"><title>Undo/Redo</title>These buttons allow the user to undo an operation such as deletion or insertion. See <link target-id="keyboard">Keyboard Shortcuts</link> for details on using these features from just the keyboard.</para>
+
+<para id="preview"><title>Preview</title>Shows what math will look like when module is published. To resume editing, one must click the Preview button a second time.</para>
+
+<para id="source"><title>View Source</title>Math in Connexions is represented in an XML format known as MathML. Clicking the View Source button will allow editing of the raw MathML.</para></section><section id="editing"><title>Editing Area</title><para id="eip-60">This is the main area for creating math. It begins empty, but math can be pasted directly in here from Connextions. The <link document="m24560">tutorials</link> contain instructions on moving math from Connexions to the math editor and back. The editing area is the most important part of the editor and as several subsections, outlined below:
+
+
+<list id="eip-id1170632393539"><item>Math is structured like a <link target-id="tree">tree</link>.</item>
+<item><link target-id="color">Colors</link> are used in this area to denote required information and contextual clues.</item>
+<item><link target-id="content_vs_presentation">Content vs Presentation Math</link> discusses the two different types of math the editor supports.</item>
+<item>The <link target-id="cursor">cursor</link> is discussed in detail below, including navigation and different editing modes.</item>
+<item>Since the exact location of the cursor may at times be ambiguous, the <link target-id="context">context</link> provides visual cues.</item>
+<item><link target-id="keyboard">Keyboard</link> strokes are discussed in detail.</item>
+<item>Finally, <link target-id="block">empty blocks</link> are discussed below.</item>
+</list></para>
+</section>
+
+<section id="tree"><title>Math Tree</title><para id="eip-279">Math in the editor is structured like a tree. It can be thought of as removing the precedence rules and just having parentheses. For example, the formula "<code>a*x^2+b*x+c=0</code>" which is displayed (using the editor) as <m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:times/>
+      <m:ci>a</m:ci>
+      <m:apply>
+        <m:power/>
+        <m:ci>x</m:ci>
+        <m:cn>2</m:cn>
+      </m:apply>
+    </m:apply>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+    <m:ci>c</m:ci>
+  </m:apply>
+  <m:cn>0</m:cn>
+</m:apply>
+</m:math> and as a tree would look like <link target-id="math-tree"/>. The equal sign has the least precedence and so is on the top. Similarly, <m:math><m:ci>x</m:ci></m:math> binds tighter to <m:math><m:cn>2</m:cn></m:math> through the <code>power</code> operation than to <m:math><m:ci>a</m:ci></m:math> through the <code>times</code> operation.
+</para>
+
+<figure id="math-tree"><media id="eip-id1170635625947" alt="a*x^2+b*x+c=0 as a tree">
+    <image mime-type="image/png" src="../../media/math-tree.png"/>
+  </media>
+<caption><m:math> <m:apply>   <m:eq/>   <m:apply>     <m:plus/>     <m:apply>       <m:times/>       <m:ci>a</m:ci>       <m:apply>         <m:power/>         <m:ci>x</m:ci>         <m:cn>2</m:cn>       </m:apply>     </m:apply>     <m:apply>       <m:times/>       <m:ci>b</m:ci>       <m:ci>x</m:ci>     </m:apply>     <m:ci>c</m:ci>   </m:apply>   <m:cn>0</m:cn> </m:apply> </m:math> as a tree</caption></figure></section><section id="color"><title>Colors</title>
+<para id="eip-594"><title>Color notation (legend)</title><m:math display="display">
+  <m:mrow style="font-size:large;">
+    <m:mrow style="border:1px solid #9999ff;">
+      <m:mphantom>
+        <m:mtext>_</m:mtext>
+      </m:mphantom>
+      <m:mtext>f</m:mtext>
+      <m:mphantom>
+        <m:mtext>_</m:mtext>
+      </m:mphantom>
+    </m:mrow>
+    <m:mo>=</m:mo>
+    <m:mrow>
+      <m:mfenced open="{" close="]">
+        <m:mtable>
+          <m:mtr>
+            <m:mtd>
+              <m:msub style="color: #006600;">
+                <m:mi>x</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>if</m:mtext>
+            </m:mtd>
+            <m:mtd>
+              <m:mrow style="background-color: #f9f9f9;">
+                <m:mi>x</m:mi>
+                <m:mo>&lt;</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:msub style="color: #006600; background-color:#ccccff;">
+                <m:mi>x</m:mi>
+                <m:mn>2</m:mn>
+              </m:msub>
+            </m:mtd>
+            <m:mtd>
+              <m:mtext>if</m:mtext>
+            </m:mtd>
+            <m:mtd>
+              <m:mrow>
+                <m:mrow style="background-color:#ffffcc; border: 1px solid #e0e0e0;">
+                  <m:mphantom>
+                    <m:mtext>__</m:mtext>
+                  </m:mphantom>
+                </m:mrow>
+                <m:mo>&gt;</m:mo>
+                <m:mn>0</m:mn>
+              </m:mrow>
+            </m:mtd>
+          </m:mtr>
+          <m:mtr>
+            <m:mtd>
+              <m:mrow style="border: 1px dotted #e0e0e0;">
+                <m:mphantom>
+                  <m:mtext>__</m:mtext>
+                </m:mphantom>
+              </m:mrow>
+            </m:mtd>
+            <m:mtd/>
+            <m:mtd>
+              <m:mtext>otherwise</m:mtext>
+            </m:mtd>
+          </m:mtr>
+        </m:mtable>
+      </m:mfenced>
+    </m:mrow>
+  </m:mrow>
+</m:math></para>
+
+
+<list id="eip-842"><item><m:math><m:mrow style="font-size:large;">
+  <m:mrow style="background-color: #ffffff; border:1px solid #9999ff;">
+    <m:mphantom><m:mtext>_</m:mtext></m:mphantom>
+    <m:mtext>f</m:mtext>
+    <m:mphantom><m:mtext>_</m:mtext></m:mphantom>
+  </m:mrow>
+</m:mrow></m:math> : The location where text is currently being entered is represented as a box with a blue border (see <link target-id="text-input">Text Input</link> for more information on how to enter math).</item>
+
+<item><m:math><m:mrow style="font-size:large;">
+  <m:mi>x</m:mi>
+</m:mrow></m:math> and <m:math><m:mrow style="font-size:large;">
+              <m:msub style="color: #006600;">
+                <m:mi>x</m:mi>
+                <m:mn>1</m:mn>
+              </m:msub>
+</m:mrow></m:math> : Content MathML is represented in black while Presentation MathML is in a dark green (See <link target-id="content_vs_presentation">Content vs. Presentation</link> for editing Presentation MathML.</item>
+
+<item><m:math><m:mrow style="font-size:large;">
+                <m:mrow style="background-color: #f9f9f9;">
+                  <m:mi>x</m:mi>
+                  <m:mo>&lt;</m:mo>
+                  <m:mn>0</m:mn>
+                </m:mrow>
+</m:mrow></m:math> : The cursor context (when the cursor is next to a complex expression) is represented by having a gray background. See <link target-id="context">Context</link> for details.</item>
+
+<item><m:math><m:mrow style="font-size:large;">
+    <m:mrow style="background-color:#ffffcc; border: 1px solid #e0e0e0;">
+      <m:mphantom><m:mtext>__</m:mtext></m:mphantom>
+    </m:mrow>
+</m:mrow></m:math> and <m:math><m:mrow style="font-size:large;">
+    <m:mrow style="border: 1px dotted #e0e0e0;">
+      <m:mphantom><m:mtext>__</m:mtext></m:mphantom>
+    </m:mrow>
+</m:mrow></m:math>: Empty blocks that need to be filled are denoted with a yellow background and optional blocks that can be filled but do not need to be filled are transparent with a dotted border. See <link target-id="block">Blocks</link> for details.</item>
+
+<item><m:math><m:mrow style="font-size:large;">
+      <m:msub style="background-color:#ccccff;">
+        <m:mi>x</m:mi>
+        <m:mn>2</m:mn>
+      </m:msub>
+</m:mrow></m:math> : The current selection is denoted by a light blue background. See <link target-id="keys">Copy and Paste back to Modules</link> for details.</item></list>
+</section>
+
+<section id="content_vs_presentation"><title>Content vs. Presentation</title>
+<para id="eip-id8263335">There are two subsets of the MathML language; Content MathML and Presentation MathML. Content, as the name implies, focuses on expressing operations like addition, integration, matrices, etc. Presentation focuses on how precisely math is displayed and contains elements like tables and subscripts.</para>
+
+<figure id="eip-id1167130196523" orient="vertical"><title>Comparing Content and Presentation MathML</title><subfigure id="eip-id1167129378547">
+    <label>Content MathML</label>
+    <media id="eip-id8484002" alt="Example Content MathML in the Editor">
+      <image mime-type="image/jpeg" src="../../media/piecewise-content.png"/>
+    </media>
+  </subfigure>
+  <subfigure id="eip-id8558389">
+    <label>Presentation MathML</label>
+    <media id="eip-id3204934" alt="Example Presentation MathML in the Editor">
+      <image mime-type="image/jpeg" src="../../media/piecewise-presentation.png"/>
+    </media>
+  </subfigure>
+<caption>Content MathML typically has fewer places to enter information and navigation is simpler, and Presentation MathML allows the user to tweak the way formulas are presented and is used by OCR and import software.</caption></figure>
+
+<para id="eip-317">The editor supports creating and editing the Content Math subset while being able to navigate through Presentation MathML. Every thing that is entered into the Editor is entered as Content Math. For example, entering <code>a*x^2+b*x+c=0</code> will be translated as the variable <m:math><m:ci>a</m:ci></m:math> times <m:math><m:ci>x</m:ci></m:math> to the power of <m:math><m:cn>2</m:cn></m:math> and added to <m:math><m:ci>b</m:ci></m:math> times <m:math><m:ci>x</m:ci></m:math> ...</para>
+</section>
+
+<section id="cursor"><title>Cursor</title><para id="eip-704">The Math Editor can be used entirely from the keyboard (See <link target-id="keyboard">Keyboard Input</link>). The cursor can be in one of four places. Either it is editing a variable or number, editing an empty block of text, next to a complicated expression, or has selected an expression. In each of these places there are several things that can be done.
+</para><para id="eip-974"><title>Editing a variable, number, or block</title>At this point, the cursor is surrounded by a blue box and the user can type in expressions or even paste existing MathML. The expression will be parsed as soon as the cursor leaves the box or presses the Enter key (in the case of an expression) or immediately when MathML is pasted in. The user can leave the box by pressing clicking on the toolbar or by pressing the Left, Right, or Tab key. See <link target-id="keyboard">Keyboard Input</link> for more on expressions.</para><para id="eip-881"><title>Next to a Complicated Expression</title>When a cursor is next to a complicated expression, the expression is shown with a light gray background (See <link target-id="context">Context</link>). From this point, one of three things may be done. The user may add on to the expression. This is done by just typing. For example, if the cursor is to the left of <m:math>
+  <m:apply>
+    <m:times/>
+    <m:apply>
+      <m:minus/>
+      <m:pi/>
+    </m:apply>
+    <m:imaginaryi/>
+  </m:apply>
+</m:math>, the user may type <code>-1=e^</code> and <link target-id="keyboard">parse the expression</link> to yield <m:math>
+  <m:apply>
+    <m:eq/>
+    <m:apply>
+      <m:minus/>
+      <m:cn>1</m:cn>
+    </m:apply>
+    <m:apply>
+      <m:power/>
+      <m:ci>e</m:ci>
+      <m:apply>
+        <m:times/>
+        <m:apply>
+          <m:minus/>
+          <m:pi/>
+        </m:apply>
+        <m:imaginaryi/>
+      </m:apply>
+    </m:apply>
+  </m:apply>
+</m:math></para><para id="eip-361">One can select the expression by either pressing Shift+Right/Left (depending on whether the cursor is before or after the element), Delete, or Backspace key. See <link target-id="selection">Selection</link> for what can be done next.</para><section id="selection"><para id="eip-465"><title>Selection</title>When an expression is selected, several things can be done:
+
+<list id="eip-id3356021"><item>Pressing the Delete or Backspace key will remove it</item>
+<item>Pressing Ctrl+X/C will cut/copy it</item>
+<item>Pressing Ctrl+V will replace the selection with the contents of the clipboard</item>
+<item>Clicking an item in the toolbar will replace the selected item</item>
+</list></para></section>
+</section><section id="context"><title>Context</title><para id="eip-548">Instead of using parentheses to denote which operations are grouped, the math editor highlights the current context for the operation. The context shows the position of the <link target-id="cursor">cursor</link> relative to existing math in the <link target-id="editing">editing area</link> and is displayed using a <link target-id="color">gray background</link>. An example of a confusing position can be shown using the following example. Suppose the editor contains the term <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>c</m:ci>
+  </m:apply>
+</m:apply>
+</m:math> and the cursor is just after the <m:math><m:ci>c</m:ci></m:math>. If the user enters "^2" it is not clear what should be squared. At that position the user may want to square <m:math><m:ci>c</m:ci></m:math>, <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>, or the entire term <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>c</m:ci>
+  </m:apply>
+</m:apply>
+</m:math>. This produces very different math, namely <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>c</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+</m:apply>
+</m:math>, <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:power/>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>c</m:ci>
+    </m:apply>
+    <m:cn>2</m:cn>
+  </m:apply>
+</m:apply>
+</m:math>, and <m:math>
+<m:apply>
+  <m:power/>
+  <m:apply>
+    <m:plus/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>c</m:ci>
+    </m:apply>
+  </m:apply>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math>.
+
+In the above example, the context would highlight precisely the math that ended up being in parentheses. One can think of the context as defining where the parentheses should go once the new math is entered. </para></section><section id="keyboard"><title>Keyboard Input</title><para id="eip-973">There are several places the user can enter text into the editor. Most of them behave the same way, but listed below are common uses and specifics:
+</para><list id="eip-516"><title>Common for all Text Entry Points</title><item>Pressing the Enter key or moving the cursor out of the text box (by pressing the Left/Right, Tab key, or clicking elsewhere) after entering will cause the Math to be parsed.</item>
+	<item>If the text cannot be converted to Math, it will appear with a red dashed line beneath it (like a spelling error) and must be corrected before saving.</item>
+	<item>Simple algebraic expressions, logic operations, trigonometric functions, and subscripts can be entered and will be converted into math.
+</item>
+	<item>If a shorthand notation exists for an operation, it will show up in the toolbar next to the name of the operation (See <link target-id="toolbar">Toolbar</link>. Shorthand notation is usually more natural (the operation, like addition, is between its arguments, like <code>a+2</code></item>
+	<item>If a shorthand notation does not exist for an operation, one can still enter the operation using the keyboard by typing the name of the operation which is also found in the menu (See <link target-id="toolbar">Toolbar</link>)</item>
+</list>
+
+<para id="keys"><title>Categories</title>There are three categories of key presses and are enumerated in the table below.
+
+<list id="eip-id1171014402654"><item>Shortcuts are preceded by pressing the Ctrl key (or the ⌘ key on Apple computers)</item>
+<item>Navigation keys move the cursor through the math</item>
+<item>Modification keys change the math in some way</item>
+</list></para><table id="eip-801" summary="Shortcut keys"><tgroup cols="4"><thead>
+  <row>
+    <entry>Category</entry>
+    <entry>Key</entry>
+    <entry>Condition</entry>
+    <entry>Action</entry>
+  </row>
+</thead>
+<tbody>
+  <row id="cut">
+    <entry morerows="5">Ctrl+ (Apple ⌘+)</entry>
+    <entry>X</entry>
+    <entry>Math is selected</entry>
+    <entry>Cuts the selected Math to the clipboard and replaces it with an empty block (that can be deleted)</entry>
+  </row>
+  <row id="copy">
+    <entry>C</entry>
+    <entry>Math is selected</entry>
+    <entry>Copies the selected Math to the clipboard</entry>
+  </row>
+  <row id="paste">
+    <entry>V</entry>
+    <entry>Math is selected</entry>
+    <entry>Pastes MathML from the Clipboard (can be from other sources)</entry>
+  </row>
+  <row>
+    <entry>Z</entry>
+    <entry/>
+    <entry>Undoes one step in the editor</entry>
+  </row>
+  <row>
+    <entry>Y</entry>
+    <entry>Ctrl+Z was just pressed</entry>
+    <entry>Redoes one step in the editor</entry>
+  </row>
+  <row>
+    <entry>E</entry>
+    <entry/>
+    <entry>Opens full-source editing</entry>
+  </row>
+
+<row><entry morerows="3">Navigation</entry>
+  <entry>Tab Shift+Tab</entry>
+  <entry/>
+  <entry>Moves to the next/previous free block</entry>
+</row>
+<row>
+  <entry>Left / Right</entry>
+  <entry/>
+  <entry>Moves to the previous/next element in the Math</entry>
+</row>
+<row>
+  <entry morerows="1">Shift+Left / Shift+Right</entry>
+  <entry>After / Before the <link target-id="context">Context</link></entry>
+  <entry>Selects the Context element (right next to the cursor)</entry>
+</row>
+<row>
+  <entry>Before / After the Context</entry>
+  <entry>Selects the Context's parent</entry>
+</row>
+
+
+<row><entry morerows="3">Modification</entry>
+  <entry>Enter</entry>
+  <entry/>
+  <entry>Attempts to parse the text entered next to the cursor</entry>
+</row>
+<row>
+  <entry morerows="2">Delete / Backspace</entry>
+  <entry>Cursor next to Math</entry>
+  <entry>Selects the Math Node (subsequent delete will remove the math)</entry>
+</row>
+<row>
+  <entry>Math selected</entry>
+  <entry>Removes the node and replaces it with an empty block (a second press will remove the block as well)</entry>
+</row>
+<row>
+  <entry>Cursor in block</entry>
+  <entry>Removes the empty block if it is allowed in MathML (in "a+b+c" any one variable can be removed, but addition requires at least 2 things to add)</entry>
+</row>
+</tbody>
+
+</tgroup>
+</table><table id="text-input" summary="Examples of text input the editor accepts">
+<title>Text Input Examples</title>
+<tgroup cols="3"><thead>
+      <row>
+        <entry>Type</entry>
+        <entry>Input</entry>
+        <entry>Math Output</entry>
+      </row>
+    </thead>
+    <tbody>
+  <row>
+        <entry morerows="3">Calculator</entry>
+    <entry><code>a*x^2+b*x+c=1/2</code></entry>
+    <entry><m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:times/>
+      <m:ci>a</m:ci>
+      <m:apply>
+        <m:power/>
+        <m:ci>x</m:ci>
+        <m:cn>2</m:cn>
+      </m:apply>
+    </m:apply>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+    <m:ci>c</m:ci>
+  </m:apply>
+  <m:apply>
+    <m:divide/>
+    <m:cn>1</m:cn>
+    <m:cn>2</m:cn>
+  </m:apply>
+</m:apply>
+</m:math></entry>
+  </row>
+  <row>
+    <entry><code>a &amp;&amp; b || c != a -&gt; b</code></entry>
+    <entry><m:math>
+<m:apply>
+  <m:neq/>
+  <m:apply>
+    <m:and/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:or/>
+      <m:ci>b</m:ci>
+      <m:ci>c</m:ci>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:tendsto/>
+    <m:ci>a</m:ci>
+    <m:ci>b</m:ci>
+  </m:apply>
+</m:apply>
+</m:math></entry>
+  </row>
+  <row>
+    <entry><code>sin(x)^2+cos(x)^2=1</code></entry>
+    <entry><m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:power/>
+      <m:apply>
+        <m:sin/>
+        <m:ci>x</m:ci>
+      </m:apply>
+      <m:cn>2</m:cn>
+    </m:apply>
+    <m:apply>
+      <m:power/>
+      <m:apply>
+        <m:cos/>
+        <m:ci>x</m:ci>
+      </m:apply>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:cn>1</m:cn>
+</m:apply>
+</m:math></entry>
+  </row>
+  <row>
+    <entry><code>x_1+x_2&lt;x_3</code></entry>
+    <entry><m:math>
+<m:apply>
+  <m:lt/>
+  <m:apply>
+    <m:plus/>
+    <m:msub>
+      <m:ci>x</m:ci>
+      <m:cn>1</m:cn>
+    </m:msub>
+    <m:msub>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:msub>
+  </m:apply>
+  <m:msub>
+    <m:ci>x</m:ci>
+    <m:cn>3</m:cn>
+  </m:msub>
+</m:apply>
+</m:math></entry>
+  </row>
+  <row>
+    <entry morerows="0">Templates</entry>
+    <entry><code>sum=n*(n-1)/2</code></entry>
+    <entry><m:math display="display">
+  <m:apply>
+    <m:eq/>
+    <m:apply>
+      <m:sum/>
+      <m:mrow style="font-size:large;">
+    <m:mrow style="background-color:#ffffcc; border: 1px solid #e0e0e0;">
+      <m:mphantom><m:mtext>__</m:mtext></m:mphantom>
+    </m:mrow>
+</m:mrow>
+    </m:apply>
+    <m:apply>
+      <m:divide/>
+      <m:apply>
+        <m:times/>
+        <m:ci>n</m:ci>
+        <m:apply>
+          <m:minus/>
+          <m:ci>n</m:ci>
+          <m:cn>1</m:cn>
+        </m:apply>
+      </m:apply>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+</m:math></entry>
+  </row>
+      <row>
+        <entry morerows="1">MathML</entry>
+        <entry><code>&lt;pi /&gt;</code></entry>
+        <entry><m:math><m:pi/></m:math></entry>
+      </row>
+
+      <row>
+        <entry><code>&amp;#1207x;</code></entry>
+        <entry>ҷ</entry>
+      </row>
+
+    </tbody>
+
+</tgroup>
+</table>
+</section>
+
+<section id="input"><title>Text Entry</title><para id="input-para">This is a text entry place. See shortcuts. can paste MathML (Ctrl+V from Mathematica, MathType, etc), or enter simple algebra (see Shortcuts). Moving away using Enter, Tab, Left, Right will cause the input to be parsed and converted into Math.
+</para></section>
+
+<section id="block"><title>Blocks</title>
+<para id="block-para">Blocks are holes that may need to be filled. (Click or Tab to them). Required blocks have a yellow background and optional ones are transparent and have a dotted border.</para></section><para id="mouse">
+Click, double-click, highlight, (only right-click inside a text box)
+</para>
+
+<section id="nuances"><title>Nuances / Limitations</title><para id="eip-952">There are several nuances in the editor, and common ones are listed here, along with workarounds. Also listed are <link target-id="limitations">limitations</link> of the editor and things we'd like to get working soon.
+
+<list id="eip-id1165610468040"><item>If more than two things are added or summed together, one cannot select only a subset of them. </item>
+<item>One cannot easily change a "+" sign to "*". To do this, you will need to copy the entire "+" operation and paste it, then remove the unwanted children.</item>
+<item>Moving children around by dragging is not possible. Unfortunately, this currently requires copying and pasting to the clipboard.</item>
+</list>
+</para><section id="eip-426"><title>Limitations</title><para id="eip-491">
+<title>Unable to change the domain of operations like Sum, Max, and Integrals.</title>
+Operations like Sum, Max and Integrals may be over an interval, or when a certain condition holds (like <m:math>
+<m:apply>
+  <m:in/>
+  <m:ci>x</m:ci>
+  <m:reals/>
+</m:apply>
+</m:math>). The math editor allows editing these variations but does not always offer a way to create new operations. Currently, this must be done by hand by switching to the <link target-id="source">source edit</link> view and manually replacing the <code>&lt;interval/&gt;</code> with a <code>&lt;condition/&gt;</code>.
+</para></section><section id="wrap"><title>Wrapping Math with Math</title><para id="eip-789">Sometimes it is necessary to add to existing mathematical operations. For example, adding higher terms to a polynomial. This can be done either by using the <link target-id="wrap-keyboard">keyboard</link> or with help of the <link target-id="wrap-toolbar">toolbar</link>. In the explanations below we start with "<code>b*x+c=0</code>" and create <m:math>
+<m:apply>
+  <m:eq/>
+  <m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:times/>
+      <m:ci>a</m:ci>
+      <m:apply>
+        <m:power/>
+        <m:ci>x</m:ci>
+        <m:cn>2</m:cn>
+      </m:apply>
+    </m:apply>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+    <m:ci>c</m:ci>
+  </m:apply>
+  <m:cn>0</m:cn>
+</m:apply>
+</m:math>
+
+</para>
+
+<para id="wrap-keyboard"><title>Keyboard Only</title>To add the <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+</m:apply>
+</m:math> term:
+
+<list id="eip-id1163892967008" list-type="enumerated" number-style="arabic" class="stepwise"><item>Move the cursor to the left of <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> but make sure the <link target-id="context">context</link> is <emphasis>only</emphasis> around <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> and that <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> is <emphasis>not</emphasis> <link target-id="selection">selected</link>. This can be done by clicking the "+" sign.</item>
+<item>Enter "<code>a*x^2+</code>" (without the quotes) and press the Enter key.</item>
+</list></para>
+
+<para id="wrap-toolbar"><title>Toolbar</title>Using only the toolbar to insert math is a bit more difficult because the editor does not infer multiplication or addition when pasting right next to existing math. We will need to "wrap" the existing math with the combiner operation (usually +,*, or ^) and then add in the new math.
+
+<list id="eip-id7294680" list-type="enumerated" number-style="arabic" class="stepwise"><item>Select <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> but make sure <emphasis>only</emphasis> <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> is <link target-id="selection">selected</link>. This can be done by double clicking the "+" sign.</item>
+<item><link target-id="cut">Cut</link> the existing math. This should create an empty block.</item>
+<item>From the <link target-id="toolbar">toolbar</link> select the combiner operation. This should create at least one empty block.</item>
+<item><link target-id="paste">Paste</link> the math that was cut earlier into one of the empty blocks.</item>
+<item>Select another empty block.</item>
+<item>From the toolbar, insert the operation.</item></list></para>
+</section></section></content>
+
+</document>

@@ -1,0 +1,123 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Finding Content</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m37430</md:content-id>
+  <md:title>Finding Content</md:title>
+  <md:abstract>This module describes how to use Connexions' Search and Browse features, as well as how to find related content from the content viewing page, through lens tags, and through author profiles.</md:abstract>
+  <md:uuid>925229b3-7971-42a1-a69d-02ab43eebf60</md:uuid>
+</metadata>
+
+<content>
+ 
+	<list id="eip-301"><title>Learn to</title><item><link target-id="search">Search</link> the repository.</item>
+<item><link target-id="openrm">Browse</link> the repository.</item>
+<item><link target-id="sorting">Sort</link> by various criteria.</item>
+<item><link target-id="discovercontent">Discover</link> quality content in other ways.</item>
+</list><section id="search"><title>Searching the Content Repository</title><para id="sp1">You can search the content <link url="/content"><term>repository</term></link> for a specific module 
+	or a collection using the <code>Search</code> button and text box in the 
+	upper right of the Connexions web pages. Type in a name, keyword, 
+	collection title, module title, text string, or object ID in the Search 
+	text box and click <code>Search</code>. Connexions will display a 
+	list of all modules and collections that match your	entry. You can <link target-id="sorting">sort</link> and filter these results by various criteria. To view a 
+	module or collection, click its title.
+      </para>
+
+<figure id="bluesearch-fig"><media id="bluesearch-media" display="block" alt="Search.">	
+<image mime-type="image/jpeg" src="/content/m19610/latest/homepage-search-loggedin.jpg"/>
+</media>
+
+<caption>Search bar.</caption></figure></section>
+
+        <section id="openrm"><title>Browsing the Content Repository</title><para id="openp1">Select the <link url="/content">Content</link> tab (above the <code>You are here</code> 
+        Breadcrumb bar) to display the 
+        browsing interface screen. This page also
+        allows you to <link target-id="searchinterface-fig">search</link> for modules or collections by title, author name, or subject area.</para>
+
+<figure id="searchinterface-fig"><media id="search-media" display="block" alt="Search bar.">
+<image mime-type="image/png" src="/content/m19610/latest/search.png"/>
+</media>
+
+<caption>Search bar and interface.</caption></figure>
+
+<para id="openp2">Or you can use the Connexions <link target-id="studentig1">Browse</link> feature to display a listing of all content by subject, title, author name, keyword, popularity, language or revision date. </para>
+	
+	<figure id="studentig1"><media id="id19860664" alt="Browsing interface"><image src="/content/m19610/latest/contentTabBrowse.png" mime-type="image/png"/></media>
+	 
+	<caption>Browsing interface</caption></figure>
+	
+<list id="openp3" list-type="enumerated"><item><emphasis>Browse</emphasis> by selecting the appropriate item under the <code display="inline">Browse All Content</code> heading on the tab. (The last filter criterion, "All Collections", will display a listing of only collections instead of searching individual modules.)</item>
+<item><emphasis>Refine</emphasis> your results. The refinement differs depending on what you chose to browse by in Step 1.</item>
+<item><emphasis>View</emphasis> a module or collection by clicking on its title.</item>
+</list>
+
+	<figure id="browse"><media id="browse.png" alt="Browsing interface."><image src="/content/m19610/latest/browse.png" mime-type="image/png"/></media>
+	 
+	<caption>Browsing interface and refinement.</caption></figure>
+
+<para id="openp4">On the right side of the browsing interface screen is the <link target-id="random-fig">Repository</link> portal. Use this to jump to a random module or random collection in the repository.</para>
+<figure id="random-fig"><media id="randomContentPortlet" display="block" alt="Repository portlet.">
+<image mime-type="image/png" src="/content/m19610/latest/randomContentPortlet.png"/>
+</media>
+
+<caption>The repository portlet with links to random content.</caption></figure></section><section id="sorting"><title>Sorting Criteria</title><para id="eip-659">There are several pages on Connexions where you might see a list of content like those shown below. Some of the pages are the results of <link target-id="search">searching</link> or <link target-id="openrm">browsing</link> Connexions, but you will also see these lists through <link document="m37415" target-id="lensPage">lens pages</link>, <link target-id="byauthor">author profiles</link>, and elsewhere. This interface allows you to choose multiple views of the content listings, sort them by various criteria, and even quickly checkout or <link document="m11804" target-id="createderive">derive a copy</link> of content to one of your <link document="m10885" target-id="cnxworkareas">Work Areas</link>.</para>
+
+<para id="eip-319">A typical listing is shown <link target-id="detail">below</link>. Notice the left side includes basic <link document="m37413">metadata</link> like the title, author, summary, etc. and the right side includes further metadata which you can <link target-id="eip-675">sort by</link>.</para><figure id="detail">
+<media id="detail.png" alt="Search results with sort options." display="block">
+<image src="/content/m19610/latest/detail.png" mime-type="image/png"/>
+</media>
+<caption>Detailed search returns.</caption>
+</figure>
+
+<para id="eip-675"><title>Sort by</title>You can choose a new sorting criteria from the <code display="inline">Sort by</code> dropdown at the top of the listing. You can sort by:
+<list id="sortbylist" list-type="bulleted">
+<item>Relevance - to what you searched by</item>
+<item>Popularity - based on the number of times the content has been visited in ratio to the total number of page hits of all Connexions content.</item>
+<item>Language - as specified by the author.</item>
+<item>Revision date - to sort the most recently updated content to the top of the list.</item>
+<item>Title - to list the content alphabetically</item>
+<item>Type - to group collections together at the top, and modules together at the bottom.</item>
+</list></para><figure id="sortfields">
+<media id="sortfields.png" alt="Search results with sort options." display="block">
+<image src="/content/m19610/latest/sortfields.png" mime-type="image/png"/>
+</media>
+<caption>Search returns with "Sort by" list shown.</caption>
+</figure>
+
+<para id="eip-791"><title>Views</title>On the left side above the content listing, you should see <code display="inline"><emphasis>View:</emphasis> Detail | Compact | Statistics</code>. Clicking on one of these changes the view. Often, the default view is "Detail". When you click on "Compact", you can view a <link target-id="compact">compact</link> listing of the content, which only shows the title and author on the left, and your current sorting criterion on the right.</para><figure id="compact">
+<media id="compact.png" alt="Compact search results." display="block">
+<image src="/content/m19610/latest/compact.png" mime-type="image/png"/>
+</media>
+<caption>Compact search results.</caption>
+</figure>
+
+<para id="eip-872">Finally, the <link target-id="statistics">statistics</link> view gives you a bit more information behind Connexions "Popularity" ranking. You can see the total number of times the content has been viewed, the average number of views/day, how high the content is ranked (a rank of "1" means that content is the most-viewed content in the Connexions repository), and the rank percentile (a percentile of 98.72% means that 98.72% of the content in the repository is ranked lower than the this content).</para><para id="eip-8">At the top of the statistics view are links that allow you to download a spreadsheet of  the statistics, either for the past week or for all time.</para><figure id="statistics">
+<media id="statistics.png" alt="Search results with sort options." display="block">
+<image src="/content/m19610/latest/statistics.png" mime-type="image/png"/>
+</media>
+<caption>Search returns with statistics.</caption>
+</figure></section>
+
+<section id="discovercontent"><title>Discovering Content</title><para id="eip-313">
+If you are looking for quality content on a certain subject, or tailored for a certain audience, there are other ways to find what you are looking for.
+</para>
+
+<para id="bycontent"><title>Through content</title>You can use the <link document="m11837" target-id="findlinksect">Related Material</link> portlet to find content similar to the content you are viewing. The "Related Material" portlet also lists other collections which include this content.
+</para>
+
+<para id="bylens"><title>Through lenses</title>When viewing content, you can use the <link document="m11837" target-id="lensp4">Lenses</link> portlet to find lenses which include this content. Those lenses are likely to have similar content of high quality. You can also use the <link document="m11837" target-id="eip-910">Tags</link> portlet to search the repository for other content included in lenses that is associated with this tag.</para>
+
+<para id="eip-694">You can always browse our list of public <link url="/lenses">Lenses</link> to find lenses related to the subject you are searching.</para><para id="byauthor"><title>Through member profiles</title>If you enjoyed one module or collection, you might enjoy more content by that author. Click the author's name to go to the <link target-id="authorProfile">author's profile</link>, where you will find links to all of their modules, collections, and lenses, as well as links to the profiles of any coauthors whom they authored content with.</para>
+
+<figure id="authorProfile">
+<media id="authorProfile.png" alt="View of author profile." display="block">
+  <image src="/content/m19610/latest/authorProfile.png" mime-type="image/png"/>
+</media>
+<caption>Author profile, with link to author's statistics.</caption>
+</figure><para id="eip-966">In this <link target-id="authorProfile">figure</link>, a link <code display="inline">(view statistics)</code> is circled in red. Click this to go directly to the <link target-id="eip-872">popularity statistics</link> of this author's content. Rank them by popularity to find the content by this author most visited.</para></section>
+
+
+
+</content>
+
+</document>

@@ -1,0 +1,35 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Navigating the Editing Interface</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m37463</md:content-id>
+  <md:title>Navigating the Editing Interface</md:title>
+  <md:abstract>This module describes some of the navigation and other features used throughout the editing interface.</md:abstract>
+  <md:uuid>d83419da-03bb-4b0e-9690-1f31819a0688</md:uuid>
+</metadata>
+
+<content>
+          
+
+<section id="navigationbar-section"><title>Navigation Bar</title><para id="eip-126">The <link target-id="sidebar-figure">navigation sidebar</link> is located on the left side of all editing interface pages. You can always use the link at the top of the sidebar to return to the <link document="m10885">MyCNX Home page</link>. You can collapse and expand the different sections by clicking the small triangle located next to the heading.</para>
+        <para id="eip-846">The "By Type" section allow you to find all of the Modules, Collections, and Lenses you've created by clicking on the respective link. This is a great tool if you can't remember in which Work Area you saved your content. The "By Location" section displays your Personal Workspace and all of the workgroups you belong to; this section is initially collapsed on all pages except for the MyCNX Home page. </para><figure id="sidebar-figure"><media id="id23901347" alt=""><image src="/content/m19610/latest/mycnx-left-toolbar.png" mime-type="image/png"/></media><caption>"Workspace" sidebar.</caption></figure></section>
+
+<section id="showhide-section"><title>Show/Hide Toolbars</title><para id="eip-586">When editing a module or collection, a useful <link target-id="showhidetoolbarsfigure">Show/Hide Sidebars</link> icon is featured in the upper right hand corner. When you click on the icon, the right and left authoring sidebars are hidden and the content pane is expanded. This is especially useful when editing modules using Edit-In-Place, or when using a netbook or other small-screened device.</para><para id="eip-363">Once the Show/Hide Sidebars icon has been clicked, you can reduce the editing area and display the sidebars by clicking it again.</para>
+
+<figure id="showhidetoolbarsfigure" orient="vertical"><title>Using the Show/Hide Sidebars icon</title><subfigure id="showhide-subfig1">
+    <media id="showhide-1" alt="The module edit page with sidebars shown. The show/hide icon is highlighted and enlarged to emphasize its location in the top-right corner of the editing pane.">
+      <image mime-type="image/png" src="/content/m19610/latest/module-edit-showhide-closed.png"/>
+    </media>
+<caption>Click on the "Show/Hide Sidebars" icon...</caption>
+  </subfigure>
+  <subfigure id="showhide-subfig2">
+    <media id="showhide-2" alt="The module edit page with sidebars shown. The show/hide icon is highlighted and enlarged to emphasize its location in the top-right corner of the editing pane.">
+      <image mime-type="image/png" src="/content/m19610/latest/module-edit-showhide-open.png"/>
+    </media>
+<caption>...and the editing area fills the page. Click on the icon again to return to your normal view.</caption>
+  </subfigure>
+<caption>Demonstration of the Show/Hide Sidebars icon</caption></figure>
+</section>
+</content>
+
+</document>

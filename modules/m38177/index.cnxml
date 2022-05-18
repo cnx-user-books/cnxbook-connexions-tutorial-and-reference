@@ -1,0 +1,141 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Roles</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38177</md:content-id>
+  <md:title>Roles</md:title>
+  <md:abstract>This module explains the authoring roles which can be included with a module or collection.</md:abstract>
+  <md:uuid>7cec717c-6ea5-43eb-8788-f4cea7b197c8</md:uuid>
+</metadata>
+
+<content>
+
+
+ <para id="rolespara">As creator of a module or collection, by default you hold all three required
+	    roles: author, maintainer, and copyright holder. Note that of the following roles, only someone assigned the maintainer role may (re-)publish the content.
+<list id="rolelist1" list-type="bulleted"><item><term>Authors</term> receive credit for writing the material. The author is the person who is responsible for the creation of the content, but may or may not be the person who actually enters the work into the Connexions. Any module or collection must have at least one person with an author role before it can be published in Connexions.</item>
+<item><term>Maintainers</term> are able to edit and publish successive versions of a module or collection, even if they were not responsible for the creation of the content itself. Most authors will serve as maintainers for their materials, but some may choose not to. Authors may appoint additional maintainers to assist them in updating the materials. </item>
+<item><term>Copyright Holders</term> have the legal right to license the materials. In most cases, the copyright holder is the same person as the author, but this may not be the case in institutions where faculty and employees are required to sign over copyright to the institution. In this case the institution serves as copyright holder and the individual retains the author and/or maintainer roles.</item>
+</list></para>
+
+	  <para id="eip-813">Additionally, there are two other roles that Connexions offers for special content types. These roles are not granted permission to publish content.
+<list id="rolelist2" list-type="bulleted"><item><term>Editors</term> receive credit for editing a module or collection. Editing duties may include checking the material for accuracy, grammar, spelling, organization, and so on. Unlike authors, editors do not take credit for the ideas behind the content, but rather for its organization and presentation. Editors do not have rights to publish materials in Connexions, so editors who are also responsible for keeping modules or collections up-to-date must be assigned the maintainer role in order to publish new versions of the content. Editors are listed under the "More about this content" link that appears at the end of the module.</item>
+<item><term>Translators</term> have taken existing Connexions content and translated it from one language into another. Translators are listed next to the authors' names in the content headers. As with editors, translators do not have permission to publish or update content, so translators with publication responsibilities should also be assigned as maintainers for the content.</item>
+</list></para><para id="eip-499">You can grant one or more roles to other Connexions account holders who you want to collaborate with you on the module or collection. The "Roles" tab has a search feature for locating these people. The current collaborators on the content are listed by role under the heading "Current Roles" on the <link target-id="rolesfig">"Roles"</link> tab. You can change the roles assigned to these people by selecting or deselecting the check boxes in the "Authors", "Maintainers", "Copyright Holders", "Editors" and "Translators" columns under the heading "Change Roles". </para><figure id="rolesfig"><media id="id10006306" alt=""><image src="/content/m19610/latest/module-roles.png" mime-type="image/png"/></media>
+	    
+	  <caption>Example "Roles" tab for a module.</caption></figure>
+
+
+    <para id="element-856">When you grant or update roles for a collaborator on a module or collection in a work area, a role request is sent to the collaborator whose roles have been modified; the collaborator must either accept or reject the role request. If there are any pending roles (roles not yet accepted or rejected) for a module or collection, Connexions will not let you publish that content. Once the collaborator accepts the role or updated role, you must (re-)publish the content for the updated roles to appear on the published version of the content. The following paragraphs describe how to grant or update roles.
+</para>
+
+<section id="editroles"><title>Adding and Removing Role Assignments</title><para id="addingroles"><title>Granting Roles to Collaborators</title>To grant one or more roles in a module or collection to another Connexions account holder, use the following steps:	    <list id="editroleslist1" list-type="enumerated"><item>Click the "Roles" tab to display it.</item>
+<item>If the collaborator is a member of your current workgroup, click the "Select from members of your current workgroup" link. A table that lists all the members of the current workgroup appears under the link.</item>
+	     <item>If not, type the first or last name of the person you want to grant a role to in the text
+	     box next to <code>Search</code>.</item>
+	     <item>Click <code>Search</code>. The Connexions accounts are searched 
+	     and any Connexions accounts that match the search string are displayed.</item>
+	     <item>Select the check boxes for the appropriate roles next to the name of the person you want to add and click <code>Add People</code>. The name of the new collaborator appears with the names of authors, maintainers, and copyright holders under the "Current Roles" heading and in the table under the "Change Roles" heading. In both places, the new collaborator is noted as a role change that is pending acceptance.</item>  
+	     <item>Look at the table under the "Change Roles" heading and verify that the check boxes in the "Author", "Maintainer", "Copyright Holder", "Editor", and "Translator" columns are checked for the roles you want to grant to the new collaborator. If necessary, you can click the check boxes to change which roles will be granted.</item>
+	     <item>Click <code>Submit Changes</code>. The next time the new collaborator logs into Connexions, he or she will be notified of a <link target-id="pending">pending role request</link>. Connexions will not apply the roles to the new collaborator until he or she accepts the role request.</item>
+	  </list>
+	</para><para id="changeroles1"><title>Changing Role Assignments</title>To change any roles that were previously granted to a user, return to the "Roles" tab, check or uncheck the appropriate check boxes to reassign roles, and click <code>Submit Changes</code>. Each time to change the role assignments, a notification of a <link target-id="pending">pending role change request</link> will display to the collaborator upon his or her next login to Connexions. Connexions will not apply the roles to the new collaborator until he or she accepts the role request.</para><para id="changeroleorder1"><title>Changing the Order of Author Names</title>To have an author's name appear first on the module or collection, his or her name must be at the top of the "Change Roles" table. The second name from the top of the table will appear as the second name in the list of authors, and so on. Click the up or down arrows in the "Order" column to move an author up or down in the order of appearance on the published content. The single arrows move the name up or down one place. The double arrows move the name to the top or bottom of the list. Click <code>Submit Changes</code> to save the order changes.</para>
+
+
+
+
+<para id="removepara1"><title>Removing a Collaborator</title>To remove a collaborator from a module or collection, use the following steps:
+
+<list id="removerolelist1" list-type="enumerated"><item>Click the "Roles" tab to display it.</item>
+<item>Locate the name of the person or persons in the "Change Roles" table of which you want to remove.</item>
+<item>Click on the check box in the "Remove User" column for the collaborator you want to remove.</item>
+<item>Click <code>Submit Changes</code>. The "Change Roles" table is updated with the removed collaborator not appearing on the list of users with roles.</item>
+</list>
+A notification of a <link target-id="pending">pending role request</link> will display to the collaborator upon his or her next login to Connexions. Connexions will not remove the collaborator until he or she accepts the role removal request.</para>
+</section>
+
+    <section id="pending">
+      <title>Viewing and Processing Pending Role Requests</title>
+	
+	<para id="pendingpara">
+	  Connexions makes it easy to collaborate on educational materials. One way 
+	  to do this is to share authorship or maintenance of a module or collection.  
+	  If another author has granted you a role in their module or collection so that 
+	  you can collaborate with them, the <link target-id="collabbox">"Pending"</link> 
+	  sidebar will appear in the upper right corner of your Connexions pages.
+	</para>
+
+	<figure id="collabbox"><media id="id13678618" alt=""><image src="/content/m19610/latest/portlet-pending-role-request.png" mime-type="image/png"/></media>
+	  
+	<caption>"Pending" sidebar with role requests.</caption></figure>
+	
+	<para id="pendingpara2">Click the <emphasis>Role Request</emphasis> link to display the 
+	  <link target-id="collab2">"Collaboration Requests"</link> screen. From this 
+	  screen you can view and act upon: 
+	  
+	  <list id="things">
+	    <item><link target-id="requestsawaitingsect">Requests awaiting your approval</link></item>
+	    <item><link target-id="requestsyouhavemadesect">Requests you have made awaiting others' acceptance</link></item>
+	    <item><link target-id="requestscompletedsect">Completed requests</link></item>
+	  </list>
+	</para>
+
+	<figure id="collab2"><media id="id13678718" alt=""><image src="/content/m19610/latest/role-requests.png" mime-type="image/png"/></media>
+	  
+	<caption>"Collaboration Requests" screen showing one request awaiting 
+	  your approval.</caption></figure>
+
+	
+      <section id="requestsawaitingsect">
+	<title>Requests Awaiting Your Approval</title>
+
+	<para id="requestsawaiting">If another Connexions author grants you a role on their module or collection
+	  as an author, maintainer, copyright holder, editor, and/or translator, an entry appears under 
+	  the 'Requests Awaiting Your Approval' section of the "Collaboration Requests" 
+	  screen. To accept the request select the check box in the table for the 
+	  request you wish to accept and click <code>Accept</code>.
+	</para>
+	
+	<para id="requestawaiting2">To reject the request, select the check box in the table for the request 
+	  you wish to reject, and click <code>Reject</code>.
+	  
+	<note id="id13678792" type="note">If you have been requested to be added to a module or collection as a copyright 
+	  holder, you must select the check box indicating that you agree to the 
+	  license which has been selected for that module before you can accept the
+	  request. A link to the full license is provided in the "License" column of the 
+	  table.
+	</note>
+	</para>
+      </section>
+
+
+      <section id="requestsyouhavemadesect">	
+        <title>Requests You Have Made</title>
+
+	<para id="requestsyouhavemade">
+	  If you have requested that someone be added to one of your modules 
+	  or collections as an author, maintainer, and/or copyright holder, an 
+	  entry appears under the "Requests You Have Made" section of the 
+	  "Collaboration Requests" screen until the other author acts on it. 
+	  You can cancel pending requests from here.
+	</para>
+       </section>	
+       
+	
+       <section id="requestscompletedsect">
+	 <title>Completed Requests</title>
+
+	 <para id="requestscompleted">
+	   Any requests you have made that were accepted or rejected are 
+	   listed in the "Requests You Have Made -- Completed" section of 
+	   the "Collaboration Requests" screen. When you no longer need 
+	   to keep the record, you can delete it.
+	</para>
+	
+      </section>
+    </section>
+
+
+</content>
+
+</document>

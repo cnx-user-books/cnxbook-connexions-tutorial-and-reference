@@ -1,0 +1,104 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Report a Bug</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m11836</md:content-id>
+  <md:title>Report a Bug</md:title>
+  <md:abstract>Instructions for reporting bugs.</md:abstract>
+  <md:uuid>f06246c8-e44b-43f2-a311-11945251771e</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="/bug_submit_form" strength="3">Bug Report Form</link>
+      <link url="/help/techsupport" strength="3">Technical Support Help</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="bugintro">
+    <title>Submitting a Bug Report</title> 
+
+    <para id="bug1">In any software package you may encounter the occasional
+    flaw with a feature or the documentation. Please bring these
+    flaws, or <term>bugs</term>, to the attention of the Connexions team 
+    with the <emphasis>Report a Bug</emphasis> link, which is located 
+    on the <link url="http://cnx.org/">Connexions Home page</link> 
+    and on other Connexions web pages in the Personal Toolbar.  
+    </para>
+
+    <para id="bug2">To report a bug, use the following steps:
+
+      <list id="buglist" list-type="enumerated"><item>Click on the <link target-id="homepage-search-loggedin">Report a Bug</link> link at the top of the page.
+<figure id="homepage-search-loggedin">
+<media id="homepage-search-loggedin.jpg" display="block" alt="Report a bug link.">
+  <image src="/content/m19610/latest/homepage-search-loggedin.jpg" mime-type="image/jpeg"/>
+</media>
+<caption>Report a Bug link above the search bar.</caption>
+</figure>
+
+        The <link url="/bug_submit_form">Bug Report 
+        Submission Form</link> displays.</item>
+  <item>Enter a short summary of the problem.</item>
+  <item>Enter your name and e-mail address. These aren't required, but it helps us to know who's having trouble, and if you don't enter an email address we can't get back to you with an answer.</item>
+  <item>The page you were on immediately before the bug form is entered automatically into the "Problem URL" field. If you didn't come directly from the error page, please go back to the page where you had the problem and enter its address here. If the problem was on a module or collection, the object ID number is sufficient, e.g. m99999. <note display="inline">A content object's ID appears in its URL or on the content's <link document="m37413">metadata</link> page.</note></item>
+  <item>Specify the nature of the error. Click the down arrow in
+  the "Category" field and select the appropriate entry from the 
+  drop-down menu.</item>
+  <item>Specify the impact of the error. Click the down arrow in the 
+  "Severity" field and select the appropriate entry from the drop-down 
+  menu.</item>
+  <item>Enter a one-line summary of the bug in the "Task Title" 
+  field.</item>
+  <item>Enter an explanation of the circumstances of the error in 
+  the "Description" field. Include your actions and the system's 
+  actions that led up to the error condition. Please include your browser and operating system. If possible, include
+  step-by-step instructions for reproducing the bug.</item>
+  <item>Click <code>Submit</code> to enter the bug into 
+        the Connexions tracking system.</item>
+      </list>
+</para>
+    </section>
+
+    <section id="bugtips">
+     <title>Helpful Tips for Submitting Bug Reports</title> 
+
+    <para id="para1">
+      Here are some tips for submitting error reports that will help 
+      us fix the bugs quickly. 
+
+      <list id="list2"><item>First, do not close the error message display 
+  until you have captured some information from it to include in your 
+  bug report. The error message contains important information. If you 
+  have left it to go to the 
+  <link url="/bug_submit_form">Bug Report Submission 
+  Form</link> or to a <link url="/help/">Help</link> 
+  page, use the Back function on your browser to redisplay the error 
+  message.</item>
+
+  <item>Include a copy of the error page. If the error displays an 
+  actual error message, please copy the text of that message and paste 
+  it into the bug report. It is even better to include the HTML source 
+  of the error message -- some of our systems include important 
+  information in HTML comments. While the error message is displaying, 
+  right click your mouse and select the <code>View Source</code> or 
+  <code>View Page Source</code> option, depending on your browser, to 
+  display the HTML for the page. Then you can copy the HTML information 
+  and paste it into the bug report.</item>
+
+  <item>Full descriptions of errors are very useful. If your 
+  error involved a specific module, include the name of the module. 
+  If you were in the <link document="m10885">editing interface</link>, include the workgroup and/or 
+  module with which you were working. If you were using the <link document="m10288">Collection
+  Composer</link>, mention which collection you were working with, and so forth. 
+  Include the exact URL of the page on which the error occurred. 
+  Always include a description of what you were doing, if you can.
+  </item>
+      </list>
+      </para>
+    </section>
+  
+  </content>
+  
+</document>

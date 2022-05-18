@@ -1,0 +1,23 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Create an organizational account</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m43299</md:content-id>
+  <md:title>Create an organizational account</md:title>
+  <md:abstract>This module explains how to create an organizational account.</md:abstract>
+  <md:uuid>c98e6e64-704c-4c90-955f-4bd6d67a5496</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me">In order to set up an endorsement or affiliation lens, you will first need to set up an organizational account.
+
+</para><list id="eip-587" list-type="enumerated" number-style="arabic"><item>Create a personal account using the <link url="../join_form">sign-up form</link>. You will need a valid email address in order to complete the registration process.</item>
+<item>After logging into the site, <link url="../org_account_form">create an organizational account</link>.</item>
+<item>Log out of your personal account and log into the newly created organizational account.</item>
+<item>Click on the MyCNX tab at the top of the screen and click on the <code class="codeline">Create a lens link.</code></item>
+<item>Provide a name for the lens, select a lens type, and click on the <code class="codeline">Continue</code> button.</item>
+<item>Customize your lens by providing additional information such as a description, logo, website, etc. (Note: This information should provide readers with a description of your organization as well as the criteria used to endorse content (in the case of an endorsement lens). Also, you may wish to leave your lens in a "Private" state until you have had a chance to add content to the lens - this option can be changed at any time.)</item>
+<item>Save your lens.</item></list><para id="eip-910">Once created, you will be able to add content to your lens by using the <code class="codeline">Add to a lens</code> feature in the <link document="m11837" target-id="contentactionsbarsection">Content Actions</link> bar at the top of the content. If you wish to modify or remove items from your lens, or to make your lens public or private, you can do so by clicking on the MyCNX tab, clicking on the <code class="codeline">View all my lenses</code> link, and making the necessary changes to your lens.</para>
+</content>
+
+</document>

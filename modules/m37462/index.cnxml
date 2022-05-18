@@ -1,0 +1,122 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Overview</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m37462</md:content-id>
+  <md:title>Overview</md:title>
+  <md:abstract>This module describes the different types of Work Areas, and how to create and delete public/collaborative Workgroups.</md:abstract>
+  <md:uuid>2b2c736d-86bb-4a7b-9a52-4672467a980a</md:uuid>
+</metadata>
+
+<content>
+
+       
+          
+
+    <section id="cnxworkareas">
+      <title>Connexions Work Areas</title>
+      <para id="workareapara1">Connexions provides two types of areas in which to work on content: 
+        <link target-id="managingworkgroupssection">My Workspace</link> and <link target-id="workgroups">Workgroups</link>. You can create, edit, and manage content in both work areas. The difference between the 
+        types of work areas is user access. "My Workspace" is a private work area. 
+        Only you can access it and view or modify its contents. "Workgroups" are for collaborative 
+        projects. Their contents can be accessed by a group of users and each of the 
+        group members can view or modify its contents. "Workgroups" must be created 
+        by you. You can create multiple workgroups, one for each 
+        project. Both of these types of work areas are described in this module.
+      </para>
+
+      <section id="managingworkgroupssection">
+        <title>My Workspace</title>
+        <para id="personalworkspacepara">Every person with 
+        a Connexions account has their own "My Workspace". It was created automatically 
+        when their Connexions account was set up. "My Workspace" is your personal work area in Connexions where you can work 
+  independently of anyone else. In this work area you can keep your own modules, 
+  files, and collections that no one else can view or modify. Many authors prefer to 
+  work on modules or collections in "My Workspace" before moving them to a 
+          <link target-id="workgroups">workgroup</link> where a group of collaborators can 
+  make comments or edit the material. 
+        <note id="eip-id3423714">It is best to keep only one working copy of any one content; therefore be sure to use "Cut" and "Paste" to move content to a Workgroup instead of "Copy" and "Paste".</note></para>
+        <para id="personalworkspacepara2">You can display your personal work area from a Connexions web page by 
+  clicking on the  <code display="inline">My Workspace</code> link in the <link document="m37463" target-id="navigationbar-section">navigation 
+  sidebar</link> on the left side of the page.</para>
+      </section>
+      <section id="workgroups">
+        <title>Workgroups</title>
+        <para id="workg1">
+   A workgroup is a private "scratch area" where a group of Connexions authors 
+   can collaborate on a common set of modules. This allows authors working 
+   together to see their progress without letting the rest of the world 
+   see their work.
+
+          <note id="id23896815" type="Warning"><label>Warning</label>
+     Remember that <emphasis>workgroups are not a substitute for communication 
+     between collaborators</emphasis>. The members of a workgroup must communicate 
+     openly because all the members in a workgroup have the same level of 
+     privilege. Any member in a workgroup may add or remove another member and 
+     modify, add, or remove content. The creator of a workgroup has no extra 
+     privileges. 
+          </note>
+        </para>
+        <para id="workg2">Modules, collections, and other uploaded files can be included in each workgroup. 
+   The members of the workgroup can create new content in the workgroup, or can checkout existing content (or <link document="m11804">derive a copy</link> of content) from the 
+   <term>Content Repository</term>. Once content is placed in the workgroup, any 
+   member of the workgroup may modify it. 
+   To publish modified content, a person must have the maintainer role for that 
+   module or collection. For more on this see <link document="m10887" target-id="editroles">Editing Module
+   Roles</link>.
+        </para><para id="workg3">The names of the workgroups of which you are a member are listed 
+        in the <link document="m37463" target-id="navigationbar-section">navigation 
+  sidebar</link> on the left side of the page. You can display the contents of a workgroup by 
+        clicking on the name of the workgroup. 
+        </para>
+      </section>
+
+</section>
+
+      <section id="createworkgroupsect">
+        <title>Creating a New Workgroup</title>
+        <para id="createworkgpara1">
+   To create a workgroup, use the following steps:
+
+          <list id="createworkglist1" list-type="enumerated">
+            <item>Click <code>Create a workgroup</code> in the "Workspaces" sidebar. The 
+     "Create Workgroup" screen displays.</item>
+            <item>Type the name of the workgroup in the "Name" field.</item>
+            <item>(Optional) Type a group e-mail address in the "Email" field. This should be a common
+         e-mail address or mailing list that is shared by all members of the workgroup.
+            </item>
+            <item>(Optional) Type a description of the workgroup in the "Description" field.(optional)</item>
+            <item>Click <code>Create</code>. The screen for the new workgroup displays.</item>
+          </list>
+        </para>
+        <para id="createworkgpara2">Since it is a new workgroup, it has no content and you are its only member. 
+         See <link document="m37476">Managing Work Area Contents</link> for a 
+         description of how to add content to the new workgroup. See 
+          <link document="m37472">Managing Workgroup Members</link> for a 
+         description of how to add members to the new workgroup.
+        </para>
+      </section>
+
+
+      <section id="deletewgsec">
+        <title>Deleting a Workgroup</title>
+        <para id="deletewgpara1">
+      A workgroup is deleted when it no longer has any members. If you want to 
+      delete a workgroup, you must remove all the members of the workgroup, 
+      including yourself. To delete a workgroup, use the following steps:
+
+          <list id="deletewglist" list-type="enumerated"><item>Click on the green "Members" tab at the top of the Workgroup.</item>
+            <item>Select the checkbox in the "Remove" column next to every member's name, including your own..</item>
+            <item>Click <code>Remove selected users from group</code>. The "Delete 
+            Workgroup" confirmation screen displays.</item>
+            <item>Click <code>Yes, Delete it</code>. All members are removed from the 
+      Workgroup, the Workgroup is deleted, and the Workgroup name is removed from 
+      the <link document="m37463" target-id="navigationbar-section">navigation 
+  sidebar</link> of all members of the Workgroup. Any published content located in the Workgroup will not be deleted; to edit or modify it, you will need to check it out to another Work Area.</item>
+          </list>
+        </para>
+      </section>
+
+</content>
+
+</document>

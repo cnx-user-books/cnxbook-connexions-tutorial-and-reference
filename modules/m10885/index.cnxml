@@ -1,0 +1,36 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>MyCNX Tab</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m10885</md:content-id>
+  <md:title>MyCNX Tab</md:title>
+  <md:abstract>An overview of the MyCNX dashboard.</md:abstract>
+  <md:uuid>656813c1-edac-48f9-a9a3-2f0fff300eed</md:uuid>
+</metadata>
+
+<content>
+    <para id="eip-174">You can begin managing and creating new content from the editing interface component of Connexions, known as <term>MyCNX</term>. It is also called your <term>dashboard</term> because it offers quick and easy access to various parts of the editing interface. You can access it by clicking on the <link url="/mycnx">MyCNX</link> tab located at the top of every Connexions page.</para>
+
+<para id="eip-420">The MyCNX Home page is a gateway to all of Connexions' authoring areas, such as your <link document="m37462" target-id="managingworkgroupssection">Personal Workspace</link> and your <link document="m37462" target-id="workgroups">Workgroups</link>. It is also a quick way to manage and edit <link target-id="accesslenses-section">your Lenses</link>, including your My Favorites list. You can access the MyCNX home page by clicking on the <code display="inline">MyCNX</code> tab at the top of any Connexions page. You must <link document="m37412" target-id="createaccoutsection">obtain a Connexions account</link> and <link document="m37412" target-id="loginout">log in to the site</link> in order to access MyCNX.</para>
+
+<section id="createandedit-section"><title>Create and Edit Content</title><para id="eip-87">The <link target-id="reateandedit-figure">Create and edit content</link> section of the MyCNX Home page is the quickest way to start authoring in Connexions. Clicking the <code display="inline">Create a new module</code> link allows you immediately begin creating a new module and choose later which Work Area to keep it in (likewise for the <code display="inline">Create a new collection</code> link). Underneath these links is the "Last modified" area, which provides an easy way to resume working on content that you have already created.
+        </para>
+
+        <figure id="createandedit-figure"><media id="cne-me" alt="Create and Edit content."><image src="/content/m19610/latest/mycnx-create-and-edit-content.png" mime-type="image/png"/></media><caption>Create and Edit Content</caption></figure></section>
+
+<section id="accesslenses-section"><title>Access lenses</title><para id="eip-951">To start creating and editing <link document="m37415">lenses</link> from the MyCNX home page you can follow the links under the <link target-id="accesslenses-figure">Access lenses</link> section. This area provides users with a list of their lenses. Click the lens name to view the contents of the lens as if you were a normal viewer; click <code display="inline">Edit</code> to change the lens properties. <note id="eip-id1165541992459">If you wish to add new content to a lens, navigate to the content in the repository and choose <code display="inline">Add to a lens...</code> in the <link document="m11837" target-id="contentactionsbarsection">Content Actions bar</link> at the top of the content.</note>If you have several lenses, you can see them all by clicking the <code display="inline">More</code> link at the bottom of the section. You can also create a new lens by clicking on the <code display="inline">Create a new lens</code> link.
+        </para>
+
+ <figure id="accesslenses-figure"><media id="al-med" alt="Access lenses."><image src="/content/m19610/latest/mycnx-access-lenses.png" mime-type="image/png"/></media><caption>Access lenses</caption></figure></section><section id="guidestutorials-section"><title>Guides and Tutorials</title><para id="eip-687">The MyCNX Home page provides several links to <link target-id="tutorials-figure">guides and tutorials</link> that can help you begin authoring content in Connexions.
+        </para>
+
+ <figure id="tutorials-figure"><media id="tut-med" alt="Guides and tutorials."><image src="/content/m19610/latest/mycnx-tutorials.png" mime-type="image/png"/></media><caption>Links to guides and tutorials</caption></figure></section><section id="recentlyviewed-section"><title>Recently Viewed</title><para id="eip-176">Finally, the <link target-id="recentlyviewed-figure">Recently Viewed</link> portlet located on the MyCNX Home page lists the collections, modules, and lenses that you've most recently visited.
+        </para>
+
+ <figure id="recentlyviewed-figure"><media id="view-med" alt="Recently Viewed portlet."><image src="/content/m19610/latest/mycnx-recently-viewed.png" mime-type="image/jpeg"/></media><caption>Links to recently viewed modules</caption></figure></section>
+
+     <section id="viewingwg"><title>Navigating to Work Areas</title><para id="viewingwgppara">The left side of the McCNX homepage is filled by the blue <link document="m37463" target-id="navigationbar-section">navigation sidebar</link>. This sidebar remains on the left side of the page as long as you are within the editing interface portion of Connexions, and allows you to switch among your Work Areas and content easily and quickly.</para></section>
+
+
+
+  </content>
+</document>

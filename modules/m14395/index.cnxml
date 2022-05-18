@@ -1,0 +1,330 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+  <title>Advanced CNXML using Edit-in-Place</title>
+
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14395</md:content-id>
+  <md:title>Advanced CNXML using Edit-in-Place</md:title>
+  <md:abstract>This document explains and elaborates on CNXML tags that you can insert into a Connexions document using Edit-in-Place.</md:abstract>
+  <md:uuid>fe21231a-23a8-499d-b10a-152aafaf440b</md:uuid>
+</metadata>
+
+  <content>
+<section id="para">
+	    <title>Para</title>
+	    <para id="parap1">When working in Edit-in-Place, notice that the first item of the "Add Here" drop-down menu is "Paragraph".  When you select this item and click <code>Add Here</code>, <link target-id="element-177" class="cnxn">a text box</link> will appear.  You can now insert text in the white box, including <link document="m14394" target-id="Inline_tags" class="cnxn">inline tags</link>.  Note the <code>id="element-143"</code> in the upper left hand part of the blue box in <link target-id="element-177" class="cnxn"/>. 
+
+ <code>element-143</code> is the paragraph's unique <term>ID</term>, which you can use to refer to the paragraph directly using a <link document="m14394" target-id="cnln" class="cnxn">link</link> tag.  Also, you can find some helpful tips in the upper right-hand corner of the blue box: "Help editing &lt;para&gt;".</para>
+	    <figure id="element-177"><title>A Paragraph Box</title><media id="id45983989" alt=""><image src="../../media/para box.jpeg" mime-type="image/jpeg"/></media><caption>When you click "insert and choose paragraph", a box like this should appear.</caption></figure><example id="paraexamp"><title>Submitted by J. Cameron Cooper</title>
+	      <code id="id45984015" display="block">
+&lt;para id='intro'&gt;
+  Working on trees or bushes can generate a lot of limbs and 
+branches to haul away. If you just carry them, it'll take 
+all day. Instead, make a sledge. 
+&lt;/para&gt;
+&lt;para id="intro2"&gt;
+  Find a large, complex branch to make the base of your 
+sledge. It should be relatively flat, and broad and long 
+enough to make a decent pile; that is, as big or bigger than 
+anything else you need to haul away. Green branches from 
+hardwoods are best. Place it with the cut end pointing the 
+way you want to go. If no single branch is good enough, two
+can be used. Just place their cut ends a couple feet apart.
+&lt;/para&gt;
+&lt;para id="intro3"&gt;
+  Then pile on the remaining branches. Most will naturally 
+weave together; if not, give 'em a little help. Once the 
+pile it a few layers deep, smaller waste, like weeds or 
+maybe even leaves can be added to the pile. If it gets 
+unstable, another big branch will help.
+&lt;/para&gt;
+&lt;para id="intro4"&gt;
+  When you're done, grab the cut end of the bottom branch, 
+and maybe the base of one of the other big branches in the 
+pile, and drag the thing where you want to go. You'll be 
+surprised how much one person can drag!
+&lt;/para&gt;
+&lt;para id="intro5"&gt;
+  If you have a lot of leaves or similar small stuff to move,
+you can use a similar technique. Get a tarp, toss the leaves 
+and weeds and whatnot in the middle, and then drag the whole 
+thing away.
+&lt;/para&gt;	      </code><para id="element-702">which displays as the following:</para><para id="element-484">Working on trees or bushes can generate a lot of limbs and branches to
+haul away. If you just carry them, it'll take all day. Instead, make a
+sledge. 
+</para>
+<para id="intro2">
+  Find a large, complex branch to make the base of your sledge. It should
+be relatively flat, and broad and long enough to make a decent pile;
+that is, as big or bigger than anything else you need to haul away.
+Green branches from hardwoods are best. Place it with the cut end
+pointing the way you want to go. If no single branch is good enough, two
+can be used. Just place their cut ends a couple feet apart.
+</para>
+<para id="intro3">
+  Then pile on the remaining branches. Most will naturally weave together;
+if not, give 'em a little help. Once the pile it a few layers deep,
+smaller waste, like weeds or maybe even leaves can be added to the pile.
+If it gets unstable, another big branch will help.
+</para>
+<para id="intro4">
+  When you're done, grab the cut end of the bottom branch, and maybe the
+base of one of the other big branches in the pile, and drag the thing
+where you want to go. You'll be surprised how much one person can drag!
+</para>
+<para id="intro5">
+  If you have a lot of leaves or similar small stuff to move, you can use
+a similar technique. Get a tarp, toss the leaves and weeds and whatnot
+in the middle, and then drag the whole thing away.
+</para>
+	    </example>
+	  </section>  
+
+<section id="list">
+      <title>List</title>
+      <para id="listp1">To insert a new list, select "list" from the "insert" drop-down menu. As with adding a paragraph, adding a list will insert <link target-id="element-662" class="cnxn">a blue box</link>, with the list's unique ID in the upper left-hand corner and a helpful link in the upper right-hand corner.</para>
+      <figure id="element-662" orient="vertical"><title>Lists Available in Edit-in-Place</title><subfigure id="subfigure-list-1">
+  <title>Enumerated List</title>
+  <media id="id45984361" alt=""><image src="../../media/enumerated list.jpeg" mime-type="image/jpeg"/></media>
+  <caption>After you add a list, you will see this blue box. You can then select the type of list you wish to use. Here an enumerated list has been selected</caption>
+ </subfigure>
+<subfigure id="subfigure-list-2">
+  <title>Bulleted List</title>
+  <media id="id45984391" alt=""><image src="../../media/bulleted list.jpeg" mime-type="image/jpeg"/></media>
+  <caption>Here a bulleted list has been selected.</caption>
+ </subfigure></figure><example id="listexamp"><title>Enumerated List</title>
+	<para id="reglist">
+	  <code id="id45984424" display="block">
+&lt;list id='sledge' list-type='enumerated'&gt;
+  &lt;title&gt;Making a Sledge&lt;/title&gt;
+  &lt;item&gt;
+    Find a large, complex branch to make the base of your
+sledge. It should be relatively flat, and broad and long 
+enough to make a decent pile; that is, as big or bigger than 
+anything else you need to haul away. Green branches from 
+hardwoods are best. Place it with the cut end pointing the way
+you want to go. If no single branch is good enough, two can be 
+used. Just place their cut ends a couple feet apart.
+  &lt;/item&gt;
+  &lt;item&gt;
+    Then pile on the remaining branches. Most will naturally 
+weave together; if not, give 'em a little help. Once the pile 
+it a few layers deep, smaller waste, like weeds or maybe even 
+leaves can be added to the pile. If it gets unstable, another 
+big branch will help.
+  &lt;/item&gt;
+  &lt;item&gt;
+    When you're done, grab the cut end of the bottom branch, 
+and maybe the base of one of the other big branches in the 
+pile, and drag the thing where you want to go. You'll be 
+surprised how much one person can drag!
+  &lt;/item&gt;
+&lt;/list&gt;</code>
+	  The resulting list will look like:
+	  <list id="marinadedisplay" list-type="enumerated"><title>Making a Sledge</title>
+  <item>Find a large, complex branch to make the base of your sledge. It should be relatively flat, and broad and long enough to make a decent pile; that is, as big or bigger than anything else you need to haul away. Green branches from hardwoods are best. Place it with the cut end pointing the way you want to go. If no single branch is good enough, two can be used. Just place their cut ends a couple feet apart.</item>
+  <item>Then pile on the remaining branches. Most will naturally weave together; if not, give 'em a little help. Once the pile it a few layers deep, smaller waste, like weeds or maybe even leaves can be added to the pile. If it gets unstable, another big branch will help.</item>
+  <item>When you're done, grab the cut end of the bottom branch, and maybe the base of one of the other big branches in the pile, and drag the thing where you want to go. You'll be surprised how much one person can drag!</item></list>
+	</para>
+      </example><example id="element-412"><title>Bulleted List</title>
+<code id="id45984508" display="block">
+&lt;list id="ex-bulleted-list" list-type="bulleted"&gt;
+  &lt;item&gt;branches&lt;/item&gt;
+  &lt;item&gt;leaves&lt;/item&gt;
+  &lt;item&gt;sweat&lt;/item&gt;
+  &lt;item&gt;lemonade&lt;/item&gt;
+&lt;/list&gt;</code>
+<list id="ex-bulleted-list" list-type="bulleted"><item>branches</item>
+  <item>leaves</item>
+  <item>sweat</item>
+  <item>lemonade</item>
+</list></example>
+
+      
+    </section>
+
+<section id="equation">
+      <title>Equation</title>
+      <para id="eqnp1a">The <code>equation</code> tag is used to set off and number
+	equations in CNXML documents.  If you have <link document="m9008" class="cnxn">MathML</link> <link target-id="element-510" class="cnxn">enabled</link> for your document, you will only be able to place MathML equations within the <code>equation</code> tags.  Otherwise, to write the actual equations, you can use ASCII or images.<note id="id45984604" type="note">Connexions strongly encourages the use
+	equation with <link document="m9008" class="cnxn">MathML</link> tags when
+	displaying math.</note>  If you look at <link target-id="element-188" class="cnxn"/>, you will find the equation's unique ID in the upper left-hand corner and a helpful link in the upper right-hand corner.
+      </para>
+
+      <figure id="element-188"><title>Adding an Equation</title><media id="id45984641" alt=""><image src="../../media/equation.jpeg" mime-type="image/jpeg"/></media>
+</figure><para id="element-51">As with lists, you can add an optional <code>title</code> at the beginning of each equation.</para>	
+	
+<example id="equationexample">
+	  <title>Using Images as Equations</title>
+	    <code id="id45984677" display="block">&lt;equation id="eqn14"&gt;
+  &lt;media id="img12" display="block" alt="1+2=3"
+ &lt;image mime-type='image/gif' src='euler.gif' /&gt;
+&lt;/equation&gt;</code>
+		<para id="element-878">displays as:</para><equation id="image-eq">
+			<media id="id45984700" alt=""><image src="../../media/euler.gif" mime-type="image/gif"/></media>
+		</equation>
+	</example>
+
+	<example id="ex-eq-ascii">
+		<title>ASCII equations</title>
+		 <code id="id45984722" display="block">&lt;equation id='eqn15'&gt;
+  &lt;title&gt;Simple Arithmetic&lt;/title&gt;
+    11+27=38
+&lt;/equation&gt;</code>
+		<para id="simple-eq-para">
+	    This equation will display as: 
+	    <equation id="eqn15">
+	      <title>Simple Arithmetic</title>
+	      11+27=38
+	    </equation>
+		</para>
+	</example>
+    </section>  
+
+<section id="exercise">
+      <title>Exercise</title>
+      <para id="exercisep1">The <code>exercise</code> tag allows authors to
+	add practice problems into their documents.  When you initially add an exercise, you will see the <link target-id="element-902" class="cnxn">familiar blue box</link>, with the unique ID and the helpful link in the top corners.  However, also notice that new tags have been premade in your text box: <code>problem</code> and <code>solution</code>.  </para>
+      <figure id="element-902"><title>Adding an Exercise</title><media id="id46024769" alt=""><image src="../../media/exercise.jpeg" mime-type="image/jpeg"/></media></figure><para id="element-325">To continue utilizing edit-in-place to edit your exercise, press the <code>Save</code> button (see <link target-id="element-121" class="cnxn"/>).  You can now add various block tags to your problem and solution, including paragraphs and lists!</para><figure id="element-121"><title>A New Exercise after Saving</title><media id="id46024810" alt=""><image src="../../media/exercise-eip.png" mime-type="image/png" width="600"/></media>
+ <caption>If you save immediately after creating a new exercise, you can continue to edit the exercise using the familiar edit-in-place interface.</caption></figure><para id="qml">To create more complex exercises, such as multiple-choice,
+	multiple-response, ordered-response, and free-response
+	questions, QML (Questions Markup Language) may used in place
+	of the problem and solution tags.  For more information,
+	please see the information about <link document="m10136" class="cnxn">QML</link>.
+      </para>
+      <example id="exerexam">
+	<code id="id46024872" display="block">&lt;exercise id='hyd_test'&gt;
+  &lt;problem id="id9"&gt;
+    &lt;para id='hyd_testp1'&gt;
+      The color of a hydrangea changes with the pH of the 
+      soil. What color would the hydrangea be if the soil 
+      were highly acidic?  Highly basic?  Neutral?
+    &lt;/para&gt;
+  &lt;/problem&gt;
+  &lt;solution id="id10"&gt;
+    &lt;para id='hyd_sol1p1'&gt;
+      Highly acidic soil produces blue flowers.  Highly 
+      basic soil produces pink flowers. Neutral soil produces 
+      very pale cream flowers.
+    &lt;/para&gt;
+  &lt;/solution&gt;
+&lt;/exercise&gt;</code>
+	<para id="element-83">This code will display as:</para><exercise id="grilltest">
+	  <problem id="id46024904">
+	    <para id="grilltestp1">The color of a hydrangea changes with the pH of the soil.  What color would the hydrangea be if the soil were highly acidic?  Highly basic?  Neutral?</para>
+	  </problem>
+	  <solution id="id46024920">
+	    <para id="sol1p1">Highly acidic soil produces blue flowers.  Highly basic soil produces pink flowers. Neutral soil produces very pale cream flowers.</para>
+	  </solution>
+	</exercise>
+      </example>
+    </section>
+
+<section id="figure">
+      <title>Figure</title>
+      <para id="figp1">The <code>figure</code> tag provides the structure for
+	creating a figure within a document.  They can contain either
+	two or more <link document="m9006" target-id="subfigure" class="cnxn">subfigure</link> tags, or
+	a single <link document="m12660" class="cnxn">media</link>, <link document="m14396" class="cnxn">table</link>, or <link target-id="code" class="cnxn">code</link> tag.
+      </para>
+      <figure id="element-146"><title>Adding a Figure</title><media id="id46025013" alt=""><image src="../../media/figure.jpeg" mime-type="image/jpeg"/></media><caption>Adding a figure will create this familiar blue box, with a helpful link in the upper right corner and the figure's unique ID in quotes in the upper left corner.</caption></figure>
+      <para id="name">The optional first tag of the <code>figure</code> tag is <link document="m9000" target-id="name" class="cnxn">title</link> which is used to
+	title a figure.
+      </para>
+      <para id="media">The <code>title</code> tag is followed by any of the tags
+	listed above; however, the most commonly used tag is media,
+	which is used to include any sort of media such as images,
+	video, music, or java applets.  For more information on what media you can add to your content, and how to add it, see <link document="m12660" class="cnxn">Adding Multimedia to Your Connexions Content</link>.</para>
+      <para id="caption">
+	The final tag is the optional <code>caption</code> which is
+	used to add a small caption to the figure.
+      </para>
+      <example id="figexamp"><title>Example of a Figure</title>
+	<code id="id46025109" display="block">
+
+&lt;figure id='blossom'&gt;
+   &lt;title&gt;Momosa Blossom&lt;/title&gt;
+   &lt;media id="image-example" display="block" alt="A Momosa Blossom."&gt;
+      &lt;image id="flower" mime-type="image/jpeg" src="alb_jul_flo_1.jpg"&gt;
+   &lt;/media&gt;
+   &lt;caption&gt;
+      Picture taken by Jenn Drummond (CC Attribution).
+   &lt;/caption&gt;
+&lt;/figure&gt;</code><para id="element-260">This code will display as:</para><figure id="element-845"><title>Momosa Blossom</title>
+  <media id="id46025140" alt=""><image src="../../media/alb_jul_flo_1.jpg" mime-type="image/jpeg"/></media>
+  <caption>
+    Picture taken by Jenn Drummond (CC Attribution).
+  </caption></figure>
+      </example>
+    </section>
+
+
+<section id="code">
+      <title>Code</title>
+      <para id="codelp1">As seen in <link document="m14394" target-id="code" class="cnxn">Using Basic CNXML in Edit-in-Place</link>, you can add inline code to your document; edit-in-place also allows you in insert a <link target-id="element-418" class="cnxn">block of code</link>, separate from text.</para>
+
+      <figure id="element-418"><title>Adding a Block of Code</title><media id="id46025209" alt=""><image src="../../media/code.jpeg" mime-type="image/jpeg"/></media><caption>Note that <code>code</code> has a required unique ID <emphasis>if and only if</emphasis>  the display attribute is <emphasis>block</emphasis>.</caption></figure><para id="element-219">If you need to use the <code>&gt;</code> and <code>&lt;</code> symbols in your block of code, you must either use the unicode for these characters (&amp;gt; and &amp;lt;, if you have MathML enabled), or use the CDATA method.  To utilize the CDATA method, insert <code>&lt;![CDATA[</code> before your code and <code>]]&gt;</code> after it, as seen in <link target-id="codelexamp" class="cnxn"/>.</para><example id="codelexamp"><title>A Block of Code, Using CDATA</title>
+	<figure id="element-85"><title>Using CDATA in a Code Block</title><media id="id46025314" alt=""><image src="../../media/code CDATA.jpeg" mime-type="image/jpeg"/></media></figure><para id="element-965">When saved, <link target-id="element-85" class="cnxn"/> will display as:</para><code id="id46025334" display="block">
+&lt;para id='copy'&gt;
+  In a unix terminal the command to copy a file is 
+  &lt;code display='inline'&gt;cp original copy&lt;/code&gt;.
+&lt;/para&gt;</code>
+	
+      </example>
+    </section>
+
+    <section id="note">
+	    <title>Note</title>
+	    <para id="notep1">As mentioned in <link document="m14394" target-id="note" class="cnxn">Using Basic CNXML in Edit-in-Place</link>, the <code display="inline">note</code> tag creates an "out
+	      of line" note to the reader.  You can also insert a note using the drop-down box in Edit-in-Place; however, unless you edit the full source, the type of note will be set to the default.
+	    </para>
+	    <figure id="element-94"><title>Adding a Note using Edit-in-Place</title><media id="id45986580" alt=""><image src="../../media/note.jpeg" mime-type="image/jpeg"/></media><caption>As with <code>code</code>, notes require a unique ID when the display attribute is "block".</caption></figure><example id="notexamp">
+	      <code id="id45986607" display="block">
+&lt;note&gt;
+  Gardening requires a lot of intense physical exertion.  
+  Please drink plenty of water to avoid dehydration!
+&lt;/note&gt;     </code>
+	      <para id="notep2">
+		The above markup will display as: 
+	      </para><note id="id45986622">Gardening requires a lot of intense physical exertion.  Please drink plenty of water to avoid dehydration!</note>
+	      
+
+	    </example>
+	  </section>
+
+<section id="example">
+      <title>Example</title>
+      <para id="examp1">As is often the case in textbooks, authors will include
+	examples in the middle of a chapter or section.  For this
+	reason CNXML provides the <link target-id="element-60" class="cnxn">example</link> tag that allows an author to include
+	examples in a document.  
+      </para>
+      <figure id="element-60"><title>Adding an Example Using Edit-in-Place</title><media id="id45986676" alt=""><image src="../../media/example.jpeg" mime-type="image/jpeg"/></media></figure><example id="exampexamp"><para id="element-398">Here is the code for <link target-id="notexamp" class="cnxn"/>:</para><code id="id45986703" display="block">
+&lt;example id="notexamp"&gt;  
+  &lt;code id="codeseg1" display="block"&gt;
+    &lt;note&gt;
+      Gardening requires a lot of intense physical exertion.  
+      Please drink plenty of water to avoid dehydration!
+    &lt;/note&gt;   
+  &lt;/code&gt;
+  &lt;para id="notep2"&gt;
+    The above markup will display as: 
+  &lt;/para&gt;
+  &lt;note&gt;
+    Gardening requires a lot of intense physical exertion.  
+    Please drink plenty of water to avoid dehydration!
+  &lt;/note&gt;
+&lt;/example&gt;</code>      </example>
+    </section>
+
+    <section id="calstable">
+      <title>CALS Table</title>
+      <para id="calsp1">The final element you can add using Edit-in-Place is <code>table</code>.  To learn more about adding and editting tables using Edit-in-Place, see <link document="m14396" class="cnxn">CALS Table</link>.  For a more
+	  complete description of the CALS Table consult the <link url="http://www.oasis-open.org/specs/a502.htm">CALS Table
+	  Spec</link>.
+      </para>
+    </section>
+  
+    
+  </content>
+</document>

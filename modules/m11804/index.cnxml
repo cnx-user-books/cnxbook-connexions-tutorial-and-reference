@@ -1,0 +1,166 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Creating Adaptations</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m11804</md:content-id>
+  <md:title>Creating Adaptations</md:title>
+  <md:abstract>Instructions for using the Derive Copy function from content editing and using the Reuse/Edit shortcut from content viewing.</md:abstract>
+  <md:uuid>7521fb69-b403-4c2c-91ca-4b1d0c3d0b11</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://creativecommons.org/licenses/by/3.0/" strength="3">Creative Commons License</link>
+      <link url="http://cnx.org/help/authoring/expressedit" strength="3">Adaptations Help</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+
+
+
+      
+
+
+
+
+
+
+
+<section id="derive">
+      <title>What is an adaptation?</title>
+
+      <para id="derivepara">The Derive Copy function in Connexions allows you to create a
+	derivative work ("adaptation") that is based on any published module or collection. An adaptation starts with a copy of existing content, to
+	which you make changes and then publish as your
+	own, with proper attribution to the original authors. The creation of adaptations is not a method of collaboration, though it is possible to add the original authors to your new content, should they wish to collaborate with you on your new adaptation.
+	<note id="id1169757271696" type="warning">Any adaptations you create is a snapshot of the original at the 
+	time you created the work. If at a later time the original content 
+	is updated, your adaptation will not reflect those updates.
+	</note>
+      </para>
+
+      <para id="intro2">Adaptations are permitted under the 
+        <link url="http://creativecommons.org/licenses/by/3.0/">Creative 
+        Commons	Attribution License</link>, which applies to all 
+        Connexions content. When you publish an adaptation, Connexions
+	automatically adds an attribution statement that identifies the 
+	original work and its author, which is legally required by the 
+	Creative Commons Attribution License.
+      </para>
+
+
+    <section id="uses">
+      <title>Examples</title>
+      
+      <para id="usespara">Some examples of adaptations are: 
+
+	<list id="useslist"><item>
+          <label>Adaptations of others' work</label>
+          You may wish to create a module or collection that is similar to an existing one, but with some changes. For example, you may find an existing module with excellent explanations that uses an example that won't make sense for your students. You can create a derived copy with a new example. Or perhaps you want to you a module in your collection, but the module contains errors. You contact the original author and suggest corrections. The original author does not respond to your suggestions, so you create a derived copy of the module, insert your changes, and publish the new module.
+	  </item>
+	  <item>
+          <label>Adaptations of your own work</label>
+          For example, say you are teaching two mathematics courses, but that each course uses a different calculator. You can write modules that show instructions for functions using one of the calculators, and then derive a copy of those modules to show the same functions using the other calculator.
+	  </item>
+	  <item>
+          <label>Translations</label>
+          Derived copies provide a mechanism whereby content can be translated from one language into another.
+	  </item>
+	</list>
+      </para>
+    </section>
+    </section>
+
+
+
+<section id="createderive"><title>Creating Adaptations</title><para id="eip-289">There are two ways to derive copies of existing content:
+<list id="introlist" list-type="enumerated"><item>If there is a published collection or module that you would adapt, you can now quickly derive a copy directly from the content page itself. At the top of each page of published content, there is now a <link target-id="reuseedit-section">Reuse / Edit dropdown link</link>.</item>
+<item>Or you can <link document="m37476">checkout</link> content to one of your work areas and <link target-id="adaptacheckout">derive a copy at a later time</link> from the Edit Content page. (This method is more convenient especially if you wish to derive copies of multiple items. First do a <link document="m37476" target-id="addmodulesection">batch checkout</link>, and then derive a copy later.)</item>
+</list></para><section id="reuseedit-section"><title>Through the "Reuse/Edit" menu</title><para id="createderivepara">To check out an editable copy of a collection or module, <link url="http://cnx.org/content/search">Search the Content Repository</link> for the content you want to copy. Click on the title of the content you want to copy.</para>
+
+<para id="createderivepara3">Near the top right corner, select the menu reading <emphasis>Reuse / Edit</emphasis> and click the "Reuse or edit" link for the content you want to copy. (If you are viewing a module in the context of a collection, there are "Reuse or edit" links for both the collection and the module.)</para>
+
+<figure id="eip-id1163934177274"><media id="eip-id1163922379162" alt="The 'Reuse / Edit' menu in the Content Actions bar.">
+  <image src="../../media/reuse-edit-action-cropped.png" mime-type="image/png"/>
+</media>
+<caption>The 'Reuse / Edit' menu in the Content Actions bar.</caption></figure>
+
+<para id="createderivepara4">You will be prompted to log in if you have not already done so. Then,
+  <list id="permissionsoptions" list-type="bulleted"><item><para id="nopermissionsp1"><emphasis>If you have permission to edit the content</emphasis>, it is assumed that you want to <link document="m37476" target-id="addingexistingmodules">checkout</link> a copy of the content. If you do actually wish to derive a copy and create an adaptation of your own content, you can do that from the Edit Content page after you checkout a new copy of the content (<link target-id="adaptacheckoutpara">see below</link>).</para>
+
+<para id="nopermissionsp2">You will be prompted to select a work area to edit the content in.
+<figure id="nopermissions-workarea-fig"><media id="nopermissions-workarea-media" display="block" alt="'Choose a work area to check out content to' popup.">
+    <image src="../content/m19610/latest/checkout.png" mime-type="image/png"/>
+  </media>
+<caption>'Choose a work area to check out content to' popup.</caption></figure></para><para id="eip-268">If you leave the "Edit the content now" checkbox selected, you will be redirected to the work area in order to immediately start editing the content.</para>
+</item>
+
+<item>
+<para id="yespermissionsp1">
+<emphasis>If you do NOT have permission to edit the content</emphasis>, you will be prompted either to:
+    <list id="nopermissionsublist" list-type="bulleted"><item><emphasis>Derive a copy of the content.</emphasis> <link target-id="derive">Deriving a copy</link> allows you to adapt this content and then publish your adaptation.</item>
+      <item><emphasis>Or check it out anyway.</emphasis> You might choose to <link document="m37476" target-id="addingexistingmodules">checkout</link> the content, even though don't have permission to publish changes. You may ask to be a co-author later, derive a copy later, or just want to see how the content is constructed.
+    </item>
+  </list>
+<figure id="eip-id1163923078164"><media id="eip-id1163934500368" alt="The pop-up with options to derive a copy or check it out anyway">
+  <image src="../../media/derive-or-checkout.png" mime-type="image/png"/>
+</media>
+<caption>Derive a copy or check it out anyway.</caption></figure>
+</para>
+
+          <para id="createderivepara6">The next step in the pop-up will ask you to select a work area in which to edit the content. 
+<figure id="eip-id1171098806451"><media id="eip-id1171109363838" alt="Choose a work area and accept the license.">
+  <image src="../../media/derive-step-2.png" mime-type="image/png"/>
+</media>
+<caption>Choose a work area and accept the license.</caption></figure>
+</para>
+	  
+ 
+	  <para id="eip-658">If you leave the "Edit the content now" checkbox selected, you will be redirected to the work area in order to immediately start editing the content. You will also need to agree to the <link url="http://creativecommons.org/licenses/by/3.0/">Creative
+	  Commons Attribution License</link> for your newly derived content. Agree to the license and click <code>Yes, Create Copy</code> to proceed.
+	  </para><para id="createderivepara7">At this point, an adaptation of the original content will be checked out in the work area you selected above.
+
+	  All the contents of the new module or collection are exactly the same as the
+	  contents of the original. The metadata is the same,
+	  except for the roles. The roles now show you as an author,
+	  maintainer, and copyright holder. You
+	  can edit the content of the module or collection, its files, metadata,
+	  roles, and links as necessary. 
+	
+	</para>
+
+
+  </item>
+
+</list>
+</para>
+
+
+</section>
+
+<section id="adaptacheckout"><title>From a checked out copy</title>
+<para id="eip-39">If you chose to <link document="m37476" target-id="addingexistingmodules">checkout</link> content for which you did not hold the maintainer role, then if you try to publish the checkout, you will be prompted to derive a copy. 
+
+<figure id="publish-blocked-fig">
+  <media id="publish-blocked-media" alt="'Publish blocked' message on the Publish tab." display="block">
+    <image src="../content/m19610/latest/publish-blocked.png" mime-type="image/png"/>
+  </media>
+<caption>The "Publish" option is blocked.</caption>
+</figure></para><para id="adaptacheckoutpara">You can derive a copy of any item in one of your Work Areas at any time. Click on the content to edit it. Then click the <code>Derive Copy</code> link in the Module Status portlet on the right side of the page.
+
+<figure id="module-status-fig">
+  <media id="module-status-media" alt="Module Status portlet." display="block">
+    <image src="../content/m19610/latest/module-status.png" mime-type="image/png"/>
+  </media>
+<caption>The Module Status portlet with a "Derive Copy" link.</caption>
+</figure></para>
+</section></section>
+
+
+
+
+  </content>
+  
+</document>

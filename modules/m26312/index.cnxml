@@ -1,0 +1,836 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+
+<title>MathML Editor: The Basics</title>
+<metadata>
+  <md:content-id>m26312</md:content-id><md:title>MathML Editor: The Basics</md:title>
+  <md:abstract>This module provides a basic user's guide to Connexions' MathML editor. In it you will learn how to access the editor, how to create, edit, and delete MathML expressions using the editor, and how to insert the MathML code into a module.</md:abstract>
+  <md:uuid>13090ab9-1984-4d1c-8132-976c58d2c1b9</md:uuid>
+</metadata>
+
+<content>
+  <section id="overview">
+  <title>Overview</title><para id="eip-420">This module covers some basic points of Connexions' MathML editor, now in beta testing. It is organized as a tutorial and will lead you through basic usage of the editor, though you can skip around the sections if you wish. The tutorial covers:
+  <list id="overviewlist" type="bulleted" item-sep=","><item>how to <link target-id="access">access</link> and use the editor</item>
+	<item>how to <link target-id="create">create</link> MathML expressions</item>
+	<item>how to <link target-id="navigate">navigate</link> through the structure of an expression</item>
+	<item>how to <link target-id="edit">edit</link> expressions</item>
+	<item>how to <link target-id="insert">insert</link> expressions created in the editor into a module</item>
+	<item>how to <link target-id="delete">delete</link> expressions</item>
+	<item>how to <link target-id="usemenus">use the menu buttons</link> to create and edit expressions</item>
+</list>
+</para><para id="eip-343">You will learn how to create the expression <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> using <link target-id="create">keyboard input</link> and also using the <link target-id="usemenus">toolbar menus</link>.</para><para id="eip-293">You will also learn about the <link target-id="eip-964">basic layout</link> of the MathML editor, the <link target-id=" whatthe">context</link> of your cursor within the editing area, and how to <link target-id="eip-369">select or highlight</link> part or all of the MathML within the editor with key strokes or the mouse.</para><para id="eip-307">All of these aspects of the editor and more are covered in more detail in the <link document="m24561">MathML Editor: Manual</link>.</para></section>
+
+<section id="access"><title>Accessing the editor</title><para id="opening">Currently, the MathML editor is only supported in <link url="http://www.mozilla.com/firefox/">Mozilla Firefox</link>. If you use Internet Explorer or another browser, you can download Firefox for free under the link.</para>
+	<para id="eip-375">When <link document="m10887" target-id="editinplacesec">editing a module</link> using Mozilla's Firefox browser, click on an element within the module to open a blue <link target-id="launch-editor">editing box</link>.</para><figure id="launch-editor">
+		<media id="eip-id7676321" alt="Launching the Math Editor">
+			<image mime-type="image/png" src="../../media/launch.png"/>
+		</media>
+		<caption>
+     Begin editing and in the top-right corner is a MathML Editor link
+  </caption>
+	</figure>
+	<para id="eip-666">On the top-right hand side of the box is a "MathML Editor" link which will open up <link target-id="blank-editor">the editor</link>.</para><figure id="blank-editor">
+		<media id="eip-id1169718914496" alt="An empty Math Editor">
+			<image mime-type="image/jpeg" src="../../media/matheditor-blank-editor.png"/>
+		</media>
+		<caption>
+     Once clicked, a popup window will appear containing the Math Editor
+  </caption>
+	</figure>
+
+<para id="eip-649">The <link target-id="blank-editor">popup window</link> can remain open while editing a module and can even stay open while editing several modules. At any point one can close the window, but the contents of the editor will be lost.</para>
+
+	<para id="eip-964">The editor has two main sections: the <link document="m24561" target-id="toolbar">toolbar</link> and the main <link document="m24561" target-id="editing">editing area</link>. </para><para id="eip-11">The toolbar consists of
+
+  <list id="toolbarlist" item-sep="," list-type="bulleted"><item>a <link document="m24561" target-id="menu">Menu</link> containing mathematical operators</item>
+			<item>the <link document="m24561" target-id="path">Path</link> bar to help you find the context of your cursor</item>
+			<item>buttons for <link document="m24561" target-id="undo">Undo/Redo</link></item>
+			<item>a <link document="m24561" target-id="preview">Preview</link> button, which will display the math as it will look in a published module</item>
+			<item>and a <link document="m24561" target-id="source">View Source</link> button, which displays the raw MathML code</item>
+		</list></para><para id="eip-972">The editing area is the main area for creating math. It begins empty, but math can be pasted directly in here from Connexions, or created on the spot by either typing in expressions or using the toolbars. See the section <link target-id="insert">Inserting expressions into a module</link> below for how to move math from Connexions to the math editor and back.</para>
+</section>
+
+
+<section id="create"><title>Creating expressions</title><para id="eip-500">When you first <link target-id="access">open</link> the MathML editor, the <link document="m24561" target-id="editingarea">Editing area</link> should have one blank box in it, called a "<link document="m24561" target-id="block">block</link>". A block is an empty slot that can be filled with a number, variable, or longer expression consisting of at least one operator and its associated arguments. </para><para id="eip-103">Click inside of it to place your cursor inside the empty block.</para><para id="eip-664">There are two ways to insert math using the keyboard. The simplest way is to use keyboard shorthand notations for operators. These exist for simple algebra notations, and are similar to the buttons on a calculator (for instance, <code display="inline">*</code> for multiplication, <code display="inline">-</code> for negative or minus). A full list of Keyboard shortcuts is located <link document="m24561" target-id="keyboard">here</link>.</para>
+
+<para id="eip-374">The MathML editor will correctly parse a sequence of text and numbers and keyboard shortcuts into operators and arguments. For instance, <code display="inline">3-4</code> will be interpreted as "3 minus 4", and <code display="inline">3/(x+9)</code> will be interpreted as "3 divided by the quantity x plus 9". </para><para id="eip-70">The second way to create operations using the keyboard is to type out the MathML name. This is analogous to choosing the operation from the toolbar menus and is discussed in the <link target-id="usemenus">same section</link>.</para><section id="example"><title>An example</title><para id="eip-189">With a blank MathML editor <link target-id="access">open</link>, try typing in the following (or copying it from here and pasting into the editor):</para><code id="eip-576" display="block">x^2+b*x</code><para id="eip-745">Hit <code display="inline">Enter</code>. The MathML editor will display this as:</para><para id="eip-810"><m:math>
+<m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+  </m:apply>
+</m:math></para><para id="eip-815">Notice that we had to be explicit about our operations. Although most textbooks, and even our MathML editor, represents the product visually by printing <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math> and <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> next to one another, we had to explicitly mark the multiplication. The editor will display the <code display="inline">times</code> operation in different ways, depending on the surrounding operations.</para>
+
+
+<para id="eip-826">If you try to represent the product of <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math> and <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> with <code display="inline">bx</code>, that portion of your expression will be highlighted, indicating that there is a problem with the code that must be fixed before being used in a module. Simply click on <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> and replace it with <code display="inline">b*x</code>.</para>
+</section></section>
+
+<section id="navigate"><title>Navigating through an expression</title><para id="eip-967">If you have just <link target-id="create">created</link> an expression and pressed <code display="inline">Enter</code>, tight now your cursor should be at the right edge of your expression. If it isn't, click somewhere within your expression, and press the right arrow key until the cursor no longer moves and the path no longer changes in the <link document="m24561" target-id="path">Path</link> bar. In this position, the Path bar should display
+
+<code id="eip-id6680994" display="inline">Path: / plus</code>
+
+and the entire expression should have a light grey background.</para>
+
+<figure id="navplusfig">
+  <media id="navplus" alt="The plus operation has a light grey background and the Path bar contains 'Path: / plus'.">
+    <image mime-type="image/png" src="../../media/matheditor-navigate-plus.png"/>
+  </media>
+  <caption>
+     The context of the cursor is the entire plus operation.
+  </caption>
+</figure>
+
+
+<para id="eip-607">Press the left arrow key once. The cursor should still be on the right-hand side of the expression, but the Path bar should read:
+
+<code id="eip-id1171720825958" display="inline">Path: / plus / times</code>
+
+and now only the <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> term should have a light grey background.</para>
+
+<figure id="navtimesfig">
+  <media id="navtimes" alt="The times operation has a light grey background and the Path bar contains 'Path: / plus / times'.">
+    <image mime-type="image/png" src="../../media/matheditor-navigate-times.png"/>
+  </media>
+  <caption>
+     The context of the cursor is thetimes operation.
+  </caption>
+</figure>
+
+<para id="eip-922">Press the left arrow again. Now the <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> should appear within a block and be selected. The path will change again to 
+
+<code id="eip-id14618018" display="inline">Path: / plus / times / ci</code>
+
+The term <code display="inline">ci</code> represents an "identifier", in this case our variable <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>.</para>
+
+<figure id="navcifig">
+  <media id="navci" alt="The ci block is highlighted and the Path bar contains 'Path: / plus / times / ci'.">
+    <image mime-type="image/png" src="../../media/matheditor-navigate-ci.png"/>
+  </media>
+  <caption>
+     The context of the cursor is the ci block.
+  </caption>
+</figure>
+
+<para id="eip-25">Continue pressing the left arrow key across your expression to see what happens. Notice that once you reach the left side of the <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math>, the path should again read <code display="inline">Path: / plus / times</code> and the product <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> should have a light grey background. When you reach the far left side of the expression, the path should again read <code display="inline">Path: / plus</code> and the entire expression should have a light grey background.</para>
+
+<section id="whatthe"><title>What is going on here?</title><para id="eip-983">MathML treats operators and their arguments as nested elements. In our example of <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math>, <m:math>
+<m:apply>
+ <m:ci>b</m:ci>
+</m:apply>
+</m:math> and <m:math>
+<m:apply>
+ <m:ci>x</m:ci>
+</m:apply>
+</m:math> are both arguments of the operation called <code display="inline">times</code>. The product "b times x" is just one argument within the <code display="inline">plus</code> operation. The other argument of the <code display="inline">plus</code> operation is of course <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math>. This <code display="inline">power</code> operation itself has two arguments: <m:math>
+<m:apply>
+ <m:ci>x</m:ci>
+</m:apply>
+</m:math> and 2. In this way, <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math> is more closely bound to <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> than it is to either argument of the <code display="inline">power</code> operator.</para><para id="eip-214">We could picture these operators and arguments in a parenthetical structure:
+
+<code id="eip-id1171715004787" display="block">( ( (x)^(2) ) + ( (b)*(x) ) )</code>
+
+The parentheses group arguments of each operator together. A set of parentheses encloses each number or variable separately, and a set of parentheses encloses each entire operation - for instance, the entire product <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> or the entire sum <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math>.</para><para id="eip-106">This parenthetical structure can also be visualized as a tree-like structure. See the <link document="m24561">MathML Editor: Manual</link> for an <link document="m24561" target-id="tree">example</link>.</para><para id="eip-281">By moving our cursor left and right, we move deeper in or out of these parenthetical or tree-like structures, represented by a longer path name, and a smaller unit of shaded math. The Path and shading lets us know the <link document="m24561" target-id="context">context</link> of our cursor, i.e. where within the parenthetical or tree-like structure our cursor is. Essentially, navigating to different contexts of the MathML expression lets us place new expressions anywhere we want, as we'll show <link target-id="eip-229">below</link>.</para>
+</section></section><section id="edit"><title>Editing expressions</title><section id="eip-72"><title>Adding an argument to an existing operation</title><para id="eip-828">Be sure the editing area of the MathML editor contains the expression we <link target-id="create">entered</link>, <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math>. Let's change this to <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>.</para><para id="eip-35">To do this, we will have to add an argument to the addition operation. Move your cursor to the end of the expression by clicking on the last <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> and then pushing the right arrow key a couple of times to move the cursor to the right of the <code display="inline">times</code> operation. Then type in <code display="inline">+c</code> and press <code display="inline">Enter</code>.</para><para id="eip-99">You do not always have to add on to the right-hand side of an expression. Try moving your cursor to the beginning of the expression, typing in <code display="inline">c+</code> followed by <code display="inline">Enter</code>. Experiment with adding more arguments to the <code display="inline">plus</code> operation just after the <code display="inline">power</code> operation or just before the <code display="inline">times</code> operation.</para></section>
+
+<section id="eip-229"><title>Creating a new operation</title><para id="eip-132">In our example, <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>, let's change <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> to <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+</m:apply>
+</m:math>. We are not adding an argument to an existing operation, because <m:math>
+<m:apply>
+    <m:ci>x</m:ci>
+</m:apply>
+</m:math> and 2 are arguments of a <code display="inline">power</code> operator, while we want to make the entire <code display="inline">power</code> operation one argument of a <code display="inline">times</code> operation. The other argument will be the new element that we are adding, <m:math>
+<m:apply>
+  <m:ci>a</m:ci>
+</m:apply>
+</m:math>.</para><para id="eip-915">The underlying structure of our new expression will look something like this:
+
+<code id="eip-id1163817711139" display="block">( ( (a) ( (x)^(2) ) ) + ( (b)*(x) ) + (c) )</code></para><para id="eip-699">For this we will need to choose the <link document="m24561" target-id="cursor">context</link> of our cursor carefully, or we will get different math. Make sure your cursor is on the left hand side of the <code display="inline">power</code> operation, the path says <code display="inline">Path: / plus / power</code> and that <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> has a light grey background. This means the context of the cursor is the expression <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math>, which is good. We only want to multiply <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> by <m:math>
+<m:apply>
+  <m:ci>a</m:ci>
+</m:apply>
+</m:math>, nothing more and nothing less.</para><para id="eip-716">Then type in <code display="inline">a*</code> and press <code display="inline">Enter</code>. The MathML should display as:</para><para id="eip-510"><m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math></para><para id="eip-478">What if our cursor had been in a different context when we typed in <code display="inline">a*</code>? We could have moved our cursor farther to the left so that the context was the entire <code display="inline">plus</code> operation, where the path bar would read <code display="inline">Path: / plus</code> and the entire expression would have had a light grey background. In this case, typing in <code display="inline">a*</code> would have affected the entire grey area and would have resulted in this display:</para><para id="eip-193"><m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:plus/>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+    <m:apply>
+      <m:times/>
+      <m:ci>b</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+    <m:ci>c</m:ci>
+  </m:apply>
+</m:apply>
+</m:math></para><para id="eip-848">If our cursor was next to the <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> within the <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> term, a block would appear around the <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> and the path bar would read <code display="inline">Path: / plus / power / ci</code>. Typing in <code display="inline">a*</code> next to the <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> in the block would mean that now the quantity <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>a</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> would be squared and would result in this display:</para><para id="eip-564"><m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:apply>
+      <m:times/>
+      <m:ci>a</m:ci>
+      <m:ci>x</m:ci>
+    </m:apply>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math></para></section></section>
+
+
+<section id="insert"><title>Inserting expressions into a module</title><para id="eip-900">Let's put our expression <m:math>
+		<m:apply>
+			<m:plus/>
+			<m:apply>
+				<m:times/>
+				<m:ci>a</m:ci>
+				<m:apply>
+					<m:power/>
+					<m:ci>x</m:ci>
+					<m:cn>2</m:cn>
+				</m:apply>
+			</m:apply>
+			<m:apply>
+				<m:times/>
+				<m:ci>b</m:ci>
+				<m:ci>x</m:ci>
+			</m:apply>
+			<m:ci>c</m:ci>
+		</m:apply>
+	</m:math> into a module we're editing.</para><para id="eip-671">The MathML editor won't automatically insert your MathML expression into a module. You will have to copy and paste the MathML code. You can paste it into any module you wish, not only the module that you first accessed the MathML popup window from. The popup window can remain open even if you edit several different modules, but once you close it all contents of the editor will be lost.</para><para id="eip-925">You can press <code display="inline">Ctrl+A</code> (or <code display="inline">⌘+A</code> on Macs) to select your entire expression. You can also double-click in the white box outside of your expression to select it all. If you want to select only a portion of the expression, hold the <code display="inline">Shift</code> key down and use the left and right arrow buttons, or double click on the operator of just the portion you want to select (i.e. double click <code display="inline">+</code> to select everything within the <code display="inline">plus</code> operator, or double click on two multiplied objects to just select that product).</para><para id="eip-610">Copy your expression by pressing <code display="inline">Ctrl+C</code> (<code display="inline">⌘+C</code>). Open your module and click on a segment to edit. Press <code display="inline">Ctrl+V</code> (<code display="inline">⌘+V</code>) to paste the MathML code directly into your module.</para><section id="eip-369"><title>Why can't I select the MathML with my mouse?</title><para id="eip-545">
+There are two ways to select expressions within the editor. By using one of the methods above, you copy the underlying MathML code. This is what you need to copy MathML code over to a module, or to select a portion of your code to delete.</para>
+
+<para id="selectpara2">By clicking and dragging over an expression within the edit box, you select only the text. Like any other text you enter, if you copy part of your code and paste it as an argument of an operator within the editing area, the MathML editor will correctly parse it and generate the underlying code. This is also called "<link document="m24561" target-id="wrap">wrapping</link>" your existing math.</para>
+</section></section>
+
+
+<section id="delete"><title>Deleting expressions</title><para id="eip-883">There are several ways to delete part or all of your expression. You can either move your cursor to the <link document="m24561" target-id="context">context</link> of the portion of your expression you want to delete, then push <code display="inline">Delete</code>, or you can <link target-id="insert">select</link> the portion of your code you want to delete, and press <code display="inline">Delete</code>.</para><para id="eip-145">To delete <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> from our expression <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>, move your cursor until the context is only <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>. The <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> portion of the expression should have a light grey background, and the path bar should read <code display="inline">Path: / plus / times</code>.</para>
+
+<figure id="deltimesfig">
+  <media id="deltimes" alt="The times operation has a light grey background and the Path bar contains 'Path: / plus / times'.">
+    <image mime-type="image/png" src="../../media/matheditor-delete-times.png"/>
+  </media>
+  <caption>
+     The context of the cursor is the times operation.
+  </caption>
+</figure>
+
+<para id="eip-868">Press <code display="inline">Delete</code> once, and that part of your expression should be highlighted in blue. </para>
+
+<figure id="deltimeshilitefig"><media id="deltimeshilite" alt="The times operation is selected and the Path bar contains 'Path: / plus / times'.">
+    <image mime-type="image/png" src="../../media/matheditor-delete-times-highlight.png"/>
+  </media>
+  
+<caption>The times operation is highlighted.
+  </caption></figure>
+
+<para id="eip-627">Press <code display="inline">Delete</code> again and that portion will delete.</para>
+
+<figure id="deltimescifig"><media id="deltimesci" alt="The times operation is gone. The ci block containing c is highlighted, and the Path bar contains 'Path: / plus / times / ci'.">
+    <image mime-type="image/png" src="../../media/matheditor-delete-times-block.png"/>
+  </media>
+  
+<caption>The cursor will move to the next argument.
+  </caption></figure>
+
+<para id="eip-120">You should be left with a blank block where the expression <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> used to be. By clicking <code display="inline">Delete</code> you have deleted the content of one argument of the <code display="inline">plus</code> operator, but not the argument itself. You can type in a different expression that will replace <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>, or if you simply want the expression <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>, press <code display="inline">Delete</code> one more time to delete the block. Notice that the context automatically moves to the next argument, which in our case is the <code display="inline">ci</code> element <m:math>
+<m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>.</para></section>
+
+
+<section id="usemenus"><title>Creating expressions with the toolbar menus</title><para id="eip-615">The toolbar menus are only activated when something is selected within the editing box. This can be either an entire operator, like the expression <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>, or it could be just one argument of an operator, like <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math> or an empty block. Since the editing box contains only an <link target-id="blank-editor">empty block</link> when you first open it, the block is automatically highlighted and the toolbar menus are accessible.</para><para id="eip-165">However, note that if you select a portion of your MathML expression and then insert an operator from the toolbar, the selected portion will be overwritten. The operator will <emphasis>not</emphasis> appear behind or in front of the selected expression. New users are often confused by this behavior. Essentially, keyboard input and the toolbar function in different ways. </para><para id="eip-706">Remember that each operator in MathML has a specific number of arguments that can be associated with it. For instance, the operator <code display="inline">plus</code> must have at least two arguments (as in <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>x</m:ci>
+  <m:ci>y</m:ci>
+</m:apply>
+</m:math>) up to an unlimited number of arguments (as in <m:math>
+<m:apply>
+  <m:plus/>
+  <m:cn>1</m:cn>
+  <m:cn>2</m:cn>
+  <m:cn>3</m:cn>
+  <m:cn>4</m:cn>
+  <m:cn>5</m:cn>
+  <m:cn>6</m:cn>
+</m:apply>
+</m:math>...). The operator <code display="inline">root</code> has one required argument (the radicand, as in <m:math>
+<m:apply>
+  <m:root/>
+  <m:cn>3</m:cn>
+</m:apply>
+</m:math>), as well as one optional argument for specifying which root power (as in <m:math>
+<m:apply>
+  <m:root/>
+  <m:degree>
+    <m:cn>6</m:cn>
+  </m:degree>
+  <m:cn>3</m:cn>
+</m:apply>
+</m:math>).</para><para id="eip-440">When you insert a series of characters into the editor, the editor will correctly parse some of the symbols you enter as operators, and some as arguments of the operators. Furthermore, it correctly determines <emphasis>which</emphasis> operator you have typed in, and correctly associates the surrounding symbols as arguments of that operator.</para><para id="eip-772">The menu buttons in the toolbar will paste an operator over your highlighted expression, and insert blank blocks for all the required and optional arguments of the operator. This means that keyboard input and toolbar insertion are useful for different things. </para><list id="eip-364"><title>The toolbar is recommended:</title><item>When you are just beginning a new expression and already know the relations of the arguments to one another. For instance, if you have a written version of an equation in front of you and want to recreate it in the MathML editor so that you can paste the MathML code into a module. We recreate the equation <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> in the <link target-id="eip-212">sections below</link> using only the toolbar, or find a more complicated and in-depth example in the module <link document="m24560">MathML Editor: Intermediate</link>.</item>
+
+<item>When the operator has many arguments associated with it.</item>
+
+<item>When the operator does not have a keyboard shortcut, or if you do not know the keyboard shortcut. To the right of each menu entry, there is the keyboard shortcut for that operator. For complicated operators, you often must type in the name of the element (for instance, "root"), and the editor will provide a visual representation (the radical sign, in this case) and blank boxes for argument entry.</item></list><list id="eip-388"><title>Keyboard input is recommended:</title><item>For most simple MathML entry.</item>
+<item>When you want your existing expression in the editing area to become one argument of a new operation. To add a new argument to the plus operator <m:math>
+<m:apply>
+  <m:plus/>
+  <m:ci>x</m:ci>
+  <m:ci>y</m:ci>
+</m:apply>
+</m:math>, you need only type <code display="inline">+z</code>. The editor interprets <m:math>
+<m:apply>
+  <m:ci>z</m:ci>
+</m:apply>
+</m:math> as one argument of the <code display="inline">plus</code> operator, and the previously existing expression as the other argument. Toolbar insertion cannot do this. Some examples of workarounds are given below.</item></list><para id="eip-728">The following sections will show you how to create an expression from scratch using mainly toolbar entry, and how to use part or all of your existing expression as one argument of a new operator.</para><section id="eip-212"><title>Creating a new expression</title><para id="toolbarcreate">The toolbars are useful when creating new expressions because you work "from the top down". The operator with the broadest scope is inserted from the menus first. Then, the arguments are filled in with variables and numbers, or with another complex expression. If one complex expression is itself an argument of an operator, you can use the toolbar to insert the operator first, and then fill in the arguments again. Continue this iteration with successively narrower scoped operators, until only number and variables are left to be inserted as arguments.</para><para id="eip-511">Let's create <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>a</m:ci>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> using the toolbar menus, and in the same order that we created it with keyboard input <link target-id="create">above</link>. We'll first <link target-id="eip-856">insert <m:math>
+<m:apply>
+  <m:plus/>
+    <m:apply>
+      <m:power/>
+      <m:ci>x</m:ci>
+      <m:cn>2</m:cn>
+    </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math></link>, then <link target-id="eip-740">add <m:math>
+<m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math></link> as an argument to the existing <code display="inline">plus</code> operator, and finally <link target-id="eip-110">add <m:math>
+<m:apply>
+  <m:ci>a</m:ci>
+</m:apply>
+</m:math></link> as an argument in a new operation. </para><para id="eip-53">Make sure the editing area in the MathML editor is blank. It should already be blank if you've just opened it. If you have some text entered, <link target-id="delete">delete</link> it first.</para><para id="eip-525">The expressions <m:math>
+<m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+</m:apply>
+</m:math> and <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> stand in relation to one another as arguments of a <code display="inline">plus</code> operator, so we will start by inserting a <code display="inline">plus</code> operator and then inserting successively smaller chunks of the expression.</para><list id="eip-856" list-type="enumerated" number-style="arabic" class="stepwise"><item>Click the <code display="inline">plus</code> operator from the toolbar.</item>
+
+<item>To create the <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> expression, click within the first block in the <code display="inline">plus</code> operation, then select the <code display="inline">power</code> operator from the toolbar.</item>
+
+<item>Click within the first block in the <code display="inline">power</code> operation, and type in <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>.</item>
+
+<item>Click within the second block in the <code display="inline">power</code> operation, and type in <m:math>
+<m:apply>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math>.</item>
+
+<item>To create the <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>b</m:ci>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> expression, click within the remaining block, which should be the second argument of the <code display="inline">plus</code> operation, and select the <code display="inline">times</code> operator from the toolbar.</item>
+
+<item>Click within the first block of the <code display="inline">times</code> operation, and type in <m:math>
+<m:apply>
+  <m:ci>b</m:ci>
+</m:apply>
+</m:math>.</item>
+
+<item>Click within the second block of the <code display="inline">times</code> operation, and type in <m:math>
+<m:apply>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math>.</item></list></section><section id="eip-740"><title>Adding an argument to an existing operation</title><para id="eip-797">There are two ways we can add the final argument <m:math>
+<m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math> to the <code display="inline">plus</code> operator. One way would have been to add an extra argument to the <code display="inline">plus</code> operation immediately after we inserted it from the toolbar menu. After Step 1 above, click in either blank block on each side of the <code display="inline">+</code> sign. Then insert another <code display="inline">plus</code> operation. Essentially we are inserting the entire operator as an argument of the first <code display="inline">plus</code> operator, but the editor will correctly condense this and turn all three blocks into arguments of one <code display="inline">plus</code> operator. The same thing occurs with keyboard input when, say, you replace the 6 in <m:math>
+<m:apply>
+  <m:plus/>
+  <m:cn>6</m:cn>
+  <m:cn>7</m:cn>
+</m:apply>
+</m:math> with <m:math>
+<m:apply>
+  <m:plus/>
+  <m:cn>5</m:cn>
+  <m:cn>6</m:cn>
+</m:apply>
+</m:math>.</para><para id="eip-428">The second method would be to want to add a new argument to the <code display="inline">plus</code> operator after we already created the expression <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math>. In this case, we essentially want to make <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math> the first argument of a new <code display="inline">plus</code> operator, and then add <m:math>
+<m:apply>
+    <m:ci>c</m:ci>
+</m:apply>
+</m:math> as the second operator. This is known as "<link document="m24561" target-id="wrap">wrapping</link>" existing math in a new operation.</para><list id="eip-98" list-type="enumerated" number-style="arabic" class="stepwise"><item>Select the entire expression and cut it by pressing <code display="inline">Ctrl+X</code> (or <code display="inline">⌘+X</code> on a Mac), so that you are left with a blank editing area.</item>
+<item>Select the <code display="inline">plus</code> operator from the toolbar menu.</item>
+<item>Paste in the expression <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+</m:apply>
+</m:math> as the first argument of the operation.</item>
+<item>Click in the remaining block and type in <code display="inline">c</code>.</item></list></section><section id="eip-110"><title>Creating a new operation</title><para id="eip-746">You will also have to wrap existing math when inserting a new operation. Let's change the first expression <m:math>
+<m:apply>
+  <m:power/>
+  <m:ci>x</m:ci>
+  <m:cn>2</m:cn>
+</m:apply>
+</m:math> to <m:math>
+<m:apply>
+  <m:times/>
+  <m:ci>a</m:ci>
+  <m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+  </m:apply>
+</m:apply>
+</m:math>.</para><list id="eip-771" list-type="enumerated" number-style="arabic" class="stepwise"><item>Select and cut the <code display="inline">power</code> operation <m:math>
+<m:apply>
+    <m:power/>
+    <m:ci>x</m:ci>
+    <m:cn>2</m:cn>
+</m:apply>
+</m:math>. You should be left with a blank block + <m:math>
+<m:apply>
+  <m:plus/>
+  <m:apply>
+    <m:times/>
+    <m:ci>b</m:ci>
+    <m:ci>x</m:ci>
+  </m:apply>
+  <m:ci>c</m:ci>
+</m:apply>
+</m:math>.</item>
+<item>Insert a <code display="inline">times</code> operator from the toolbar menu.</item>
+<item>Click on the first block of the times operator and type in <code display="inline">a</code>.</item>
+<item>Click on the second block of the times operator and paste in the expression that you cut.</item></list></section></section>
+
+
+
+
+
+
+</content>
+
+</document>

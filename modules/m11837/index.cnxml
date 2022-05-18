@@ -1,0 +1,233 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+	<title>Modules and Collections</title>
+	<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m11837</md:content-id>
+  <md:title>Modules and Collections</md:title>
+  <md:abstract>A description of how to view courses and modules in Connexions.</md:abstract>
+  <md:uuid>054c4673-030b-4677-8620-028ca1520778</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="/help/viewing" strength="3">Viewing Content Help</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+<note id="eip-660">Each piece of content has two major components available for viewing: the actual content itself, and the metadata page, containing information about the content, author, and more. When you first browse to a module or collection, you will be taken to the content page. To see the metadata, select the <code display="inline">metadata</code> link at the bottom of the page. Metadata are non-content information about a 
+	module, such as the module ID, license type, version number, 
+	creation date, revision date, authors, maintainers, copyright holders, 
+	module name, keywords, and abstract.</note>
+
+	<para id="eip-583">All Connexions content is located in the <term>content repository</term>, which can always be navigated to by clicking the <code display="inline">Content</code> tab at the top of the page. To allow you to easily access other parts of Connexions while viewing content (e.g. your <link url="/mycnx">MyCNX page</link> or our <link url="/help">Help</link> documentation) the blue Connexions logo will always be located above the content you are viewing, including many of the links also on the <link document="m10884">home page</link>.</para>
+	
+	<para id="eip-376"><title>What's in this module?</title>This module first describes the basic layout of the "Viewing Content" pages. There are additional features added to the page when you are viewing content in the <term>context</term> of a collection or a lens. Those extra features are described in the second and third sections of this module.</para>
+
+<para id="intropara">Jump to:
+<list id="toclist" list-type="enumerated">
+<item><link target-id="viewingcontentlayoutsection">Basic Layout</link></item>
+<item><link target-id="navwithout">Collection Context</link></item>
+<item><link target-id="lenscontext">Lens Context</link></item>
+</list>
+</para>
+
+<section id="viewingcontentlayoutsection"><title>Basic Layout</title><para id="contentactionspara">The components of the content viewing page include:
+<list id="toc_list" list-type="bulleted"><item><link target-id="contentactionsbarsection">Content Actions Bar</link></item>
+<item><link target-id="titlebar">Content Title Bar</link></item>
+<item><link target-id="featuredlinks">Featured Links</link></item>
+<item><link target-id="contentportlets">Sidebar Portlets</link></item>
+<item><link target-id="footer">Footer</link></item>
+</list>
+</para>
+
+<section id="contentactionsbarsection"><title>Content Action Bar</title><para id="eip-297">The <link target-id="epub-screenshot-fig">Content Action</link> bar is a white horizontal bar above the module or collection title that includes a series of dropdown menus. All actions in the Content Action bar are also available as plain hyperlinks in the <link target-id="footer">footer</link> of the page.</para><figure id="epub-screenshot-fig"><media id="eip-id9050045" display="block" alt="Downloads dropdown in the content action bar">
+  <image width="480" mime-type="image/png" src="/content/m19610/latest/epub-download-screenshot-crop-drop-shadows.png"/>
+
+</media>
+
+
+<caption>Content Action bar with the "Downloads" dropdown shown.</caption></figure>
+
+<para id="addtomyfav"><title>Add to My Favorites</title>The <code display="inline">Add to my favorites</code> dropdown allows you to quickly add content to your <link url="/help/accounts/myfavorites">My Favorites</link> lens. In addition to bookmarking content of personal interest, the My Favorites lens also allows readers to <link url="/help/accounts/trackprogress">start reading from where they last left off</link> within a bookmarked collection.</para>
+
+<para id="addtolens"><title>Add to a Lens</title>The <code display="inline">Add to a lens</code> dropdown allows you to quickly add content to a <link document="m37415">lens</link> you own.</para>
+
+<para id="reuse"><title>Reuse/Edit</title>The <code display="inline">Reuse/Edit</code> dropdown menu allows you to quickly checkout the content to a <link document="m10885" target-id="cnxworkareas">Work Area</link> (if you have permissions to edit the content) or <link document="m11804" target-id="createderive">derive a copy</link> of the content to create an <term>adaptation</term>(if you don't have permissions).</para>
+
+	
+	<para id="print"><title>Download</title>The <code display="inline">Downloads</code> dropdown menu allows you to quickly access PDF and EPUB versions of the module and/or collection. The link to <code display="inline">More downloads...</code> will take you to <link document="m37413" target-id="downloads">all available downloads</link> for the content on its metadata page.</para>
+
+<para id="printpage"><title>Print this Page</title>Click the <code display="inline">Print this page</code> button to print a printer-friendly version of the HTML page.</para></section>
+
+<section id="titlebar"><title>Content title bar</title><para id="eip-946"><title>Title, Author, and Summary</title>The <link target-id="contentTitleBar">content title bar</link> displays the title, author(s), and summary provided by the author(s) for the content. More detailed metadata is on the <link document="m37413">Metadata</link> page, which you can access through a link in the <link target-id="footer">footer</link> of the page.</para>
+
+<figure id="contentTitleBar"><media id="contentTitleBar.png" alt="Content title bar." display="block">
+<image src="/content/m19610/latest/contentTitleBar.png" mime-type="image/png"/>
+</media>
+
+<caption>Content title bar.</caption></figure>
+
+<para id="eip-677"><title>Facebook and Twitter</title>Connexions has rolled out Facebook "Like" and Twitter "Tweet" buttons on all of our content. If you are reading a module or collection that you like, you can like or tweet it directly from that page.</para>
+<note id="eip-749">Facebook gives much less feedback than Twitter. You won't see a confirmation message after clicking "like", but it will show up on Facebook wall nonetheless.</note><figure id="twitbookTop">
+<media id="twitbookTop.png" display="block" alt="Facebook and Twitter buttons.">
+  <image src="/content/m19610/latest/twitbookTop.png" mime-type="image/png"/>
+</media>
+<caption>Twitter and Facebook buttons in the content title bar.</caption>
+</figure>
+<para id="twitbookpara1">Buttons exist in the <link target-id="twitbookTop">content title bar</link> at the upper right corner the page, and also down at the <link target-id="twitbookBottom">bottom</link> in the footer. To like an entire collection of modules, go back to the <code display="inline">START</code> page of the collection by clicking the collection title. The description at the bottom of the page will say "Share collection" instead of "Share module", as it does on the module pages.</para>
+
+<figure id="twitbookBottom" orient="vertical"><subfigure id="twitbookModule">
+<media id="twitbookModule.png" display="block" alt="Facebook and Twitter buttons.">
+  <image src="/content/m19610/latest/twitbookModule.png" mime-type="image/png"/>
+</media>
+
+</subfigure>
+<subfigure id="twitbookCollection">
+<media id="twitbookCollection.png" display="block" alt="Facebook and Twitter buttons.">
+  <image src="/content/m19610/latest/twitbookCollection.png" mime-type="image/png"/>
+</media>
+</subfigure>
+
+<caption>Twitter and Facebook buttons in the footer.</caption></figure>
+
+<para id="twitbookpara2">The Facebook and Twitter buttons give direct feedback to authors by letting them see instantly how many people have liked or tweeted their content.</para>
+</section>
+
+<section id="featuredlinks"><title>Featured Links</title>
+<para id="element-320">In the <link target-id="element-528">Featured Links</link> portlet that appears to the right of the module content you can view links to <term>examples</term>, <term>supplemental material</term>, or <term>prerequisite material</term> provided by the module author. The importance of the links are shown by the number of bars in the box to the left         of the link name. These links can be to material within Connexions, to included files, or to a website outside of Connexions. Featured Links are only included in the online views of content; the PDF and EPUB <link document="m37413" target-id="downloads">downloads</link> will not include these.</para><figure id="element-528"><media id="id19971252" alt=""><image src="/content/m19610/latest/module-view-links.png" mime-type="image/png"/></media>
+	 
+	<caption>Featured Links portlet.</caption></figure>
+</section>
+
+
+<section id="contentportlets"><title>Sidebar Portlets</title><para id="findlinksect"><title>Related Material</title>You can view content related to the content you are displaying 
+        using the links in the <link target-id="relatedmaterialfig">Related Material</link> portlet that 
+        appears on the left side of the page. The links inside this box are specific to the content you are viewing at the time. 
+
+</para>
+	<figure id="relatedmaterialfig"><media id="id19836664" alt=""><image src="/content/m19610/latest/module-view-related.png" mime-type="image/png"/></media>
+	 
+	<caption>Links to related material</caption></figure><para id="eip-508">Included in the portlet are:
+        <list id="relatedlist1" list-type="labeled-item"><item><label>"Similar content"</label> a list of similar content generated by the <link url="http://rhaptos.org/">Rhaptos</link> platform underlying Connexions. Click a title to display that
+        content. Browsing the content listed here is a great way to find similar learning materials on a related subject. </item>
+        <item><label>"Collections using this material"</label> lists any other collections that contain the current module. (This header only appears if you are viewing a module which is included in at least one collection.) You can click on the names of the listed collections to be taken to the start page of that collection.</item>
+        </list></para>
+
+
+	
+<para id="recentlyviewed"><title>Recently Viewed</title>Unless this is your first time viewing Connexions content on this computer or under this account, the <link target-id="mycnx-recently-viewed">Recently Viewed</link> portlet will be populated with <term>modules</term>, <term>collections</term>, and <term>lenses</term> you have recently browsed, so that you can easily jump back to them. This portlet can be collapsed by clicking on the triangle next to the title of the portlet.</para>
+
+<figure id="mycnx-recently-viewed">
+<media id="mycnx-recently-viewed.png" display="block" alt="Recently Viewed.">
+<image src="/content/m19610/latest/mycnx-recently-viewed.png" mime-type="image/png"/>
+</media>
+<caption>"Recently Viewed" portlet.</caption>
+</figure>
+
+<para id="lensp4"><title>Lenses</title>If the content you are viewing is included in any public lenses, then the <link target-id="quality">"Lenses"</link> portlet will appear on the left side of the page. This portlet lists all the various lenses which include the content being viewed.</para>
+
+<figure id="quality">
+<media id="quality-image" display="block" alt="Lenses portlet">
+<image mime-type="image/png" src="/content/m19610/latest/lensesBoxHover.png"/></media>
+<caption>Display lens information in a popup.</caption>
+</figure>
+
+<para id="lensp5">Hover over the name of a lens to see more information about it, including who created it, and the comment (if any) they wrote in their lens about the content. Clicking on the name of a lens will take you to the <link document="m37415" target-id="lensPage">lens page</link> with the full list of content included in the lens.</para>
+
+<para id="eip-101">Clicking on the <code display="inline">tag</code> item next to any of the lens names in the <link target-id="quality2">Lenses</link> portlet will expand the portlet to show all the <term>tags</term> the lens creator has associated with this piece of content.</para>
+
+<figure id="quality2">
+<media id="quality-image2" display="block" alt="Lenses portlet">
+<image mime-type="image/png" src="/content/m19610/latest/lensesBox.png"/></media>
+<caption>Expand tags in the "Lenses" portlet.</caption>
+</figure><para id="eip-74">Click one of these tags to view all other content within this lens associated with this tag. The link will take you to a view of the lens page with results filtered to show only the content associated with this tag.</para><para id="eip-910"><title>Tags</title>If the content you are viewing is included in any public lenses, then you will also see a <link target-id="tagsBox-fig">Tags</link> portlet on the left side of the page. This portlet lists a combination of all of the tags associated with this content from all the lenses it is included in.
+
+</para>
+
+<figure id="tagsBox-fig">
+<media id="tagsBox-media" display="block" alt="Tags portlet">
+<image mime-type="image/png" src="/content/m19610/latest/tagsBox.png"/>
+</media>
+<caption>Tags portlet.</caption>
+</figure><para id="eip-364">Click on a tag here to see a listing of all the content in the Connexions repository that is included in a lens and has this tag associated with it. <note display="inline">Because only content contained in a lens can have a tag associated with it, this only finds content that an individual or organization has highlighted with this tag in a lens.</note></para>
+
+
+</section>
+
+<section id="footer"><title>Footer</title><para id="eip-430">If you scroll to the bottom of the page, you will reach the <link target-id="contentActionsFooter">content footer</link>, which contains links to all the various actions in the <link target-id="contentactionsbarsection">Content Action bar</link>, plus more. </para>
+
+<figure id="contentActionsFooter"><media id="contentActionsFooter.png" alt="Footer." display="block">
+<image src="/content/m19610/latest/contentActionsFooter.png" mime-type="image/png"/>
+</media>
+
+<caption>Content action links in the footer.</caption></figure>
+
+<para id="eip-181">There is one further <link target-id="contentMetadataFooter">footer section</link>, with links to various components of the <link document="m37413">metadata</link> page (circled here in red).</para>
+
+<figure id="contentMetadataFooter">
+<media id="contentMetadataFooter.png" alt="Footer." display="block">
+<image src="/content/m19610/latest/contentMetadataFooter.png" mime-type="image/png"/>
+</media>
+<caption>Metadata links in the footer.</caption>
+</figure></section>
+	
+</section>
+
+<section id="navwithout"><title>Collection Context</title><para id="colcontextp"><title>How is a collection context set?</title>When you first open a Collection, the <link target-id="collectionStartPage">collection title page</link> displays. When you land on this page, your browser saves a cookie that lets it know you are viewing that collection. After that, whenever you view a module that is included in the collection, you will view that module in the <term>context</term> of the collection, explained below. This is true until you land on a different collection's start page, at which point your browser will only display collection context information for modules in that second collection. Even if a module is actually included in 50 different collections by different authors, your browser will only show it in the context of the collection you are viewing. <note display="inline">To view collections correctly, make sure that you have enabled cookies in your browser.</note></para>
+
+	<para id="navwopara1"><title>Collection start page</title>Many portions of the collection start page are analogous to those when viewing a module, but some parts are new.</para>
+
+<figure id="collectionStartPage">
+    <media id="collectionStartPage.png" display="block" alt="Collection start page.">
+      <image src="/content/m19610/latest/collectionStartPage.png" mime-type="image/png"/>
+    </media>
+    <caption>Collection start page.</caption>
+  </figure>
+
+<para id="navwopara2">In addition to containing information about the collection itself, such as the title, authors, and summary, the center of the page displays a large
+	  <code display="inline">Start &gt;&gt;</code> link. Click 
+	  <code display="inline">Start &gt;&gt;</code> to begin reading the collection from start to finish, module by module. Or, use the <link target-id="tocPortlet">Table of Contents</link> portlet on the left side of the page to jump to any module within the collection.</para>
+
+<para id="navwopara3"><title>Table of Contents</title>The <link target-id="tocPortlet">Table of Contents</link> is shown on the collection start page itself, and on any module viewed within the context of that collection. Click a module name to jump to 
+	  that module. You can use the triangles next to each subgrouping to open and close sections of the table of contents, or you can collapse the entire Table of Contents to save space by clicking the small triangle at the top of the portlet.
+	</para>
+	
+<figure id="tocPortlet">
+    <media id="tocPortlet.png" display="block" alt="Table of Contents.">
+      <image src="/content/m19610/latest/tocPortlet.png" mime-type="image/png"/>
+    </media>
+    <caption>Table of Contents portlet</caption>
+  </figure>
+
+<para id="navwopara4"><title>Collection Context bar</title>When you view a module in the context of a collection, there will be a <link target-id="prevnextlinks">collection context bar</link> above the module title bar to remind you that you are inside a collection. Analogous to the module title bar, this contains the collection title, authors, and summary.</para>
+	
+	<figure id="prevnextlinks"><media id="id18391858" alt="Collection context bar."><image src="http://cnx.org/content/m19610/latest/collection-prev-next.png" mime-type="image/jpeg"/></media>
+	 
+	<caption>Collection context bar.</caption></figure>
+	
+
+	<para id="navwo2"><title>Previous or Next Modules</title>Once you display a module from within a collection, you can move to 
+	  the previous module or to the next module in the collection by 
+	  clicking the <code>≪Previous</code> or 
+	  <code>Next≫</code> links that appear in 
+	  the upper right corner just below the <link target-id="prevnextlinks">collection context bar</link>.
+	</para>
+
+</section>
+
+<section id="lenscontext"><title>Lens Context</title><para id="lenscontextp"><title>How is a lens context set?</title>When you first land on a <link document="m37415" target-id="lensPage">lens page</link>, your browser saves a cookie that lets it know you are viewing that lens. After that, whenever you view a module or collection that is included in the lens, you will view that content in the <term>context</term> of the lens, explained below. This is true until you land on a different lens's start page, at which point your browser will only display lens context information for content that is in that second lens. Even if a module or collection is actually included in 50 different lens by different creators, your browser will only show it in the context of the lens you are viewing. <note display="inline">To view lenses correctly, make sure that you have enabled cookies in your browser.</note></para>
+
+<figure id="ricepress-content">
+<media id="ricepress-content.png" display="block" alt="Lens branding bar.">
+<image src="/content/m19610/latest/ricepress-content.png" mime-type="image/png" width="480"/>
+</media>
+<caption>Lens context when viewing content.</caption>
+</figure>
+
+<para id="eip-697"><title>Lens logo</title>The logo or image uploaded by the lens creator will appear above the <link target-id="tocPortlet">Table of Contents</link> on the left side of the page, to remind you that you are viewing content within that lens.</para><para id="eip-463"><title>Branding bar</title>Additionally, just underneath the breadcrumbs at the top of the page, you will see a colored bar associated with the lens which will print the lens name. Click the name of the lens to return to the lens page.</para></section>
+
+
+	</content>
+</document>

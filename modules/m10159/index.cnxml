@@ -1,0 +1,76 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  
+  <title>Combining XML Languages</title>
+
+  <metadata>
+  <md:content-id>m10159</md:content-id><md:title>Combining XML Languages</md:title>
+  <md:abstract>This module explains how to use XML namespaces and DTDs to combine multiple XML languages in the same document.</md:abstract>
+  <md:uuid>9765ed3c-d04f-4cd6-8cb0-87e6966aa9b3</md:uuid>
+</metadata>
+
+<content>
+    <para id="namesp1">
+      <link url="http://www.w3.org/XML">XML</link> allows you to
+      create documents in custom markup languages.  But what if you
+      want to combine markup from multiple languages in the same
+      document?  What if there are one or more tags that exist in both
+      languages, but with different meanings?  You could, for example, have
+      a <code>&lt;table&gt;</code> tag in HTML and one
+      in a language describing office furniture as well.  How do you
+      use these tags unambiguously, without losing functionality?
+    </para>
+
+    <para id="namesp1.5">
+      The solution is to use an extension to XML called
+      <term>namespaces</term> (See the W3C's recommendation, <link url="http://www.w3.org/TR/REC-xml-names/">Namespaces in
+      XML</link>).  A namespace associates a unique global identifier
+      (usually a URI) with a particular set of tags and their usage
+      rules.  To declare a namespace for a particular tag, set the
+      <code>xmlns</code> attribute to the value of the unique
+      identifier. 
+    </para>
+
+    <para id="namesp2">
+      You can also define a <term>namespace prefix</term> for use in
+      your document.  To do this, use a modified version of the
+      <code>xmlns</code> attribute.  For example, you would
+      use the attribute
+      <code>xmlns:foo="http://somewhere.org/foo"</code> to
+      associate the prefix <code>foo</code> with the namespace
+      identifier <code>http://somewhere.org/foo</code>.  You
+      can then indicate which tags come from that namespace by adding
+      the appropriate prefix to each tag.  Thus, the
+      <code>bar</code> tag in foo's namespace would be written
+      as <code>&lt;foo:bar&gt;</code> and
+      <code>&lt;/foo:bar&gt;</code>.
+    </para>
+<para id="namesp3">
+      When you use the default namespace  any children of that tag
+      lacking an explicit prefix will be assumed to have come from the
+      same namespace.  This allows you to define a default namespace
+      for all of the children of a tag.  This is especially useful
+      when used on the <term>root node</term>, which is the outermost
+      tag in a document.
+</para>
+    
+   
+    <example id="cmcombo"><para id="pcnxp"> For CNXML 0.6 there is only one schema. The document tag will contain the namespace for all available languages and will look like this:
+      </para>
+      <code id="id1332779" display="block">
+    &lt;document xmlns="http://cnx.rice.edu/cnxml"
+              xmlns:md="http://cnx.rice.edu/mdml/0.4"
+              xmlns:bib="http://bibtexml.sf.net/"
+              xmlns:m="http://www.w3.org/1998/Math/MathML"
+              xmlns:q="http://cnx.rice.edu/qml/1.0"
+              id="new"
+              cnxml-version="0.6"
+              module-id="new"&gt;
+      </code>
+    </example>
+    
+
+    
+    
+
+  </content>
+</document>

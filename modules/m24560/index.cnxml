@@ -1,0 +1,505 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+    <title>MathML Editor: Tutorials</title>
+    <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m24560</md:content-id>
+  <md:title>MathML Editor: Tutorials</md:title>
+  <md:abstract/>
+  <md:uuid>5a4672f4-fbba-4ee4-8278-4428dedac5e3</md:uuid>
+</metadata>
+
+<content>
+        <section id="eip-105">
+            <title>Introduction</title>
+            <para id="eip-776">This module presents step-by-step instructions for creating, and then editing well-known formulas to illustrate how to use the editor. The example and what properties of the editor it illustrates are listed below. All of these assume you have a blank Math Editor open.</para>
+            <list id="eip-id8246606"><item>
+                    <link target-id="quadratic">Quadratic Equation</link>
+                     (Simple text entry, Special characters)</item>
+                <item>
+                    <link target-id="quadratic-mouse">Quadratic Equation using mostly the mouse</link></item>
+                <item><link target-id="advanced">Advanced Text Entry</link></item>
+            </list>
+        </section>
+        <section id="quadratic">
+            <title>Quadratic Equation</title>
+            <para id="eip-415">As a simple example, we'll step through several ways of writing the well-known Quadratic Equation (with real or complex coefficients): <m:math display="block">
+                    <m:apply>
+                        <m:eq/>
+                        <m:apply>
+                            <m:plus/>
+                            <m:apply>
+                                <m:times/>
+                                <m:ci>a</m:ci>
+                                <m:apply>
+                                    <m:power/>
+                                    <m:ci>x</m:ci>
+                                    <m:cn>2</m:cn>
+                                </m:apply>
+                            </m:apply>
+                            <m:apply>
+                                <m:times/>
+                                <m:ci>b</m:ci>
+                                <m:ci>x</m:ci>
+                            </m:apply>
+                            <m:ci>c</m:ci>
+                        </m:apply>
+                        <m:apply>
+                            <m:times/>
+                            <m:ci>a</m:ci>
+                            <m:apply>
+                                <m:minus/>
+                                <m:ci>x</m:ci>
+                                <m:apply>
+                                    <m:divide/>
+                                    <m:apply>
+                                        <m:plus/>
+                                        <m:apply>
+                                            <m:minus/>
+                                            <m:ci>b</m:ci>
+                                        </m:apply>
+                                        <m:apply>
+                                            <m:root/>
+                                            <m:apply>
+                                                <m:minus/>
+                                                <m:apply>
+                                                    <m:power/>
+                                                    <m:ci>b</m:ci>
+                                                    <m:cn>2</m:cn>
+                                                </m:apply>
+                                                <m:apply>
+                                                    <m:times/>
+                                                    <m:cn>4</m:cn>
+                                                    <m:ci>a</m:ci>
+                                                    <m:ci>c</m:ci>
+                                                </m:apply>
+                                            </m:apply>
+                                        </m:apply>
+                                    </m:apply>
+                                    <m:apply>
+                                        <m:times/>
+                                        <m:cn>2</m:cn>
+                                        <m:ci>a</m:ci>
+                                    </m:apply>
+                                </m:apply>
+                            </m:apply>
+                            <m:apply>
+                                <m:minus/>
+                                <m:ci>x</m:ci>
+                                <m:apply>
+                                    <m:divide/>
+                                    <m:apply>
+                                        <m:minus/>
+                                        <m:apply>
+                                            <m:minus/>
+                                            <m:ci>b</m:ci>
+                                        </m:apply>
+                                        <m:apply>
+                                            <m:root/>
+                                            <m:apply>
+                                                <m:minus/>
+                                                <m:apply>
+                                                    <m:power/>
+                                                    <m:ci>b</m:ci>
+                                                    <m:cn>2</m:cn>
+                                                </m:apply>
+                                                <m:apply>
+                                                    <m:times/>
+                                                    <m:cn>4</m:cn>
+                                                    <m:ci>a</m:ci>
+                                                    <m:ci>c</m:ci>
+                                                </m:apply>
+                                            </m:apply>
+                                        </m:apply>
+                                    </m:apply>
+                                    <m:apply>
+                                        <m:times/>
+                                        <m:cn>2</m:cn>
+                                        <m:ci>a</m:ci>
+                                    </m:apply>
+                                </m:apply>
+                            </m:apply>
+                        </m:apply>
+                    </m:apply>
+                </m:math>
+            </para>
+            <section id="keyboard">
+                <title>Method 1: Pure Keyboard</title>
+                <para id="eip-191">
+Probably the quickest way to enter math is by using the keyboard. This method requires entering a total of 3 statements and a few Tab key presses.
+</para>
+                <list id="eip-id1169811569444" list-type="enumerated" number-style="arabic" class="stepwise">
+                    <item>Start off with a blank editor.</item>
+                    <item>Enter the following into the main editing area "<code>a*x^2+b*x+c=a*(x-(-b+root)/(2*a))*(x-(-b+root)/(2*a))</code>
+                        ". See below for <link target-id="eip-76">details</link>
+                        .</item>
+                    <item>Press the Enter key. This will cause the text to be parsed and converted into math.</item>
+                </list>
+                <para id="eip-76">Most of the text in step 2 should look similar to the notation used in calculators, except for "<code>root</code>
+                    ". Many calculators follow different conventions for entering complicated math operations like integrals and vectors. For this version of the editor we decided to wait for feedback from users on which convention to adopt. Until one is chosen, any math element defined in the W3C MathML Specification can be entered. The toolbar also provides a way to see the available commands.</para>
+                <para id="eip-259">
+                    <title>Finish Entering Equation</title>
+                    At this point the editor should have 2 remaining boxes that need to be filled out, and 2 optional ones (the degree of the root). To fill in the rest, you will need to do the following:</para>
+                <list id="eip-891" list-type="enumerated" number-style="arabic">
+                    <item>Press Shift+Tab four times to move to the first empty block. (That is, hold down the Shift key, press the Tab key, and release the Shift key four times).</item>
+                    <item>Enter "<code>b^2-4*a*c</code>
+                        " into the empty block under the radical.</item>
+                    <item>Press the Enter key to convert the input into math.</item>
+                    <item>Press Shift+Left arrow key to select <m:math>
+                            <m:apply>
+                                <m:minus/>
+                                <m:apply>
+                                    <m:power/>
+                                    <m:ci>b</m:ci>
+                                    <m:cn>2</m:cn>
+                                </m:apply>
+                                <m:apply>
+                                    <m:times/>
+                                    <m:cn>4</m:cn>
+                                    <m:ci>a</m:ci>
+                                    <m:ci>c</m:ci>
+                                </m:apply>
+                            </m:apply>
+                        </m:math>
+                    </item>
+                    <item>Press Ctrl+C to copy the selection to the clipboard.</item>
+                    <item>Press the Tab key twice to move to the other empty block.</item>
+                    <item>Press Ctrl+V to paste the selection into the current block.</item>
+                </list>
+                <para id="eip-993">Now, the equation should be complete. In the previous steps we used the Tab key to navigate to empty blocks that still needed information in them, skipping over optional ones. We used Shift+ arrow keys to select math and Ctrl+C and Ctrl+V to copy and paste that math.</para>
+                <para id="eip-145">
+                    <title>Paste into Connexions</title>
+                    Finally, we need to copy the math and paste it back into a module. We already used the same technique above. Right now, the cursor should be just to the right of the second <m:math>
+                        <m:apply>
+                            <m:minus/>
+                            <m:apply>
+                                <m:power/>
+                                <m:ci>b</m:ci>
+                                <m:cn>2</m:cn>
+                            </m:apply>
+                            <m:apply>
+                                <m:times/>
+                                <m:cn>4</m:cn>
+                                <m:ci>a</m:ci>
+                                <m:ci>c</m:ci>
+                            </m:apply>
+                        </m:apply>
+                    </m:math>
+                    . The following steps will place the newly created quadratic equation back into the Connexions module.</para>
+                <list id="eip-79" list-type="enumerated" number-style="arabic" class="stepwise">
+                    <item>Press Ctrl+A to select the entire formula, or Shift+Right (or Shift+Left) until the math you want to copy is selected.</item>
+                    <item>Press Ctrl+C to copy it to the clipboard.</item>
+                    <item>Switch back to the window where you were editing the module.</item>
+                    <item>Place the cursor at the location you want to insert the quadratic formula.</item>
+                    <item>Press Ctrl+V to insert the formula.</item>
+                </list>
+                <para id="eip-34">
+                    <title>Summary</title>
+                    In this tutorial we entered the quadratic equation entirely through the keyboard. We used the Tab and arrow keys to navigate through math content, the Return key to convert input text into math, and Ctrl+C and Ctrl+V to copy and paste both within the editor and between the editor and the main module editor.</para>
+                <para id="eip-499">Next, we will do the same example using the mouse and toolbar.</para>
+            </section>
+            <section id="quadratic-mouse">
+                <title>Method 2: Toolbar</title>
+                <para id="eip-id1169809182668">
+This method requires a bit more time because we will need to click the toolbar for every character (like "+", "*", or "/" in the previous method). Instead of doing the entire equation, this tutorial will step through creating only part of it: <m:math>
+                        <m:apply>
+                            <m:divide/>
+                            <m:apply>
+                                <m:plus/>
+                                <m:apply>
+                                    <m:minus/>
+                                    <m:ci>b</m:ci>
+                                </m:apply>
+                                <m:apply>
+                                    <m:root/>
+                                    <m:apply>
+                                        <m:minus/>
+                                        <m:apply>
+                                            <m:power/>
+                                            <m:ci>b</m:ci>
+                                            <m:cn>2</m:cn>
+                                        </m:apply>
+                                        <m:apply>
+                                            <m:times/>
+                                            <m:cn>4</m:cn>
+                                            <m:ci>a</m:ci>
+                                            <m:ci>c</m:ci>
+                                        </m:apply>
+                                    </m:apply>
+                                </m:apply>
+                            </m:apply>
+                            <m:apply>
+                                <m:times/>
+                                <m:cn>2</m:cn>
+                                <m:ci>a</m:ci>
+                            </m:apply>
+                        </m:apply>
+                    </m:math>
+                </para>
+                <list id="eip-id1169817822716" list-type="enumerated" number-style="arabic" class="stepwise">
+                    <item>Start off with a blank editor.</item>
+                    <item>Click the "Arithmetic" category in the toolbar.</item>
+                    <item>Click the "Divide" operation in the menu.</item>
+                    <item>Click the top empty block (numerator).</item>
+                    <item>Click the "Arithmetic" category in the toolbar and the "Plus" operation in the menu.</item>
+                    <item>Click the left empty block.</item>
+                    <item>Click the "Arithmetic" category and the "Negate" operation in the menu.</item>
+                    <item>Enter "b" in the top-left empty block</item>
+                    <item>Click the other empty block in the numerator.</item>
+                    <item>Click the "Arithmetic" category and the "Root" operation in the menu.</item>
+                    <item>Click the empty block under the radical.</item>
+                    <item>Click the "Arithmetic" category and the "Minus" operation in the menu.</item>
+                    <item>Click the left empty block.</item>
+                    <item>Click the "Arithmetic" category and the "Power" operation in the menu.</item>
+                    <item>Enter "b" and "2".</item>
+                    <item>...</item>
+                </list>
+                <para id="eip-id1169818401526">Using the toolbar is a bit more tedious, but serves as a way to find operations that can be expressed in MathML. Some operations have variations (A sum can take a variable and limits, or a variable and a condition) but see <link document="m24561" target-id="limitations">Limitations</link>
+                     on how to enter them in.</para>
+                <para id="eip-id6668455">
+                    <title>Paste into Connexions</title>
+                    Pasting the Math back into Connexions can be done the same way as before, or can be done via the Edit menu in the browser. Again, we must <link document="m24561" target-id="selection">select</link>
+                     the entire equation. This can be done by highlighting the equation using the mouse, or double-clicking the division bar (since it is the outer-most operation). Once highlighted, you can Click Edit, and either Cut or Copy from the main browser menu bar. If you switch back to the Connexions module editor, you can Click Edit and then Paste again from the menu to paste the newly created math back into a module.</para>
+                <para id="eip-id1169823739866">
+                    <title>Summary</title>
+                    In this tutorial we entered a part of the quadratic equation using the mouse and toolbar buttons. We used the mouse to select move the cursor and select math, the toolbar to insert new operations, and the browser's Edit menu to copy and paste math between the editor and the main module editor.</para>
+                <para id="eip-id1169816330059">Next, we will discuss some more advanced math editing.</para>
+            </section>
+            <section id="advanced">
+                <title>Advanced Editing</title>
+                <para id="eip-556">So far we've gone through creating math from scratch. In this section, we will look at how to insert more elaborate symbols, change how variables look (Presentation MathML), and  customize some of the operations provided in the toolbar.</para>
+                <para id="eip-984">
+                    <title>Elaborate Symbols</title>
+                    So far we've used simple characters available from the keyboard. The quadratic formula is frequently written with a plus-minus sign like:
+
+<m:math display="block">
+                        <m:apply>
+                            <m:divide/>
+                            <m:mrow>
+                                <m:apply>
+                                    <m:minus/>
+                                    <m:ci>b</m:ci>
+                                </m:apply>
+                                <m:ci>±</m:ci>
+                                <m:apply>
+                                    <m:root/>
+                                    <m:apply>
+                                        <m:minus/>
+                                        <m:apply>
+                                            <m:power/>
+                                            <m:ci>b</m:ci>
+                                            <m:cn>2</m:cn>
+                                        </m:apply>
+                                        <m:apply>
+                                            <m:times/>
+                                            <m:cn>4</m:cn>
+                                            <m:ci>a</m:ci>
+                                            <m:ci>c</m:ci>
+                                        </m:apply>
+                                    </m:apply>
+                                </m:apply>
+                            </m:mrow>
+                            <m:apply>
+                                <m:times/>
+                                <m:cn>2</m:cn>
+                                <m:ci>a</m:ci>
+                            </m:apply>
+                        </m:apply>
+                    </m:math>
+                    
+
+In order to get this, we will need a little bit of Presentation MathML. This is because plus-minus is not an operation represented in Content MathML. 
+
+<list id="eip-id2839857" list-type="enumerated" number-style="arabic" class="stepwise">
+                        <item>We will start with one part of the formula (as <link target-id="keyboard">described above</link>
+                            )</item>
+                        <item>To save some time, copy the <m:math>
+                                <m:apply>
+                                    <m:root/>
+                                    <m:apply>
+                                        <m:minus/>
+                                        <m:apply>
+                                            <m:power/>
+                                            <m:ci>b</m:ci>
+                                            <m:cn>2</m:cn>
+                                        </m:apply>
+                                        <m:apply>
+                                            <m:times/>
+                                            <m:cn>4</m:cn>
+                                            <m:ci>a</m:ci>
+                                            <m:ci>c</m:ci>
+                                        </m:apply>
+                                    </m:apply>
+                                </m:apply>
+                            </m:math>
+                             into the clipboard.</item>
+                        <item>Highlight everything in the numerator (it should be the entire plus operation)</item>
+                        <item>Replace it with "<code>mrow</code>
+                            " and press the enter key</item>
+                        <item>Enter "<code>-b</code>
+                            " and move to the next block</item>
+                        <item>Enter "<code>±</code>
+                            " and move to the next block</item>
+                        <item>Paste the part of the formula we copied earlier</item>
+                    </list>
+                    <code>mrow</code>
+                     is used to control how Math is displayed to the user. In this case we used it to insert a plus-minus symbol between <m:math>
+                        <m:apply>
+                            <m:minus/>
+                            <m:ci>b</m:ci>
+                        </m:apply>
+                    </m:math>
+                     and <m:math>
+                        <m:apply>
+                            <m:root/>
+                            <m:apply>
+                                <m:minus/>
+                                <m:apply>
+                                    <m:power/>
+                                    <m:ci>b</m:ci>
+                                    <m:cn>2</m:cn>
+                                </m:apply>
+                                <m:apply>
+                                    <m:times/>
+                                    <m:cn>4</m:cn>
+                                    <m:ci>a</m:ci>
+                                    <m:ci>c</m:ci>
+                                </m:apply>
+                            </m:apply>
+                        </m:apply>
+                    </m:math>
+                    . The Unicode standard defines many characters but the <link url="http://www.unicode.org/charts/PDF/U2200.pdf">Unicode Mathematical Operators</link>
+                     document may be a useful reference.</para>
+                <para id="eip-637">
+                    <title>Customize the Look of Variables</title>
+                    There are many elaborate ways to customize how a variable looks. These are defined in the <link target-id="mathml-spec">W3C MathML Specification</link>
+                    . We will list off a few common ways to customize.
+
+<list id="eip-id1166723854496">
+                        <item>Subscripts like <m:math>
+                                <m:ci>
+                                    <m:msub>
+                                        <m:mi>x</m:mi>
+                                        <m:mi>i</m:mi>
+                                    </m:msub>
+                                </m:ci>
+                            </m:math>
+                             can be entered by typing "<code>x_i</code>
+                            " or using "<code>msub</code>
+                            "</item>
+                        <item>A variable with both subscripts and superscripts can be entered using "<code>msubsup</code>
+                            "</item>
+                        <item>Backets like <m:math>
+                                <m:mfenced open="(" close="]">
+                                    <m:apply>
+                                        <m:minus/>
+                                        <m:infinity/>
+                                    </m:apply>
+                                    <m:cn>0</m:cn>
+                                </m:mfenced>
+                            </m:math>
+                             can be added using "<code>mfenced</code>
+                            " and then changing the symbol used for the open and close bracket (by editing the source).</item>
+                        <item>Unlike subscripts which place content above/below and to the right, "<code>munderover</code>
+                            " places math directly above or below.</item>
+                        <item>A table can be added using "<code>mtable</code>
+                            "</item>
+                    </list>
+                </para>
+                <para id="eip-649">
+                    <title>Customize Toolbar Operations</title>
+                    Many operations that operate on a range have several ways of specifying the range they work on.
+
+For example, the following are equivalent:
+
+<m:math display="block">
+                        <m:apply>
+                            <m:sum/>
+                            <m:bvar>
+                                <m:ci>i</m:ci>
+                            </m:bvar>
+                            <m:lowlimit>
+                                <m:cn>1</m:cn>
+                            </m:lowlimit>
+                            <m:uplimit>
+                                <m:ci>n</m:ci>
+                            </m:uplimit>
+                            <m:apply>
+                                <m:power/>
+                                <m:ci>i</m:ci>
+                                <m:cn>2</m:cn>
+                            </m:apply>
+                        </m:apply>
+                    </m:math>
+                    <m:math display="block">
+                        <m:mtable>
+                            <m:mtr>
+                                <m:mtd>
+                                    <m:apply>
+                                        <m:sum/>
+                                        <m:condition>
+                                            <m:apply>
+                                                <m:in/>
+                                                <m:ci>i</m:ci>
+                                                <m:ci>S</m:ci>
+                                            </m:apply>
+                                        </m:condition>
+                                        <m:apply>
+                                            <m:power/>
+                                            <m:ci>i</m:ci>
+                                            <m:cn>2</m:cn>
+                                        </m:apply>
+                                    </m:apply>
+                                </m:mtd>
+                                <m:mtd>
+                                    <m:apply>
+                                        <m:eq/>
+                                        <m:ci>S</m:ci>
+                                        <m:set>
+                                            <m:bvar>
+                                                <m:ci>i</m:ci>
+                                            </m:bvar>
+                                            <m:condition>
+                                                <m:apply>
+                                                    <m:and/>
+                                                    <m:apply>
+                                                        <m:gt/>
+                                                        <m:ci>i</m:ci>
+                                                        <m:cn>0</m:cn>
+                                                    </m:apply>
+                                                    <m:apply>
+                                                        <m:leq/>
+                                                        <m:ci>i</m:ci>
+                                                        <m:ci>n</m:ci>
+                                                    </m:apply>
+                                                </m:apply>
+                                            </m:condition>
+                                        </m:set>
+                                    </m:apply>
+                                </m:mtd>
+                            </m:mtr>
+                        </m:mtable>
+                    </m:math>
+                    
+
+
+Changing the range these operations required switching to the MathML source and being familiar with the <link target-id="mathml-spec">W3C MathML Specification</link>
+                    .
+
+To change the former to the latter, we start with a clean "<code>sum</code>
+                    " operation. Then, to decrease the amount of hand editing, we can type "<code>i in S</code>
+                    " to the right of the equal sign. Then, we switch to MathML Source and replace every occurrence of "<code>interval</code>
+                    " with "<code>condition</code>
+                    " and removing the special "<code>&lt;block ...&gt;</code>
+                    " element just above the <code>&lt;/condition&gt;</code>
+                    .</para>
+            </section>
+            <para id="eip-id8612254"/>
+        </section>
+        <section id="mathml-spec">
+            <title>W3C MathML Specification</title>
+            <para id="eip-id1169823772273">The <link url="http://www.w3.org/TR/MathML2/">W3C MathML Specification</link>
+                 defines all math used in Connexions modules. It provides ways to represent formulas in a way that records the semantic meaning in the formula (<link url="http://www.w3.org/TR/MathML2/chapter4.html">Content MathML</link>
+                ) as well as a way to lay out variables and formulas (<link url="http://www.w3.org/TR/MathML2/chapter3.html">Presentation MathML</link>
+                ).</para>
+        </section>
+    </content>
+</document>
