@@ -1,0 +1,29 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Supplement in Connexions Chinese Course (Connexions 拾遺)</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>62f610e0-c2c4-4f9d-9b14-3c17b245f360</md:uuid>
+</metadata>
+  <content>
+
+  <section id="index">
+   <title>補充資料項目</title>
+  <para id="indexdescrip">此模組之目的，在於補充Connexion Tutorial and Reference (中文指導及參考 - Chinese)課程中所疏漏之處，以便提供讀者更為完備健全的資料。
+<list id="indexindex"><item><link target-id="oops" strength="3">OOPS</link></item>
+
+	  <item><link target-id="reportbug" strength="3">Connexions 不是 OCW ？</link></item>
+	</list></para>
+  </section>
+
+   <section id="oops">
+   <title>OOPS 是什麼？</title>
+   <para id="oopsdescrip"><link url="http://www.myoops.org/">OOPS</link>是Opensource Opencourseware Prototype System，中文名稱叫做開放式課程計畫。簡單的說，這是在<link url="http://www.fantasy.org.tw/">奇幻基金會</link>之下執行的一個計畫。希望能夠用開放原始碼的理想、精神、社群和技術來挑戰開放知識分享的這個新理念，讓更多的人可以分享到知識。本計畫同時擁有世界各翻譯計畫的<link url="http://www.myoops.org/">入口網站</link>，和<link url="http://www.twocw.net/">繁體中文版</link>及<link url="http://www.cocw.net/">簡體中文版</link>的翻譯網站。
+</para><para id="element-771">知識的分享是促進社會發展的原動力，而開放、自由的分享則是擴大人類知識領域的大膽嘗試。在創作共享理念（Creative Commons）之下，使用者只需要遵守非商業行為，註明出處，同樣分享的三項規範，就可以自由的進行改編、轉載等動作，即使是翻譯、教學、播放等動作，只需遵守這三項規定，都被視作對全人類有益的知識分享。</para><para id="element-781"><link url="http://www.myoops.org/">開放式課程計畫團隊（Opensource Opencourseware Prototype System）</link>，希望以開放原始碼的軟體和精神，來完成麻省理工學院等學校課程中文翻譯的計畫。這個翻譯計畫一開始只是一群人靠著熱血和理想所組織起來的，一年多來，我們就已經有了來自數十個國家和區域，700位以上的各領域專業人士義務翻譯805門課程，已經成為目前全世界預算最低和效率最高的開放式課程翻譯計畫。對所有的義務參與者來說，能夠有機會將自己的專業知識與他人分享，就是最好的報酬！</para><para id="element-443">繼相關的子計畫「OOPS聽打計畫」及「智慧傳播－MIT工程學院專業教育計畫」之後，OOPS再度與美國萊斯大學的Connexions團隊合作，希望藉由Connexions團隊所研發出來的知識分享平台「Connexions – 分享知識及建立社群」（Connexions – Sharing Knowledge and Building Community），將世界各大學及研究機構所建構在Connexions平台上的課程內容翻譯成中文。不僅如此，由於Connexions平台的可利用性，OOPS也期盼國內各級學校及各企業領域，將珍貴的課程內容及訓練內容等相關知識，無私奉獻與他人分享。</para><para id="element-507">歡迎您上來看看，如果您行有餘力，可以參與我們的翻譯計畫。但即使您只是單純的閱讀和使用這些知識，對我們來說都是莫大的鼓勵！希望翻譯計畫的完成，能夠弭平更多的知識鴻溝，給予更多貧窮和沒有機會接觸這些知識的人公平的機會。參加這個計畫的義工從律師、會計師到大學校長都有。我們唯一的報酬就是知識和以自己的專業能力幫助整個中文世界的成就感；也許看起來微薄，但這是千金難買的成就感！</para>
+   </section>
+
+   <section id="reportbug">
+   <title>Connexions 不是 OCW ？</title>
+    <para id="reportbugabstrat">在前往美國唸書前的幾個月，Lucifer告訴我在我將前往的城市（Dallas）附近，有另一個城市叫休士頓（Houston），那裏有一所大學是Rice University（米國的米大學？），要到那裏取經，探索他們的開放式課程「Connexions – 分享知識及建立社群」（Connexions – Sharing Knowledge and Building Community）。在Grace的指導及協助之下，去年（2005年）十二月初我們和萊斯大學的Connexions團隊開始有了第一次接觸及合作的概念產生。</para><para id="element-513">在瞭解Connexions模式的開放式過程當中，我們產生了很多奇奇怪怪的意見，<link url="http://forum.fantasy.org.tw/viewtopic.php?t=12065">中文討論區有一些相關內容的彙整</link>，幸運的是最後對於Connexions的瞭解並沒有產生太過嚴重的觀念偏差。雖然「瞭解Connexions」這件事，對於我們或是有興趣的義工及讀者朋友們來說，並不是一件輕鬆的事；然而，當<link url="http://cnx.org/content/browse_course_institutions">各國多所大學及研究機構都逐漸將他們的課程</link>架構在Connexions平台上的時候，那正是OOPS所該前往的地方。</para><para id="element-923">在Lucifer、Grace及Connexions團隊等人的督促（鞭策？）之下，最近終於把Connexions較為重要的入門指導介紹課程（Connexions Tutorial and Reference）《course》，在Connexinos的平台上建立了起來。雖然還有一部份課程內容（關於XML）及其他重要的參考資料尚未建立中文化，但相信這正是其他OOPS義工們可以發揮所長的地方。（請先饒了我吧，目前我對資訊科技的程式語言還是濛濛懂懂的，因為我是物理系的。）</para><para id="element-460">如果義工要在Connexions上翻譯課程內容，可以從以上的課程內容去熟悉Connexions的作業環境，請注意創作共享（Creative Commons）的規範，可以參考其中一個模組「衍生副本」《module》。如果各位義工在探索Connexions的時候遇到任何的問題，歡迎我們一起共同來交換意見，您也可以直接向Connexions提出反應意見。</para><para id="element-205">因為Connexions是一個可以讓任何人登入上去編輯教材的平台，可以組織課程的結構，可以傳送多媒體資料上去，可以將課程內容轉成PDF檔案列印下來，等等，所以其想像空間和應用空間將非常的大。如果您是大學教授或中小學老師甚至幼稚園老師，或者如果您是一個學校社團裏的一個領導幹部，或者如果您是一個公司的老闆或幹部、職員，您都可以在Connexions上面編寫您的課程訓練內容；甚至於如果您是一個作家、一個發明家或一個學生，只要您有值得讓人欣賞、學習的地方，都可將您的知識在Connexions上與大家分享。而Connexions其中的一個理念也是促進跨領域的知識交流，這是Connexions獨有的魅力。</para><para id="element-73">Connexions團隊也是一個發展中的團隊，他們有許多創新的概念，他們告訴我們說Connexions的使用環境在未來還會有許多改良，甚至他們願意嘗試製造出「直式中文」的編輯界面，以進一步進行國際化。目前，在PDF轉檔後的一些中文字無法呈現，還有其他系統上的問題，也許這些都有待更多OOPS義工們的投入，協助他們解決中文使用上的問題，也才能嘉惠世界上的中文讀者們。</para><para id="element-17">最後有個小小的建議，當您在Connexions上完成一個翻譯工作或著作的時候，請以您的方式適時的與OOPS的讀者們分享。或者，當我們在Connexions編寫著作時，可以相互聯繫以交換經驗。例如您可以在您的Connexions帳號頁面上傳遞OOPS的相關訊息，如<link url="http://cnx.org/member_profile/alvin">Alvin</link>。 </para>
+   </section>
+  </content>
+    
+  
+</document>

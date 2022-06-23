@@ -1,0 +1,273 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+	<title>工作區域</title>
+	<metadata>
+  <md:content-id>m13482</md:content-id><md:title>工作區域</md:title>
+  <md:abstract>解釋工作區域（Work Areas）：我的工作空間（My Workspace）及工作群組（Workgroups）。</md:abstract>
+  <md:uuid>b1908a45-c3d9-4176-a683-caab6b93990a</md:uuid>
+</metadata>
+
+<content>
+
+<note id="deprecated-translate" type="warning">
+<para id="p1">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  The current (English-language) version of this module can be located at <link document="m10885">http://cnx.org/content/m10885/latest/</link>.   If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</para>
+<para id="p2">If you would like to assist Connexions by helping us update this module with an appropriate translation from the current English version, please contact us at <link url="mailto:cnx@cnx.org">cnx@cnx.org</link> as we would appreciate your help with improving our support for non-English-speaking users.</para>
+</note>
+
+		<section id="cnxworkareas">
+			<title>Connexions 工作區域</title>
+			<para id="workareapara1">Connexions提供兩種區域類型以進行資料處理的工作：「My Workspace」（我的工作空間）及「Workgroups」（工作群組）。您可以在兩個工作區域中進行相同的資料建立、編輯、及管理工作。此兩個工作區域間的差異是使用者的存取權限。「我的工作空間」是一個私人工作區域，只有您可以進入此區域觀看及修改資料。擁有Connexions帳號的每個人都有他們自己的「我的工作空間」，這在Connexions帳號建立的時候會自動建立起來。「工作群組」是為了處理合作模式的計劃，一個使用者的群組以及群組裏成員的每一個人都可以存取裏面的資料，而可以進行觀看及修改資料。「工作群組」必須由您來建立，您可以建立多個工作群組，讓每一個計劃對應到不同的工作群組。這兩種的工作區域都在此模組中詳細說明。
+</para>
+			<section id="viewingwg">
+				<title>觀看工作區域</title>
+				<para id="viewingwgppara">一旦您登入Connexions之後，在<link url="http://cnx.org/">Connexions首頁</link>左下方的「Log in」（登入）書籤將會由「Workspaces」（工作空間）書籤所取代。只要您登入之後，此書籤將存在在首頁上及Connexions其他的網頁上，讓您可以方便及快速地在您的工作區域之間進行轉換。</para>
+				<figure id="workspacebox"><media id="id8275959" alt=""><image src="../../media/workspacebox-30df.png" mime-type="image/png"/></media>
+	<caption>「工作空間」書籤。</caption>
+</figure>
+			</section>
+			<section id="managingworkgroupssection">
+				<title>我的工作空間</title>
+				<para id="personalworkspacepara">在Connexions裏，「我的工作空間」是您個人的工作區域，讓您獨立工作，別人無法進入。在此工作區域裏，您有您自己的模組、檔案、及課程，這些是別人無法觀看到或進行修改的。許多作者在將模組或課程移動到「工作群組」之前，喜歡在「我的工作空間」裏處理模組或課程的相關工作，而<link target-id="workgroups">工作群組</link>是共同合作者的一個群組可以註解或編輯材料的地方。
+	</para>
+				<para id="personalworkspacepara2">藉由點擊「Workspaces」（工作空間）書籤裏的<emphasis>My Workspace我的工作空間</emphasis>連結，或者點擊「Personal toolbar」（個人工具列）裏的<emphasis>My Workspace我的工作空間</emphasis>連結，您可以從一個Connexions網頁顯示您個人的工作區域。</para>
+			</section>
+			<section id="workgroups">
+				<title>工作群組</title>
+				<para id="workg1">工作群組（Workgroup）是一群Connexions的編寫者所擁有的非公開草擬區域（scratch area），在此可以共同處理他們共有的模組，允許編寫者一起工作及檢視進度，而不會讓外界人士看到他們的工作進行。
+ 	<note id="id1171705329105" type="警告"><label>警告</label>請記住，<emphasis>工作群組不是讓共同合作者之間進行溝通的地方</emphasis>。一個工作群組的成員必須開放式的互相溝通，因為工作群組理所有的成員都擁有相同等級的使用權；一個工作群組裏的任何成員可以增加或移除其他成員，以及修改、增加、或移除資料；一個工作群組的建立者沒有額外的權限。 	</note></para>
+				<para id="workg2">每一個工作群組可具有相關聯的模組或檔案，工作群組的成員可以從資料公共園地所存在的模組中增加至工作群組裏。一旦建立一個模組或查核過一個模組，工作群組裏的任何成員具有編輯的權利，而可以對此模組進行修改。為了要具有編輯的權利，這個人必須具有這個模組的資料維護者的角色，請詳見<link document="m13493" target-id="editroles">編輯模組角色</link>。</para><para id="workg3">當您是某一個工作群組的成員時，工作群組的名稱會列在工作空間（Workspaces）書籤裏。您可以點擊工作群組裏的名字，以顯示一個工作群組的資料。</para>
+			</section>
+			<section id="createworkgroupsect">
+				<title>建立一個工作群組</title>
+				<para id="createworkgpara1">要建立一個工作群組，請依下列步驟：
+ 	 	
+         <list id="createworkglist1" list-type="enumerated"><item>請點擊「Workspaces」（工作空間）書籤裏的<code>Create a workgroup建立一個工作群組</code>，將會顯示「Create workgroup」（建立工作群組）視窗。</item>
+	<item>請在「Name」（名稱）區域裏鍵入工作群組的名稱。</item>
+	<item>（非必要）請在「Email」（電子信箱）區域裏鍵入一組電子信箱，可以是一個共用的電子信箱或此工作群組所有成員的信箱列表。
+         </item>
+	<item>（非必要）請在「Description」（說明）區域裏鍵入工作群組的相關說明。</item>
+	<item>請點擊<code>Create建立</code>，將會顯示新工作群組的視窗。</item>
+</list>
+</para>
+				<para id="createworkgpara2">因為這是一個新的工作群組，裏面沒有資料，而且您是這唯一成員。請查閱<link target-id="managewapara1">管理工作區域資料</link>內的描述說明，以在新的工作群組裏增加資料。請查閱<link target-id="wgmemberssect">管理工作群組成員</link>內的描述說明，以在新的工作群組裏增加成員。</para>
+			</section>
+		</section>
+		<section id="managewapara1">
+			<title>管理工作區域資料</title>
+			<para id="wacontentpara1">要顯示我的工作空間，請點擊「Workspaces」（工作空間）書籤裏的<emphasis>My Workspace我的工作空間</emphasis>連結。要顯示一個工作群組，請點擊「Workspaces」（工作空間）書籤裏的名稱。若這是您第一次顯示「My Workspace」（我的工作空間），或者若您剛建立工作群組，工作區域裏面不會有資料。</para>
+			<para id="wacontentpara2">「My Workspace」（我的工作空間）的顯示視窗裏有一個「Content」（資料）和一個「Properties」（屬性）標籤。「Workgroups」（工作群組）裏顯示「Content」（資料）、「Properties」（屬性）、和「Members」（成員）標籤。兩個工作區域的「Content」（資料）標籤是相同的，除了那一頁上方的名稱之外。下圖中顯示一個「My Workspace」（我的工作空間）的「Content」（資料）標籤，含有一個課程及三個模組。</para>
+			<figure id="workspacefig"><media id="id6782771" alt=""><image src="../../media/personalx.png" mime-type="image/png"/></media>
+				<caption>「我的工作空間」的「Content」（資料）標籤。</caption>
+			</figure>
+			<para id="workg6">您可以從「Content」（資料）標籤上進行下列的工作：
+
+	<list id="workgrouplist"><item><link target-id="creatingmodules" strength="3">建立新項目</link></item>
+					<item><link target-id="addingexistingmodules">從資料公共園地增加已存在的項目</link></item>
+					<item><link target-id="viewcontentssect" strength="3">觀看工作區域資料</link></item>
+					<item><link target-id="removingfiles" strength="3">從一個工作區域移除項目</link></item>
+					<item><link target-id="renamingfilesec" strength="3">在一個工作區域裏重新命名項目</link></item>
+					<item><link target-id="cuttingcoying" strength="3">在一個工作區域裏剪貼或複製項目</link></item>
+				</list>
+			</para>
+			<section id="creatingmodules">
+				<title>建立新項目</title>
+				<para id="createmodulepara">要在工作區域裏建立新的模組或課程，請依下列步驟：
+	  	  
+	<list id="createitemlist2" list-type="enumerated"><item>請點擊文章方格裏<code>Create 
+	  New Item建立新項目</code>按鍵旁的向下箭頭，將會出現一個可用項目型式的下拉列表。
+	  </item>
+						<item>請選擇「Course」（課程）或「Module」（模組）項目型式，點擊<code>Create New Item建立新項目</code>，將會顯示「New content: Licesing」（新資料：授權）視窗。</item>
+						<item>請選擇確認方格以同意此授權，點擊<code>Next下一步</code>。若您選擇課程「Course」（課程），將會在「Edit Course」（編輯課程）視窗上顯示「Metadata」（詮釋資料）標籤；請查閱<link document="m13489">如何使用課程編輯者</link>的內容以瞭解如何編輯一個課程。若您選擇「Module」（模組），將會在「Edit Module」（編輯模組）視窗上顯示「Metadata」（詮釋資料）標籤；請查閱<link document="m13493">編輯模組</link>的內容以瞭解如何編輯一個模組。</item>
+					</list>
+				</para>
+				<para id="createfilepara">要在工作區域裏建立新的檔案或圖片，請依下列步驟上傳檔案或圖片：
+	  
+         <list id="createitemlist3" list-type="enumerated"><item>請點擊文章方格裏<code>Create 
+	  New Item建立新項目</code>按鍵旁的向下箭頭，將會出現一個可用項目型式的下拉列表。
+	  </item>
+						<item>請選擇「Image」（圖片）或「File」（檔案）型式，點擊<code>Create New Item建立新項目</code>。若您選擇「File」（檔案），將會顯示「Edit File」（編輯檔案）視窗；若您選擇「Image」（圖片），將會顯示「Edit Image」（編輯圖片）視窗。</item>
+						<item>請點擊<code>Browse瀏覽</code>，以及將所增加的檔案或圖片放置到您所選位置。
+	  </item>
+						<item>請選擇項目並點擊OK（確定），以上傳檔案或圖片。</item>
+						<item>請點擊<code>Save儲存</code>以在工作區域裏增加檔案或圖片。</item>
+					</list>
+				</para>
+				<para id="createfilepara2">「Image」（圖片）及「File」（檔案）項目型式，讓您可以自由上傳您想在內容中使用到的材料，這些材料必須在您傳送至Connexions之前就已經存在。當您在工作區域裏建立檔案或圖片後，您在Connexions裏已實際上建立了這個項目。</para>
+				<para id="createfilepara3">當您建立一個新的圖片項目，一旦您點擊<code>Save儲存</code>之後，將會出現圖片的預覽，以及顯示一個訊息說明您的圖片已被儲存。當您建立一個新的檔案項目並點擊<code>Save儲存</code>之後，將會出現檔案顯示的資訊，以及出現<emphasis>Click here to get the file請按此處以獲得檔案</emphasis>連結。</para>
+			</section>
+			<section id="addingexistingmodules">
+				<title>從資料公共園地增加已存在的項目</title>
+				<para id="addingmodules">您可以增加已存在於資料公共園地裏的模組或課程至您的工作區域裏，因此您可以再利用Connexions裏其他地方的資訊。要增加已存在的項目，請依下列步驟：
+	  
+	  <list id="addmodulelist" list-type="enumerated"><item>請點擊<code>Search for Published Content搜尋已發佈資料</code>，將會顯示「Search the Connexions repository」（搜尋Connexions資料庫）視窗。</item>
+						<item>請在<code>Search搜尋</code>按鍵旁輸入一個物件編號ID、名稱、關鍵字、編輯者姓名、或文章中字串。</item>
+						<item>若有必要，請取消「modules」（模組）或「courses」（課程）的確認方格，點擊<code>Search搜尋</code>，將會有符合您搜尋條件的模組及課程列表顯示在視窗上。</item>
+						<item>請選擇您所需要的項目旁的確認方格，加入至您的工作區域，或者使用名稱橫幅中的確認方格以選擇所有項目。</item>
+						<item>請點擊「Add selected content」（增加所選資料）文字方格裏的向下箭頭，將會顯示屬於您的全部工作區域的一個下拉列表，請從這列表中選擇一個工作區域。</item>
+						<item>請點擊<code>Add增加</code>，您所選的項目將會增加至工作區域，然後顯示該工作區域的「Content」（資料）標籤。</item>
+					</list>
+				</para>
+				<figure id="addmodules"><media id="id1171700538632" alt=""><image src="../../media/addmodulesx.png" mime-type="image/png"/></media>
+					<caption>已存在資料的搜尋結果。</caption>
+				</figure>
+			</section>
+			<section id="viewcontentssect">
+				<title>觀看工作區域資料</title>
+				<para id="viewwgcontentspara">一個工作區域可以包含模組、課程、檔案及圖片，一個工作區域的目前資料可以從工作區域上的「Content」（資料）標籤來觀看。在工作區域裏用以顯示每一項目的資訊，係如下所示：
+	  
+	  <list id="filemoduleinfo"><item>Title - （標題）此欄顯示標題及檔案名稱，或者您已經建立的項目ID，或者增加至工作區域群組的。</item>
+						<item>Type - （型式）此欄顯示所列項目的型式，型式包含：圖片、檔案、模組、及課程。</item>
+						<item>Size - （檔案大小）此欄顯示該項目的檔案大小（kilobytes），模組或課程並不顯示檔案大小。</item>
+						<item>Modified - （已修改）此欄顯示該項目最後修改的日期及時間，如果是新的項目，此欄顯示建立日期及時間。</item>
+						<item>Status - （狀態）此欄顯示該項目目前的狀態，有四種可能狀態：
+	    <list id="contentstatuslist"><item>Published - （已發佈）此項目已登入至資料公共園地，目前可以讓大眾存取。</item>
+								<item>Checked Out - （已查核）此項目複製自資料公共園地，放置在您的工作區域裏以供編輯。</item>
+								<item>Created - （已建立）此項目已被建立，並放置在您的工作區域裏，但此項目沒有副本存放於資料公共園地。</item>
+								<item>Modified - （已修改）此項目已查核過且更改過，更改過的內容已被儲存。當您建立一個項目且更改其內容之後，該項目的狀態將從「Created」（已建立）變成「Modified」（已修改）。</item>
+							</list>
+						</item>
+					</list>
+				</para>
+			</section>
+			<section id="removingfiles">
+				<title>從一個工作區域移除項目</title>
+				<para id="removepara">要從一個工作區域中移除一個項目，請選擇您所要移除的項目名稱旁的確認方格，點擊<code>Remove移除</code>；您可以從工作區域中選擇多個項目並且一次全部移除。</para>
+			</section>
+			<section id="renamingfilesec">
+				<title>在一個工作區域裏重新命名項目</title>
+				<para id="renamefilepara">要在一個工作區域裏重新命名項目，請依下列步驟：
+	      
+	      <list id="renamelist" list-type="enumerated"><item>請選擇您所要重新命名的項目名稱旁的確認方格，點擊<code>Rename重新命名</code>，將會顯示「Rename item」（重新命名項目）視窗。</item>
+						<item>請在「New Name」（新名稱）區域裏輸入該項目的新名稱。</item>
+						<item>請在「New Title」（新標題）區域裏輸入該項目的新標題。</item>
+						<item>請點擊<code>Rename All更新全部名稱</code>，您可以一次重新命名多個項目，可在工作區域資料視窗上選定多個項目。</item>
+					</list>
+	      
+	      在「Content」（資料）標籤上所顯示的項目將會進行更新。</para>
+			</section>
+			<section id="cuttingcoying">
+				<title>在一個工作區域裏剪貼或複製項目</title>
+				<para id="movingmodulespara1">要在一個工作區域裏複製及貼上一個項目，請依下列步驟：
+	      
+	    <list id="copylist" list-type="enumerated"><item>請選擇您所要剪下或複製的項目旁的確認方格，點擊<code>Cut剪下</code>或<code>Copy複製</code>；<code>Cut剪下</code>將會移除原來的項目，<code>Copy複製</code>會在原來地方留下原本的項目。</item>
+						<item>請顯示您所要貼上物件的位置，例如另一個工作區域，點擊<code>Paste貼上</code>；如果您在原來的工作群組裏貼上一個複製的項目，您將產生原本項目的一個副本。</item>
+					</list>
+				</para>
+			</section>
+		</section>
+		<section id="wapropertysect">
+			<title>工作區域屬性</title>
+			<para id="wapropertypara1">您可以編輯一個工作區域的特定屬性，例如一個工作群組的名稱，或者是您個人的工作區域「My Workspace」的一個描述說明；可以在工作區域的「Properties」（屬性）標籤上存取這些改變。</para>
+			<section id="myworkpropsect">
+				<title>編輯我的工作空間標題及說明</title>
+				<para id="myworkproppara1">要編輯我的工作空間的標題或說明，請依下列步驟：
+                    
+          <list id="myworkproplist"><item>請點擊<code>My Workspace我的工作空間</code>以顯示您個人的工作區域視窗。</item>
+						<item>請點擊「Properties」（屬性）標籤，將會顯示「Edit Folder Properties」（編輯資料夾屬性）視窗。</item>
+						<item>請在「Title」（標題）區域裏為您個人的工作區域鍵入一個新的標題或名稱。</item>
+						<item>請在「Description」（說明）區域裏為您個人的工作區域鍵入一個新的說明。</item>
+						<item>請點擊<code>Save儲存</code>。</item>
+					</list>
+				</para>
+			</section>
+			<section id="workgrouppropsect">
+				<title>編輯一個工作群組名稱、電子信箱、及說明</title>
+				<para id="workgroupproppara1">要編輯標題、電子信箱帳號、以及您所具有成員身份的一個工作群組說明，請依下列步驟：
+          
+          <list id="workgroupproplist"><item>請點擊在「Workspace」（工作空間）裏的工作群組名稱，以顯示工作群組視窗。</item>
+						<item>請點擊「Properties」（屬性）標籤，以顯示「Properties of」（屬性）視窗。</item>
+						<item>請在「Name」（名稱）區域裏為工作群組鍵入一個新的標題或名稱。</item>
+						<item>請在「Email」區域裏鍵入一組電子信箱帳號，可以是一個共用的電子信箱帳號，或該工作群組所有成員的電子信箱列表。</item>
+						<item>請在「Description」（說明）區域裏鍵入一個工作群組的描述說明。</item>
+						<item>請點擊<code>Update更新</code>。</item>
+					</list>
+				</para>
+			</section>
+		</section>
+		<section id="wgmemberssect">
+			<title>管理工作群組成員</title>
+			<para id="wgmemberspara1">一旦您建立了一個工作群組，或者您成為一個已經存在的工作群組的成員時，您可以增加其他成員至此工作群組裏，這些成員可以對這工作群組裏的資料一起進行工作。
+	<note id="id8337934" type="注意"><label>注意</label>
+	只有當一個人擁有Connexions的帳號才可以成為一個工作群組的成員。
+	</note>
+			</para>
+			<para id="manageviewgroup">工作群組成員的名稱及電子信箱會列在「Member」（成員）標籤裏；這標籤並不存在於「My Workspace」（我的工作空間）工作區域裏，因為那是您個人的工作區域，您是唯一可以存取這工作區域的人。</para>
+			<figure id="memberstabfig"><media id="id1171705010497" alt=""><image src="../../media/members.png" mime-type="image/png"/></media>
+				<caption>工作群組「Members」（成員）標籤。</caption>
+			</figure>
+			<para id="managewg3">您可以從「Member」（成員）標籤上進行下列工作：
+        <list id="managewglist"><item><link target-id="addingmembers">增加成員至一個工作群組</link></item>
+					<item><link target-id="removememberpara" strength="3">從一個工作群組移除成員</link></item>
+					<item><link target-id="emailfullwg" strength="3">對整個工作群組發送電子郵件</link></item>
+					<item><link target-id="emailmembersec" strength="3">對一個個別成員發送電子郵件</link></item>
+					<item><link target-id="leavewgsec" strength="3">離開一個工作群組</link></item>
+					<item><link target-id="deletewgsec" strength="3">刪除一個工作群組</link></item>
+				</list>
+			</para>
+			<para id="joingingpara">加入一個工作群組需要一個邀請函，請查閱<link target-id="joinwgsec" strength="3">加入一個工作群組</link>以獲得更多資訊。</para>
+			<section id="addingmembers">
+				<title>增加成員至一個工作群組</title>
+				<para id="addmemberpara1">要增加新的成員至您所在的一個工作群組，請依下列步驟：
+	  	  
+	  <list id="addmemberlist" list-type="enumerated"><item>請在<code>Search</code>按鍵旁鍵入您所希望增加成員的名字列表。</item>
+						<item>請點擊<code>Search搜尋</code>，將會有符合搜尋字串的一個Connexions帳號持有者列表出現；如果搜尋結果顯示沒有資料，請再試一次只用一個使用者名稱或一個姓氏last name搜尋。</item>
+						<item>請選擇您希望增加至工作群組的人的名字旁的確認方格。</item>
+						<item>請點擊<code>Add selected users增加所選使用者</code>，將會更新「Current Group Members」（目前群組成員）表格，以包括新的成員。</item>
+					</list>
+				</para>
+			</section>
+			<section id="removememberpara">
+				<title>從一個工作群組移除成員</title>
+				<para id="removepara1">要從您的工作群組裏移除成員，請依下列步驟：
+
+    	  <list id="removememberlist" list-type="enumerated"><item>請在您所希望自工作群組中移除成員的「Remove」（移除）欄位裏，選擇確認方格。</item>
+						<item>請點擊<code>Remove selected users from group從群組移除所選成員</code>，將會更新「Current Group Members」（目前群組成員）表格，以顯示移除的成員。</item>
+					</list>
+				</para>
+			</section>
+			<section id="emailfullwg">
+				<title>對整個工作群組發送電子郵件</title>
+				<para id="emailwgfull1">要對整個工作群組發送電子郵件，請依下列步驟：
+              
+              <list id="emailfullwglist" list-type="enumerated"><item>請在「Current Group Member」（目前群組成員）列表標題旁，點擊<emphasis>email group電子信箱群組</emphasis>連結；將會開啟您的電子郵件軟體，顯示一個新的訊息，與此工作群組成員聯繫。</item>
+						<item>請鍵入訊息文件，以及發送。</item>
+					</list>
+				</para>
+			</section>
+			<section id="emailmembersec">
+				<title>對一個個別成員發送電子郵件</title>
+				<para id="emailmember">除了對整個工作群組發送電子郵件之外，您可以對一個工作群組的個別成員發送電子郵件。要對一個個別成員發送電子郵件，請依下列步驟：
+            
+              <list id="emailindlist" list-type="enumerated"><item>對於您所要發送電子郵件的一個成員名字，請點擊名稱旁邊的「E-mail」（電子信箱）欄位；將會開啟您的電子郵件軟體，顯示一個新的訊息，與此工作群組成員聯繫。</item>
+						<item>請鍵入訊息文件，以及發送。</item>
+					</list>
+				</para>
+			</section>
+			<section id="joinwgsec">
+				<title>加入一個工作群組</title>
+				<para id="workg4">要加入一個群組，該群組的一個現有成員必須將您增加至此工作群組成員列表裏；如果您希望加入一個工作群組，請聯繫那個工作群組的一個成員，要求他們將您加入至工作群組裏。</para>
+			</section>
+			<section id="leavewgsec">
+				<title>離開一個工作群組</title>
+				<para id="leavewgpara">如果您離開一個工作群組，或者從成員列表裏移除您自己，您就不再是那個工作群組的一個成員；要再成為一個成員，該群組的一個現有成員必須將您再增加至此工作群組成員列表裏。要離開一個工作群組，請依下列步驟：
+	  
+	  <list id="leavewg" list-type="enumerated"><item>請在您希望離開的工作群組裏顯示「Members」（成員）標籤。</item>
+						<item>請選擇您名字旁的「Remove」（移除）欄位裏的確認方格。</item>
+						<item>請點擊<code>Remove selected users from group從群組移除所選成員</code>，將會顯示「Leave Workgroup」（離開工作群組）的確認視窗。</item>
+						<item>請點擊<code>Yes, Leave是的，離開</code>，您將從此工作群組裏移除，而且此工作群組的名稱將在您的Connexions網頁上的「Workspaces」（工作空間）書籤中移除。</item>
+					</list>
+	    一旦一個工作群組的每個成員都離開此群組，此群組將被刪除；最後一個離開的成員將被詢問以確認此步驟。</para>
+			</section>
+			<section id="deletewgsec">
+				<title>刪除一個工作群組</title>
+				<para id="deletewgpara1">當一個工作群組不再具有任何成員時，此工作群組將被刪除；如果您要刪除一個工作群組，您必須移除所有的成員，包括您自己。要刪除一個工作群組，請依下列步驟：
+
+	  <list id="deletewglist" list-type="enumerated"><item>請在您希望刪除的工作群組裏顯示「Members」（成員）標籤。</item>
+						<item>請選擇每一個成員名字旁的「Remove」（移除）欄位裏的確認方格。</item>
+						<item>請點擊<code>Remove selected users from group從群組移除所選成員</code>，將會顯示「Delete Workgroup」（刪除工作群組）確認視窗。</item>
+						<item>請點擊<code>Yes, Delete it是的，刪除</code>，所有成員將從此工作群組裏移除，也將刪除此工作群組，而且此工作群組的名稱將在所有成員的Connexions網頁上的「Workspaces」（工作空間）書籤中被移除。</item>
+					</list>
+				</para>
+			</section>
+		</section>
+	</content>
+</document>

@@ -1,0 +1,350 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  
+  <title>如何使用課程編輯者</title>
+
+  <metadata>
+  <md:content-id>m13489</md:content-id><md:title>如何使用課程編輯者</md:title>
+  <md:abstract>介紹如何使用 Connexions 課程編輯者。</md:abstract>
+  <md:uuid>920c15cd-134d-4643-9856-2411375ff516</md:uuid>
+</metadata>
+
+<content>
+
+<note id="deprecated-translate" type="warning">
+<para id="p1">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  The current (English-language) version of this module can be located at <link document="m10288">http://cnx.org/content/m10288/latest/</link>.   If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</para>
+<para id="p2">If you would like to assist Connexions by helping us update this module with an appropriate translation from the current English version, please contact us at <link url="mailto:cnx@cnx.org">cnx@cnx.org</link> as we would appreciate your help with improving our support for non-English-speaking users.</para>
+</note>
+
+    <section id="intro">
+      <title>課程編輯者</title>
+    <para id="delete_me">Connexions課程編輯者讓您可以建立一個新的課程，或編輯一個已經存在的課程，您可以使用課程編輯者進行下列各項工作：
+      <list id="firstlist" list-type="bulleted"><item><link target-id="create">建立一個新課程</link></item>
+        <item><link target-id="metadata">為一個新課程輸入可供辨識的詮釋資料</link></item>
+	<item><link target-id="addsection">增加一個新節</link></item>
+	<item><link target-id="subsection">增加一個子節</link></item>
+	<item><link target-id="addmodulesection">增加一個模組</link></item>
+	<item><link target-id="changetitle">提供一個替換的模組標題</link></item>
+	<item><link target-id="setversion">選擇模組版本</link></item>
+	<item><link target-id="editaddlinkssection">編輯或增加連結</link></item>
+	<item><link target-id="rearrange">重新安排資料</link></item>
+	<item><link target-id="removesection">移除課程資料</link></item>
+	<item><link target-id="addroles">指定共同合作的編輯者的角色定位</link></item>
+	<item><link target-id="notationsection">設置標記參數</link></item>
+	<item><link target-id="previewsection">預視課程</link></item>
+	<item><link target-id="publishcoursesec">發佈課程</link></item>
+	<item><link target-id="existintsection">編輯一個已存在的課程</link></item>
+      </list>
+    </para>   
+    </section>
+    
+    <section id="create">
+      <title>建立一個新課程</title>
+
+      <para id="create1">建立一個新課程，類似於建立一個<link document="m13482" target-id="creatingmodules">新模組</link>，您可以從您的工作空間或<link url="http://cnx.org/help/reference/workgroups">工作群組</link>中進入Course Composer（課程編輯者）。
+	
+	<list id="createlist" list-type="enumerated"><item>請在<code>Create New Item建立新項目</code>按鍵旁的下拉列表中選擇Course課程，並點擊<code>Create New Item建立新項目</code>，將會顯示「New Content: Licensing」（新資料：授權許可）視窗。
+	  </item>
+	  <item>請選擇在視窗底部的確認方格，以簽署您同意將此課程置於<link url="http://creativecommons.org/licenses/by/2.0/">Creative Commons 
+	  Attribution license（創用CC授權條款）</link>許可之下。</item>
+	  <item>請點擊<code>Next下一步</code>，「Metadata」（詮釋資料）標籤顯示一個訊息表示已建立一個課程。視窗左側將會出現「Course Status」（課程狀態）書籤，以及此課程目前狀態的列表及最後所進行的動作，亦即建立此課程的人的名字，以及何時建立此課程。
+	  </item>
+      </list>
+    </para>   
+       
+      <figure id="coursecomposerfig1"><media id="id8170334" alt=""><image src="../../media/coursecomposerfig1x.png" mime-type="image/png"/></media>
+	<caption>課程編輯者（Course Composer）編輯視窗。</caption>
+      </figure>
+      
+    </section>
+
+    <section id="metadata">
+      <title>為一個新課程輸入可供辨認的詮釋資料</title>
+
+      <para id="metadata1">
+	<list id="metadatalist" list-type="enumerated"><item>請在課程編輯者裏選擇「Metadata」（詮釋資料）標籤。</item>
+	  <item>請在詮釋資料區域裏輸入適當的資訊，包含：
+	    <list id="sublist" list-type="bulleted"><item>course title 課程名稱（必要的）。</item>
+	      <item>institution name 機構名稱 – 教導此課程的學校或機構。</item>
+	      <item>course code 課程編號 – 目錄編號，例如BIO 201。</item>
+	      <item>instructor name 課程指導者名稱 – 教導此課程的人。</item>
+	      <item>course home page 課程首頁 – 一個URL全名，「http://」，例如是課程的通告或教學大綱。</item>
+	      <item>keywords 關鍵字 – 此項目用以幫助Connexions使用者搜尋到此課程。</item>
+	      <item>abstract 摘要 – 此課程的一個簡短描述（必要的）。</item>
+	    </list>
+	    如果您於一個必要的區域裏沒有輸入資料，當您點擊<code>Save儲存</code>時，將會被提醒要進行輸入動作，以記錄此詮釋資料。</item>
+	  <item>請點擊<code>Save儲存</code>，將會儲存詮釋資料，「Content」（資料）標籤也將顯示此課程標題。此標籤是代表您實際組合此課程的地方，具有兩個區域；標籤左側顯示一個課程概要，標籤右側是您增加、安排、或移除課程中資料物件的地方。
+	  </item>
+	</list>
+      </para>
+    </section>
+
+    <section id="addsection">
+      <title>增加一個新節</title>
+
+      <para id="addsectionpara1">一個「節」（section）是一個課程裏的相關模組的集編，每一個「節」具有一個標題以提供觀看者辨認資料，您可以在「節」裏放置「節」，及建立「子節」（subsection）。</para>
+  
+      <list id="addnewsection" list-type="enumerated"><item>請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	<item>如果課程名稱尚未強調出來，請在課程概要裏點擊課程名稱；這是在課程概要裏具最高等級的物件。</item>
+	<item>如果尚未顯示「Content」（資料）標籤，請讓其顯示出來。</item>
+	<item>請在「Content」（資料）標籤裏點擊<code>Add New Section增加新節</code>，課程概要裏將增加一個新的節成為最新物件，以及顯示「Edit」（編輯）標籤，並有一個區域以供輸入新節名稱。
+	</item>
+	<item>請在「Title」（標題）區域裏輸入新節的名稱。
+	</item>
+	<item>請點擊<code>Save儲存</code>。</item>
+      </list>
+
+      <para id="addpara">您所輸入的標題將出現成為課程概要裏的新節，此節被強調出來，讓您可以在裏面增加資料，增加一個子節或一個模組。
+	</para>
+
+    </section>
+    
+    <section id="subsection">
+      <title>增加一個子節</title>
+
+      <para id="subsectionpara1">一個子節是在一個節裏的一組相關模組，每一個子節具有一個標題以提供觀看者辨認資料。</para>
+
+      <list id="addsubsectionlist" list-type="enumerated"><item>請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	<item>如果節的標題尚未強調出來，請在課程概要裏點擊該節標題。</item>
+	<item>如果尚未顯示「Content」（資料）標籤，請讓其顯示出來。</item>
+	<item>請在「Content」（資料）標籤裏點擊<code>Add New Section增加新節</code>；在課程概要裏強調出來的節的下方，將增加一個新的子節。將顯示「Edit」（編輯）標籤，並有一個空白「Title」（標題）區域以供輸入新子節名稱。</item>
+	<item>請在「Title」（標題）區域裏輸入子節的名稱。</item>
+	<item>請點擊<code>Save儲存</code>。</item>
+      </list>
+    
+      <para id="subsectionpara">您所輸入的標題將出現在課程概要裏成為新的子節，此子節被強調出來，讓您可以在裏面增加資料。</para>
+    </section>
+
+    <section id="addmodulesection">
+      <title>增加一個模組</title>
+
+      <para id="addmodulepara1">您可以從資料公共園地，或從一個課程擁有者自己的工作空間或<link url="http://cnx.org/help/reference/workgroups">工作群組</link>，增加一個已發佈的模組至課程裏面。增加一個模組時，Connexions並不複製該模組至您的課程裏，此模組保留在資料公共園地裡，Connexions會插入一個參考或一個指標至您課程裏的模組。任何新的或已存在的模組在下列情況下，增加到一個課程裏：
+	      
+      <list id="addmodulelist" list-type="bulleted"><item>一個模組不能插入至一個課程裏超過一次。</item>
+	<item>在您將一個模組插入至一個課程裏之前，該課程必須已經在Connexions裏發佈。</item>
+	<item>在Content Commons資料公共園地裏搜尋模組的標題、名稱、作者、關鍵字或文章字串。</item>
+      </list>
+	如果沒有找到您所搜尋字串的相關資料，Connexions將會顯示關於搜尋輸入方式的建議。
+      </para>
+
+ <section id="commonsmodulesection">
+      <title>自資料公共園地增加一個模組</title>
+      <para id="addmoudlpara3">要在資料公共園地裏搜尋一個模組，並且將其增加至您的課程裏，請依下列步驟：
+	<list id="commonssearch" list-type="enumerated"><item>如果尚未顯示「Content」（資料）標籤，請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	  <item>如果項目標題尚未強調出來，在您要插入模組的地方，請在課程概要裏點擊項目標題；項目可以是課程標題、一個節的標題、或一個子節標題。</item>
+	  <item>請在搜尋文字方格裡輸入關於此模組的一個字或一個字串。</item>
+	  <item>請不要選擇「Courses」（課程）的確認方格，留下所選的「Modules」（模組）確認方格。</item>
+	  <item>請點擊<code>Search搜尋</code>，符合搜尋輸入文字的所有模組列表將會顯示出來；如果出現許多模組超過一個網頁的範圍，會列出其他符合的額外網頁出來。
+	  </item>
+	  <item>請選擇您要增加成為資料的任一網頁的確認方格。</item>
+	  <item>請點擊<code>Add selected content增加所選資料</code>。</item>
+	</list>
+        在您所選的節底下，選定的模組將出現在課程概要裏。</para>
+    </section>
+    
+ <section id="workspacemodulesection">
+      <title>自您的工作空間或工作群組增加一個模組</title>
+    
+      <para id="addfromrep2">要從您的工作空間或工作群組增加一個模組做為您課程裏的資料，請依下列步驟：
+	<list id="copy" list-type="enumerated"><item>在您包含某個課程及模組的工作空間或工作群組，請顯示「Content」（資料）標籤。</item>
+	  <item>請選擇需要的模組的確認方格，您可以只增加在「Published」（已發佈）狀態下的那些模組。</item>
+	  <item>請點擊<code>Copy複製</code>，會有一個訊息顯示此項目已被複製。</item>
+	  <item>請點擊課程標題以進入課程編輯者，現在在「Content」（資料）標籤上會出現<code>Paste貼上</code>按鍵，伴隨著<code>Cut剪下</code>、<code>Copy複製</code>、及<code>Remove移除</code>按鍵。
+	  </item>
+	  <item>請按下您所要插入模組的節的標題。</item>
+	  <item>請在課程的「Content」（資料）標籤上點擊<code>Paste貼上</code>按鍵。</item>
+	</list>
+        此模組的標題將會出現在您所選的節之下的課程概要裏。
+      </para>
+      <note id="id1170833147549" type="注意"><label>注意</label>如果您嘗試增加一個尚未發佈的模組，將會顯示一個錯誤訊息；要進行驗證的是您所要增加的模組已被發佈，請在您的工作區域的「Content」（資料）標籤觀看「State」（狀態）欄。</note> 
+    </section>
+    </section>
+
+    <section id="changetitle">
+      <title>提供一個替換的模組標題</title>
+
+      <para id="changetitlepara">在資料公共園地裏的模組具有它們編輯者所給予的標題；當此模組在您的課程中使用，這些標題可能並不適合。您可以提供這個模組一個替換的標題，讓其出現在Roadmap路徑圖的課程概觀裏，以及在您課程的列印版本裡。當您瀏覽模組文件時，仍會顯示原來編輯者的標題。
+
+	<list id="changetitlelist" list-type="enumerated"><item>請在課程概要裏點擊模組標題，模組等級的「Edit」（編輯）標籤將會出現在視窗右側。</item>
+	  <item>請在「Alternate Title」（替換標籤）區域裡鍵入此模組的新標題。</item>
+          <item>請點擊<code>Save儲存</code>。</item>
+	  </list>
+	
+	在這課程概要裏的模組標題將變成所替換的標題。
+      </para>
+    </section>
+
+    <section id="setversion">
+      <title>選擇模組版本</title>
+
+      <para id="setversion1para">當一個模組更新或編輯後，Connexions會儲存此模組之前的歷史版本，而使用此模組最後的版本以供觀看。一個模組的每一次新版本會給定一個所屬數字，您可以選擇每一個模組的特定版本，以使用在您的課程裏。
+	<list id="versionlist" list-type="enumerated"><item>請在課程概要裏點擊模組標題，模組等級的「Edit」（編輯）標籤將會出現在視窗右側。</item>
+	  <item>請選擇您所要使用在課程裏的模組版本，點擊<code>Version版本</code>提報按鍵，預設為「Always use newest version」（永遠使用最新版本）。</item>
+	  <item>請點擊<code>Save儲存</code>。</item>
+	  </list>
+      </para>
+    </section>
+
+    <section id="editaddlinkssection">
+      <title>編輯或增加連結</title>
+
+     <para id="linkpara1">連結可以讓觀看者以點擊滑鼠的方式，顯示相關的資訊或例子，而這些內容不是課程裏的一部份。連結可以在課程等級裏被定義，或者個別的模組等級裏。在一個存在的模組裏，任何您對於連結所做的改變，只會顯示您課程裏與模組有關的情況。
+</para>
+
+    <section id="editlinkssection">
+      <title>編輯已存在的連結</title>
+
+      <list id="editlinkslist" list-type="enumerated"><item>請在課程概要裏點擊模組標題，模組等級的「Edit」（編輯）標籤將會出現在視窗右側。</item>
+	<item>請點擊「Links」（連結）標籤。</item>
+        <item>在標籤的「Edit Links」（編輯連結）控制板裏，請在「Name」（名稱）、「Link Type」（連結型態）、及「Strength」（強度）區域裏進行需要的改變。</item>
+        <item>對於您不想要出現在模組裏的任何連結，請選擇「Delete」（刪除）欄裏的確認方格。</item>
+        <item>請點擊<code>Update Links更新連結</code>。</item>
+      </list>
+
+<para id="editlinkspara">當此模組被觀看時，此改變係針對原來編輯者的連結列表，而將出現在「Links」（連結）書籤裏。</para>
+    </section>
+
+    <section id="addlinkssection">
+      <title>增加連結至一模組</title>
+
+      <list id="addlinkslist" list-type="enumerated"><item>請在課程概要裏點擊模組標題，模組等級的「Edit」（編輯）標籤將會出現在視窗右側。</item>
+	<item>請點擊「Links」（連結）標籤。</item>
+	<item>為了輸入一個新連結，在標籤的「Add a New Link」（增加一個新連結）控制板裏，請在「Enter a Name」（輸入一個名稱）區域裏鍵入連結名稱。</item>
+	<item>請在「Link Type」（連結型態）區域旁的下拉列表中選擇連結的類別。</item>
+	<item>請在「Strength」（強度）區域旁的下拉列表中選擇連結的重要性。</item>
+	<item>請在「Module ID」（模組編號）或「Link URL」（連結網址）區域裏輸入連結的目標。</item>
+	<item>請點擊<code>Add增加</code>。</item>
+      </list>
+      
+      <para id="addlinkspara">當此模組被觀看時，此連結將會出現在「Links」（連結）書籤裏，並伴隨任何可能的原來編輯者的連結。
+</para>
+     </section>
+    </section>   
+
+    <section id="rearrange">
+      <title>重新安排資料</title>
+
+     <para id="rearrangepara1">課程編輯者具有兩種方法，以供重新安排一個課程裏的資料項目；第一個方法係使用向上及向下箭頭，以在一個課程裏或節裏用以移動項目；第二個方法係使用<code>Cut剪下</code>及<code>Paste貼上</code>按鍵，用以移動項目，從課程至節裏，或從節至節裏。</para>
+
+         <section id="rearrangeupdown">
+           <title>使用向上及向下箭頭重新安排</title>
+
+         <para id="rearrangepara2">要在一個課程裏或節裏使用向上及向下箭頭移動項目，請依下列步驟：
+
+         <list id="rearragelist1" list-type="enumerated"><item>請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	   <item>請在課程裏點擊課程標題，用以重新安排資料項目；或者點擊一個節的標題，用以在那個節裏重新安排資料項目；螢幕的右側將會出現課程或所選段落的資料列表。</item>
+	<item>請在「Move」（移動）欄裏點擊向上及或向下箭頭，以在課程或節裏將一個資料項目重新指定至一不同位置；外部的兩個箭頭會將資料項目移動至第一個或最後一個位置，內部的兩個箭頭會將資料項目移動往上或往下一個位置。</item>
+	 </list>
+         </para>
+       
+      <figure id="coursecomposerfig2"><media id="id1170829422140" alt=""><image src="../../media/coursecomposerfig2.png" mime-type="image/png"/></media>
+	<caption>「Title」（標題）及「Move」（移動）欄位。</caption>
+      </figure>
+          </section>
+
+         <section id="rearrangecutpaste">
+           <title>使用「Cut」（剪下）及「Paste」（貼上）按鍵重新安排</title>
+
+         <para id="rearrangepara3">要使用<code>Cut剪下</code>及<code>Paste貼上</code>按鍵移動項目，從課程至節裏，或從節至節裏，請依下列步驟：
+          <list id="rearragelist2" list-type="enumerated"><item>請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	    <item>請在課程概要裏點擊課程標題，用以在課程裏剪下及貼上項目；或者在課程概要裏點擊一個節標題，用以在那個節裏剪下及貼上項目；螢幕的右側將會出現課程或所選的節的資料列表。</item>
+	    <item>請在您所要移動的項目左側選擇確認方格。</item>
+            <item>請點擊<code>Cut剪下</code>。</item>
+            <item>對於您所要貼上資料項目的節，請在課程概要裏點擊節的標題。</item>
+            <item>請點擊<code>Paste貼上</code>，資料項目將出現在課程概要裏的所選的節底下，而且會從原來的課程或節標題裏消失。</item>
+	</list>
+       </para>
+    </section>
+    </section>
+
+    <section id="removesection">
+      <title>移除課程資料</title>
+      <para id="removepara1">要從一個課程或一個課程裏的節移除一個資料項目，請依下列步驟：
+
+      <list id="removelist" list-type="enumerated"><item>請在課程編輯者裏選擇「Content」（資料）標籤。</item>
+	<item>請點擊課程標題，用以從課程裏移除一個資料項目；或者點擊一個節標題，用以從該節移除一個資料項目；螢幕右側將會出現該節的資料列表。</item>
+	<item>請選擇物件的確認方格以便移除。</item>
+	<item>請點擊<code>Remove移除</code>，此項目將會從課程或節裏被移除。
+</item>
+      </list>
+     </para>
+    </section>
+
+     <section id="addroles">
+      <title>指定共同合作的編輯者的角色定位</title>
+       <para id="addrolespara">要指定您所共同合作的編輯者的<link url="http://cnx.org/help/reference/roles">角色</link>定位，請依下列步驟：
+        
+      <list id="addroleslist" list-type="enumerated"><item>請在課程編輯者裏選擇「Roles」（角色）標籤。</item>
+	<item>在搜尋文字方格裏，請鍵入您所要給定編輯者、資料維護者、或版權持有者的人的名字，這個人必須有一個Connexions帳號。</item>
+	<item>請點擊<code>Search搜尋</code>，將會出現符合搜尋字串的帳號持有者名單。</item>
+	<item>請選擇所需的共同合作者的確認方格。</item>
+	<item>請點擊<code>Add People增加人員</code>，視窗底部將出現「Roles Pending Approval」（角色未定認可）方格。</item>
+	<item>請選擇此人所適合角色的確認方格，或者不選擇。</item>
+	<item>對於所有您所要在一個課程共同合作的人，請重複步驟2至5。</item>
+	<item>請點擊<code>Update Roles更新角色</code>。</item>
+      </list>
+     </para>
+      
+      <para id="addpeoplepara">Connexions注意到新的編輯者在他們下次登入時，角色的要求是懸而未決的；只要這些要求被接受，這些角色已被認定為是已經申請到適合的存取權限。</para>
+    </section>   
+    
+    <section id="notationsection">
+      <title>設置標記參數</title>
+
+      <para id="notationpara1">在不同課程裏的模組可以使用不同的方法呈現相同的項目，例如向量及虛數；您可以使用顯示參數，在您的課程裏選擇這些項目呈現的方式。要在您的課程裏設定這些參數，請依下列步驟：
+     
+      <list id="notatlist" list-type="enumerated"><item>請在課程編輯者裏選擇「Parameters」（參數）標籤。</item>
+	<item>請選擇所需標記的提報按鍵，預設出現在第一欄。</item>
+	<item>請點擊<code>Update Properties更新屬性</code>。</item>
+      </list>
+      </para>
+
+      <para id="notationpara2">Connexions使用特別的標記參數，以在課程裏顯示所有的模組。</para>
+    </section>
+
+    <section id="previewsection">
+      <title>預視課程</title>
+
+      <para id="previewpara">請在課程編輯者裏選擇「Preview」（預視）標籤，以顯示上線的課程，亦即一個學生可以觀看此完成的課程；此預視功能讓您可以驗證您所想要顯示的課程。</para>
+
+    </section>
+
+    <section id="publishcoursesec">
+      <title>發佈課程</title>
+
+      <para id="publishpara">一個已發佈的課程可以讓網際網路上想要觀看它的任何人可以看得到，一旦完成此課程，您將要在Connexions裏發佈。
+
+	<list id="publsihlist" list-type="enumerated"><item>請驗證您所要的詮釋資料、角色、及課程的線上版本。</item>
+	  <item>請在課程編輯者裏點擊「Publish」（發佈）標籤。</item>
+	  <item>請在「Description of Changes」（更改說明）區域裏鍵入此課程修訂版的簡短解釋，此段文字會顯示在此課程的修訂歷史網頁上。</item>
+	  <item>請點擊<code>Publish發佈</code>。</item>
+	  </list>
+		
+          此課程已發佈在Connexions裏，您可以在任何時候使用課程編輯者檢查此課程，以及進行修訂。
+          
+          <note id="id1170839897718" type="注意"><label>注意</label>在Connexions發佈一個課程之前，此課程必須有一個人稱為編輯者、資料維護者、及版權持有者角色；此外，此課程沒有懸而未決的角色要求，所有角色的要求必須被接受或被拒絕。</note>
+      </para>
+    </section>
+    
+    <section id="existintsection">
+      <title>編輯一個已存在的課程</title>
+
+      <para id="existpara">您可以利用您建立一個新課程相同的方法，使用課程編輯者編輯一個已存在的課程；您只可以編輯您具有資料維護者角色的那些課程。要對一個已存在的課程使用課程編輯者，請開啟您的工作空間或工作群組，以及依下列步驟：
+
+	<list id="existlist" list-type="enumerated"><item>請點擊<code>Search for Published Content搜尋已發佈資料</code>，將會顯示「Search the Connexions repository」（搜尋Connexions資料庫）視窗。
+	  </item>
+    	  <item>請在搜尋文字方格裏輸入與課程相關的字或字串。</item>
+	  <item>請去除「Modules」（模組）的確認方格，留下所選的「Course」（課程）確認方格。</item>
+	  <item>請點擊<code>Search搜尋</code>，將會顯示符合此搜尋字串的物件列表。</item>
+	  <item>請選擇所需課程的確認方格。</item>
+	  <item>請從「Add selected content to」（增加所選資料）下拉列表中選擇此課程所要放置的工作空間或工作群組。</item>
+	  <item>請點擊<code>Add增加</code>，此課程將增加至您所指定的工作空間或工作群組。</item>
+	  <item>請在課程編輯者裏打開此課程，如同此段落前面<link target-id="create">建立一個新課程</link>之下所述的方法進行編輯。</item>
+	</list>
+      </para>
+    </section>
+   
+	    
+	  
+  </content>
+  
+</document>

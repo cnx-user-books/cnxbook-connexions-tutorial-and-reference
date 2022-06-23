@@ -1,0 +1,800 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  
+  <title>QML 1.0 tutorial</title>
+
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m10138</md:content-id>
+  <md:title>QML 1.0 tutorial</md:title>
+  <md:abstract>Tutorial for QML 1.0</md:abstract>
+  <md:uuid>0079ec63-afbc-479e-be33-4a58cd017c61</md:uuid>
+</metadata>
+
+<content>
+    <note id="eip-611">This tutorial currently under revision and may contain errors or inconsistencies in its current state.  If you have any questions or notice any problems with this module, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and let us know.</note><para id="p1">
+      This tutorial will show you how to create problemsets and write
+      individual items, and how to embed them into other XML
+      documents. It is intended primarily for people involved in the
+      Connexions Project.
+    </para>
+    
+    <section id="currentstyle">
+      <title>Displaying QML</title>
+      <para id="currentp1">
+	The Connexions project provides the ability to do simple
+	response processing through stylesheets and
+	JavaScript. Examples of QML items thus processed are available
+	in the <link document="m10139" strength="3">QML 1.0 examples</link> module. 
+      </para>
+
+      <para id="currentp1.5">
+	PLEASE NOTE: This response processing is intended for the
+	student to do self-testing as he or she moves through modules.
+	Any student with minor technological know-how can determine
+	the answers to the questions by viewing the source file.
+	Hence, if you do not want students to have easy access to the
+	answers to the questions, do not include them in the QML -
+	leave the key blank and do not put information in the feedback
+	tags that will allow the student to determine the correct
+	answer.
+      </para>
+      
+    <para id="currentp2">
+      Please also note that while the current Connexions response
+      processing can determine whether answers to single-response,
+      multiple-response, and single-response questions are correct, it
+      does not process the responses to text-response questions (this
+      requires high-level and very situation-specific software that we
+      do not have plans to provide at this time).  Instead, it only
+      shows the general feedback.
+    </para>    
+  </section>
+    
+    
+    
+    <note id="eip-329">In previous versions of the CNXML language it was necessary to modify the document tags to include the use of QML.  As of CNXML 0.6 this step is no longer required, as QML is supported natively within CNXML documents.  </note><section id="overview">
+      <title>Structural overview</title>
+      <para id="overp1">
+	In QML, items (test and homework questions) are either grouped
+	together in a problemset or are written individually.  Each
+	item contains the question being asked of the user, the
+	response options together with answer-specific feedback, if
+	any, general feedback, if any, and a key.  The items can also
+	contain hints and links to resources.
+      </para>
+  </section>
+  
+  <section id="psetsitems">
+    <title>Problemsets and items</title>
+    <para id="psets1">
+      The first thing you need to do is decide whether your items
+      should be grouped together in a problemset or not.  If you are
+      writing QML with CNXML, you can only use items, and each item
+      will go within a CNXML exercise tag.  If you have a reason to
+      logically group your items together (<foreign>e.g.</foreign>
+      they comprise a homework set) and you are not writing for CNXML,
+      enclose them in a problemset.  To write a problemset, all you
+      need to do is enclose your individual items within a problemset
+      tag.  If you are writing individual items and do not have a good
+      reason to group them together within problemsets, or you are
+      using CNXML, write items without enclosing them within a
+      problemset tag.
+    </para>
+  </section>
+
+  <section id="problemset">
+    <title>Problemset</title>
+    <para id="problemset1">
+      The problemset tag encloses one or more items, and has one
+      optional attribute called id.  If you will be making a number of
+      problemsets and need to be able to reference them individually,
+      you will want to add a unique id attribute to each of your
+      problemsets to distinguish between them.
+    </para>
+
+    <section id="probex">
+      <title>Example</title>
+      <code id="id3302987" display="block">
+	      
+      &lt;problemset id="homework1"&gt;
+
+        &lt;item . . .&gt;
+        &lt;/item&gt;
+
+      &lt;/problemset&gt;
+
+      </code>
+    </section>
+  </section>
+
+  <section id="item">
+    <title>Item</title>
+    <para id="itemp1">
+      The next tag is the item tag, which contains the question,
+      response options, and so forth.  Each item tag must contain an
+      id attribute and a type attribute.  Ideally, the id attribute
+      should be unique; no two items you write should have the same
+      attribute.  How you do this is up to you.
+    </para>
+
+    <para id="itempp2">
+      The type attribute determines the type of question you are
+      asking.  It must be one of the following:
+      <list id="iteml1" list-type="bulleted">
+	<item>single-response</item>
+	<item>multiple-response</item>
+	<item>ordered-response</item>
+	<item>text-response</item>
+      </list>
+    </para>
+
+    <para id="itemp6">
+      Finally, it is important to note that an item must contain one
+      question tag.  It may also contain zero or more answer tags, and
+      zero or one key tags.  However, the existence or non-existence,
+      as well as the contents of these last two tags, may be slightly
+      different depending on the type of question.  Items may also
+      contain one or more resource tags and hint tags, and one general
+      feedback tag.
+    </para>
+
+    <section id="single">
+      <title>Single-response</title>
+      <para id="itemp2">
+	Single-response items are items for which there is one and
+	only one correct answer to be selected from the provided
+	answers.  Examples are multiple-choice (select only one) and
+	Likert scale items.
+      </para>
+    </section>
+
+    <section id="multiple">
+      <title>Multiple-response</title>
+      <para id="itemp3">
+	Multiple-response items are items which require more than one
+	selected response option for a correct answer.  Examples are
+	multiple-choice items where the user must select two or more
+	responses to each item.
+	</para>
+    </section>
+    
+    <section id="ordered">
+      <title>Ordered-response</title>
+      <para id="itemp4">
+	Ordered-response items are multiple-response items for which
+	the order of the selected response is important.  An example
+	is an item that asks the user to select the instructions for
+	performing a procedure in their proper order.
+      </para>
+    </section>
+
+    <section id="text">
+      <title>Text-response</title>
+      <para id="itemp5">
+	Text-response items are items which require a textual or
+	numeric response.  Examples are short-answer questions and
+	supply-the-answer math questions.
+      </para>
+    </section>
+
+    <section id="itemex">
+      <title>Example</title>
+      <code id="id4042637" display="block">
+	 
+	An example for a single-response question:
+
+      &lt;item id="item1" type="single-response"&gt;
+	
+        &lt;question&gt;
+	  Are bananas a fruit or a vegetable?
+        &lt;/question&gt;
+	
+        &lt;resource uri="http://bananas.com/bananas.csv" /&gt;
+	
+        &lt;answer id="fruit"&gt;
+	  .
+          .
+	&lt;/answer&gt;
+
+        &lt;answer id="vegetable"&gt;
+	  .
+	  .
+        &lt;/answer&gt;
+
+        &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+
+	&lt;feedback&gt;Bananas are a fruit.&lt;/feedback&gt;
+
+        &lt;key answer="fruit" /&gt;
+	
+      &lt;/item&gt;
+      </code>
+    </section>
+  </section>
+
+  <section id="question">
+    <title>Question</title>
+    <para id="quesp1">
+      The question tag contains the question you are asking of the
+      user.  It can be written in plain text, or using markup from
+      another language (such as HTML, which allows you to include
+      pictures and graphs as well as text).  Be aware that the
+      stylesheets for the Connexions project currently only allow
+      plain text and CNXML (with and without MathML) within question
+      tags.  If you use CNXML (with or without MathML) within a QML
+      tag, the first tag must be a section tag, which may contain any
+      of the tags a CNXML section tag is allowed to contain.
+      </para>
+
+   <section id="quesex">
+      <title>Example</title>
+      <code id="id6441070" display="block">
+	 
+      &lt;question&gt;
+	Are bananas a fruit or a vegetable?
+      &lt;/question&gt;
+	
+      </code>
+    </section>
+  </section>
+
+  <section id="resource">    
+    <title>Resource</title>
+    <para id="resp1">
+      The resource tag allows you to provide a URI attribute (file
+      location, web address, <foreign>etc.</foreign>) for a particular
+      item. For example, if you had the necessary software, you could
+      use the resource tag to attach a reference to a dataset and
+      generate question and answer values from that dataset.  At the
+      present time, Connexions has no software to do this, and the
+      resource tag is ignored by our stylesheets.
+    </para>
+
+    <para id="resp1.5">
+      It also has an optional id attribute.  If you are using more
+      than one resource for a particular item and need to keep track
+      of which resource is which, you will want to include an id tag.
+    </para>
+
+    <para id="resp2">
+      The resource tag is an empty tag, which means you must include a
+      slash at the end of the tag.
+    </para>
+
+  <section id="respex">
+      <title>Example</title>
+      <code id="id3328677" display="block">
+	 
+      &lt;resource uri="http://cnx.rice.edu/datasets/dataset1.csv" id="resource1" /&gt;
+      
+      </code>
+    </section>
+  </section>
+
+
+  <section id="arf">
+    <title>Answer, Response, and Feedback</title>
+    <para id="arfp1">
+      How you construct the answer tag, including whether you include
+      an answer tag at all, depends on your item-type. However, in all
+      cases where you have an answer tag, the ID of the answer tag
+      must not contain any commas, as the key tag refers to the answer
+      IDs separated by commas.
+    </para>
+    
+    <section id="arfsing">
+      <title>Single-response, multiple-response, and
+      ordered-response</title>
+      <para id="arfsingp1">
+	To write answer tags for single-response, multiple-response,
+	and ordered-response items:
+      </para>
+
+      <para id="arfp2">
+	  You will want one answer tag for each response option.  Each
+	answer tag has an id, which is referenced by the key tag,
+	below.  Preferably, the id tags should have an obvious
+	relation to the response option.  For example, if your
+	response options are "London, England;" "Washington, DC;" and
+	"Paris, France" your id attributes could be london,
+	washington, and paris.
+      </para>
+      
+      <para id="arfp3">
+	Each of your answer tags should contain a response tag and may
+	contain a feedback tag if you wish to provide feedback
+	specific to that response (general feedback goes in another
+	tag).  The response tag contains the response option, in text
+	or markup, and has no attributes.  Be aware that the
+	stylesheets for the Connexions project currently only allow
+	plain text and CNXML (with or without MathML) within response
+	tags.  If you use CNXML (with or without MathML) within a QML
+	tag, the first tag must be a section tag, which may contain
+	any of the tags a CNXML section tag is allowed to contain.
+      </para>
+      
+      <para id="arfp3.5">
+	The feedback tag contains feedback to be displayed to the user
+	upon selection of that response option.  The feedback may be
+	text or markup.  The feedback tag does not have attributes for
+	single-response, multiple-response, or ordered-response items.
+      </para>
+
+      <section id="arfex">
+	<title>Example for a single-response question</title>
+	<code id="id4077985" display="block">
+	   
+	&lt;item id="item1" type="single-response"&gt;
+	  
+          &lt;question&gt;
+	    Are bananas a fruit or a vegetable?
+          &lt;/question&gt;
+	
+          &lt;resource uri="http://bananas.com/banana_dataset1.csv" /&gt;
+	
+          &lt;answer id="fruit"&gt;
+	    &lt;response&gt;A fruit.&lt;/response&gt;
+  	    &lt;feedback&gt;Correct!&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="vegetable"&gt;
+	    &lt;response&gt;A vegetable.&lt;/response&gt;
+	    &lt;feedback&gt;Incorrect.&lt;/feedback&gt;
+          &lt;/answer&gt;
+
+          &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+	   
+          &lt;feedback&gt;Bananas are a fruit.&lt;/feedback&gt;
+
+          &lt;key answer="fruit" /&gt;
+	
+      &lt;/item&gt;
+	
+      </code>
+    </section>
+    </section>
+
+    <section id="arftext">
+      <title>Text-response items</title>
+      <para id="arfp4">
+	To write answer tags for text-response items: Because
+	text-response items do not have response options, you will
+	have either have no answer tag (if you are not providing
+	response feedback) or only one answer tag which may contain
+	two response-specific feedback tags: one for a correct
+	response, one for an incorrect response.
+      </para>
+      
+      <para id="arfp5">
+	The feedback tag containing the correct feedback should have
+	the attribute correct="yes", and the other should have the
+	attribute correct="no".  You may also include a general
+	feedback tag; this is recommended as Connexions does not have
+	plans to provide response processing for text-response items
+	and at the present time only shows the general feedback for
+	the user to compare his/her answer with. The content of the
+	feedback tags may be text or markup; be aware that the
+	stylesheets for the Connexions project currently only allow
+	plain text and CNXML (with or without MathML) within question
+	tags.  If you use CNXML (with or without MathML) within a QML
+	tag, the first tag must be a section tag, which may contain
+	any of the tags a CNXML section tag is allowed to contain.
+      </para>
+
+      <section id="arfex2">
+	<title>Example for a text-response item</title>
+	<code id="id3931708" display="block">
+	   
+	&lt;item id="item1" type="text-response"&gt;
+	  
+          &lt;question&gt;
+	    Are bananas a fruit or a vegetable?
+          &lt;/question&gt;
+	
+          &lt;resource uri="http://bananas.com/bananas2.csv" /&gt;
+	
+          &lt;answer id="fruit"&gt;
+  	    &lt;feedback correct="yes"&gt;Correct!&lt;/feedback&gt;
+	    &lt;feedback correct="no"&gt;Incorrect.&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+
+          &lt;feedback&gt;Bananas are a fruit.&lt;/feedback&gt;
+
+          &lt;key answer="fruit" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+  </section>   
+  </section>  
+
+  <section id="hint">
+    <title>Hint</title>
+    <para id="hintp1">
+      The hint tags each contain a hint to be displayed to the user
+      upon request.  The content of the hint tags is text or markup.
+      Be aware that the stylesheets for the Connexions project
+      currently only allow plain text and CNXML (with or without
+      MathML) within response tags.  If you use CNXML (with or without
+      MathML) within a QML tag, the first tag must be a section tag,
+      which may contain any of the tags a CNXML section tag is allowed
+      to contain.  The hint tag has no attributes; it is assumed that
+      if there are multiple hints, they will be displayed to the user
+      in order.
+    </para>
+    
+    <section id="hintex">
+      <title>Examples</title>
+      <code id="id3379823" display="block">
+	
+        &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+	
+      </code>
+    </section>
+  </section>   
+    
+  <section id="key">
+    <title>Key</title>
+    <para id="keyp1">
+      The key tag contains the answer key, for items for which the
+      answer key is included.
+    </para>
+
+    <para id="keyl22">
+      The key tag varies slightly depending on the type of item.  For
+      single-response items, the key tag contains an "answer"
+      attribute which refers to the id tag of the correct answer.
+    </para>
+
+    <section id="keyex1">
+      <title>Example</title>
+      <code id="id3910763" display="block">
+	
+      &lt;key answer="fruit" /&gt;
+	
+      </code>
+
+    <para id="keyp2">
+      For multiple-response items, the answer id should refer to all
+      the necessary response ids for a correct answer, separated by
+      commas.
+    </para>
+    </section>
+    
+    <section id="keyex2">
+      <title>Example</title>
+      <code id="id13071719" display="block">
+	
+      &lt;key answer="fruit,yellow" /&gt;
+	
+      </code>
+
+    <para id="keyp3">
+      For ordered-response items, the response ids should be in
+      correct order and separated by commas.
+    </para>
+    </section>
+    <section id="keyex3">
+      <title>Example</title>
+      <code id="id9991589" display="block">
+	
+      &lt;key answer="uno,dos,tres,cuatro,cinco" /&gt;
+	
+      </code>
+
+
+    <para id="keyp4">
+      For text-response items, the key tag should have no attributes,
+      and should contain text which will be helpful to the program or
+      person scoring the user's answers.
+    </para>
+    </section>
+
+    <section id="keyex4">
+      <title>Examples</title>
+      <code id="id12991051" display="block">
+	
+      &lt;key&gt;One example of a correct answer is "No hay nadie
+      aqui."&lt;/key&gt;
+
+      &lt;key&gt;3.14159&lt;/key&gt;
+	
+      </code>
+    </section>    
+  </section>
+
+  <section id="examples">
+    <title>Complete examples</title>
+    <section id="baresingle">
+      <title>Stripped-down single-response item</title>
+      <para id="baresing1">
+	Here is an example of a single-response item with only a
+	question, two answers, and a key.
+      </para>
+
+	<code id="id12991106" display="block">
+	   
+	&lt;item id="item1" type="single-response"&gt;
+	  
+          &lt;question&gt;
+	    Are bananas a fruit or a vegetable?
+          &lt;/question&gt;
+	
+          &lt;answer id="fruit"&gt;
+	    &lt;response&gt;A fruit.&lt;/response&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="vegetable"&gt;
+	    &lt;response&gt;A vegetable.&lt;/response&gt;
+          &lt;/answer&gt;
+
+          &lt;key answer="fruit" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+    <section id="fullsingle">
+      <title>Full single-response item</title>
+      <para id="fullsing1">
+	Here is an example of a single-response item with all options
+	- resource, hints, and feedback.
+      </para>
+
+	<code id="id13081527" display="block">
+	   
+	&lt;item id="item1" type="single-response"&gt;
+	  
+          &lt;question&gt;
+	    Are bananas a fruit or a vegetable?
+          &lt;/question&gt;
+	
+          &lt;resource uri="http://bananas.com/yellowbananas.csv" /&gt;
+	
+          &lt;answer id="fruit"&gt;
+	    &lt;response&gt;A fruit.&lt;/response&gt;
+  	    &lt;feedback&gt;Correct!&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="vegetable"&gt;
+	    &lt;response&gt;A vegetable.&lt;/response&gt;
+	    &lt;feedback&gt;Incorrect.&lt;/feedback&gt;
+          &lt;/answer&gt;
+
+          &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+	   
+          &lt;feedback&gt;Bananas are a fruit.&lt;/feedback&gt;
+
+          &lt;key answer="fruit" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+
+    <section id="baremultiple">
+      <title>Stripped-down multiple-response item</title>
+      <para id="baremult1">
+	Here is an example of a multiple-response item with only a
+	question, three answers, and a key.
+      </para>
+
+	<code id="id13081574" display="block">
+	   
+	&lt;item id="item1" type="multiple-response"&gt;
+	  
+          &lt;question&gt;
+	    Bananas are (pick two):
+          &lt;/question&gt;
+	
+          &lt;answer id="fruit"&gt;
+	    &lt;response&gt;A fruit.&lt;/response&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="vegetable"&gt;
+	    &lt;response&gt;A vegetable.&lt;/response&gt;
+          &lt;/answer&gt;
+
+          &lt;answer id="yellow"&gt;
+	    &lt;response&gt;Yellow.&lt;/response&gt;
+          &lt;/answer&gt;
+
+          &lt;key answer="fruit,yellow" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+  
+    <section id="fullmultiple">
+      <title>Full multiple-response item</title>
+      <para id="fullmult1">
+	Here is an example of the same multiple-response item with all
+	options - resource, hints, and feedback.
+      </para>
+
+	<code id="id13081975" display="block">
+	   
+	&lt;item id="item1" type="multiple-response"&gt;
+	  
+          &lt;question&gt;
+	    Bananas are (pick two):
+          &lt;/question&gt;
+	
+          &lt;resource uri="http://bananas.com/bananas.csv" /&gt;
+	
+          &lt;answer id="fruit"&gt;
+	    &lt;response&gt;A fruit.&lt;/response&gt;
+  	    &lt;feedback&gt;Yes, bananas are a fruit.&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="vegetable"&gt;
+	    &lt;response&gt;A vegetable.&lt;/response&gt;
+	    &lt;feedback&gt;Bananas are not a vegetable.&lt;/feedback&gt;
+          &lt;/answer&gt;
+
+	  &lt;answer id="yellow"&gt;
+	    &lt;response&gt;Yellow.&lt;/response&gt;
+            &lt;feedback&gt;Yes, bananas are yellow.&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;hint&gt;Bananas grow on trees.&lt;/hint&gt;
+	  &lt;hint&gt;Bananas are the same color as lemons.&lt;/hint&gt;
+
+          &lt;feedback&gt;Bananas are a yellow fruit.&lt;/feedback&gt;
+
+          &lt;key answer="fruit,yellow" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+
+    <section id="bareordered">
+      <title>Stripped-down ordered-response item</title>
+      <para id="bareord1">
+	Here is an example of an ordered-response item with only a
+	question, three answers, and a key.
+      </para>
+
+	<code id="id13081998" display="block">
+	   
+	&lt;item id="item1" type="ordered-response"&gt;
+	  
+          &lt;question&gt;
+	    In order to boil water, you need to do the following
+	    (please select in the correct order):
+          &lt;/question&gt;
+	
+          &lt;answer id="stove"&gt;
+	    &lt;response&gt;Put the pot on the stove.&lt;/response&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="pot"&gt;
+	    &lt;response&gt;Put water in the pot.&lt;/response&gt;
+          &lt;/answer&gt;
+
+          &lt;answer id="boil"&gt;
+	    &lt;response&gt;Wait until you see bubbles in the water.&lt;/response&gt;
+          &lt;/answer&gt;
+
+          &lt;key answer="pot,stove,boil" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+  
+    <section id="fullordered">
+      <title>Full ordered-response item</title>
+      <para id="fullord1">
+	Here is an example of the same ordered-response item with all
+	options - resource, hints, and feedback.
+      </para>
+
+	<code id="id12990355" display="block">
+	   
+	&lt;item id="item1" type="ordered-response"&gt;
+	  
+          &lt;question&gt;
+	    In order to boil water, you need to do the following
+	    (please select in the correct order):
+          &lt;/question&gt;
+
+	  &lt;resource uri="www.howtoboilwater.com/instructions.csv" /&gt;
+
+          &lt;answer id="stove"&gt;
+	    &lt;response&gt;Put the pot on the stove.&lt;/response&gt;
+	    &lt;feedback&gt;You put the pot on the stove second.&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+          &lt;answer id="pot"&gt;
+	    &lt;response&gt;Put water in the pot.&lt;/response&gt;
+	    &lt;feedback&gt;You put the water in the pot first.&lt;/feedback&gt;
+          &lt;/answer&gt;
+
+          &lt;answer id="boil"&gt;
+	    &lt;response&gt;Wait until you see bubbles in the water.&lt;/response&gt;
+	    &lt;feedback&gt;You wait for the bubbles third.&lt;/feedback&gt;
+          &lt;/answer&gt;
+
+	  &lt;hint&gt;The pot won't boil till there's water in it.&lt;/hint&gt;
+
+	  &lt;feedback&gt;First you put water in the pot, then you put the
+	  pot on the stove, then you wait for the bubbles.&lt;/feedback&gt;
+
+          &lt;key answer="pot,stove,boil" /&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+   <section id="baretext">
+      <title>Stripped-down text-response item</title>
+      <para id="baretext1">
+	Here is an example of an ordered-response item with only a
+	question, general feedback, and a key. 
+      </para>
+
+	<code id="id12990411" display="block">
+	   
+	&lt;item id="item1" type="text-response"&gt;
+	  
+          &lt;question&gt;
+	    What are some common tests of executive function?
+          &lt;/question&gt;
+	
+	  &lt;feedback&gt;Some common tests of executive function are the
+	  Wisconsin Card Sort Test and the Tower of Hanoi.&lt;/feedback&gt;
+
+          &lt;key&gt;Wisconsin Card Sort Test, Tower of Hanoi&lt;/key&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+   <section id="fulltext">
+      <title>Full text-response item</title>
+      <para id="fulltext1">
+	Here is an example of an ordered-response item with a
+	resource, hints, and an answer with correct and incorrect
+	feedback.
+      </para>
+      
+      <code id="id12990454" display="block">
+	 
+        &lt;item id="item1" type="text-response"&gt;
+	
+          &lt;question&gt;
+	    What are some common tests of executive function?
+          &lt;/question&gt;
+
+          &lt;resource uri="www.execfunc.com/tests.csv" /&gt;
+		
+          &lt;answer&gt;
+	    &lt;feedback correct="no"&gt;Incorrect.&lt;/feedback&gt;
+	    &lt;feedback correct="yes"&gt;Correct.&lt;/feedback&gt;
+	  &lt;/answer&gt;
+
+	  &lt;hint&gt;Think about square states and towers.&lt;/hint&gt;
+
+	  &lt;feedback&gt;Some common tests of executive function are the
+	  Wisconsin Card Sort Test and the Tower of Hanoi.&lt;/feedback&gt;
+
+          &lt;key&gt;Wisconsin Card Sort Test, Tower of Hanoi&lt;/key&gt;
+	
+        &lt;/item&gt;
+	
+      </code>
+    </section>
+
+  </section>
+</content>
+</document>

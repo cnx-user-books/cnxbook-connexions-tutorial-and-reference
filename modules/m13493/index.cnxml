@@ -1,0 +1,574 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>編輯模組</title>
+  <metadata>
+  <md:content-id>m13493</md:content-id><md:title>編輯模組</md:title>
+  <md:abstract>此模組顯示如何編輯一個模組的資料，包括文字內容、檔案、以及一個模組的詮釋資料。</md:abstract>
+  <md:uuid>9744474b-9b6d-4de9-92df-c11ee2ca497a</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.rice.edu/technology/EditingTools" strength="3">Editing Tools</link>
+      <link url="http://cnx.rice.edu/content/m11804/latest/" strength="3">Derived Copy</link>
+      <link url="http://cnx.rice.edu/content/m11817/latest/" strength="3">Suggest Edits</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+
+<note id="deprecated-translate" type="warning">
+<para id="p1">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  The current (English-language) version of this module can be located at <link document="m10887">http://cnx.org/content/m10887/latest/</link>.   If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</para>
+<para id="p2">If you would like to assist Connexions by helping us update this module with an appropriate translation from the current English version, please contact us at <link url="mailto:cnx@cnx.org">cnx@cnx.org</link> as we would appreciate your help with improving our support for non-English-speaking users.</para>
+</note>
+
+    <section id="modulesummary">
+      <title>什麼是模組（Module）？</title>
+      
+      <para id="modulessummarypara">模組是一個Connexions課程的基本構建區塊。您可以把它想像成一個資料夾，裏面包含文字、圖片、以及CNXML檔案，標示一個單一主題，或一個主題的一個特殊觀念。模組的編輯者決定模組的大小。如果有必要，每一個模組應該包含可以獨立支撐的足夠資訊。對於一個學生觀看一個課程，一個模組是一個簡單的網頁，含有一個特定主題的資訊。模組可以讓學生在一個課程裏跟著資訊的路徑，而這路徑是由課程編輯者所安排的；或者也可以打破原本規則而讓學生們擁有他們自己的路徑。對於一個課程編輯者將資料一起放在一個課程裏，在不同的模組裡有不同的主題，則易於選擇及安排這些資訊。建構一個課程時，課程編輯者可以把別的課程裏所存在的模組包含進來，或者其他的學科領域，只要這對於課程主題的呈現是重要的。</para>
+
+      	
+      <para id="interfacemodules">如<link target-id="modulefiles"/>所示，為一個新模組的資料舉例，顯示「Manage Files」（管理檔案）視窗的「File」（檔案）標籤。</para>
+
+	<figure id="modulefiles"><media id="id2434929" alt=""><image src="../../media/modulesfilesx.png" mime-type="image/png"/></media>
+	<caption>一個只含有index.cnxml檔的新模組的「Files」（檔案）標籤。</caption>
+	    </figure>
+    </section>
+
+
+    <section id="statussec">
+      <title>模組狀態書籤</title>
+        <para id="statuspara">對於模組編輯者有利用性質的工作，<link target-id="statasboxfig">模組狀態</link>書籤具有與模組及數個連結有關的重要狀態資訊。書籤出現在模組資料右側，含有下列數項：
+	    <list id="statuslist"><item><link document="m13482" target-id="contentstatuslist">State 狀態</link> – 模組的目前狀態。</item> 
+	      <item>Last action 最後的動作 – 對於模組所進行的最後動作的人及時間。</item>		
+	      <item>Actions 動作 – 對於新的模組，此項目顯示連結至Connexions網頁，以便將模組<link target-id="submitmodule">發佈</link>至資料公共園地，以及<link target-id="discardmodule">拋棄</link>對於模組的目前操作。編輯一個已存在的模組時，此項目也顯示其他連結，<link document="m13499">建議編輯</link>傳送給原編輯者編輯建議，以及對一個已存在模組建立<link document="m13498">衍生副本</link>。</item>
+	      <item>View 觀看 – 對於新的模組，此項目顯示模組的<link target-id="onlinepreview">線上</link>版本、<link target-id="previewprint">列印</link>版本、及<link target-id="onlinecodesource">CNXML原始碼</link>連結。編輯一個已存在的模組時，此項目也顯示一個摘要，列出在您的工作區域及最後發佈版本之間模組版本的<link target-id="viewchanges">差異</link>。</item>
+	    </list>
+         </para>
+	  <figure id="statasboxfig"><media id="id2399989" alt=""><image src="../../media/statusboxnewmodule.png" mime-type="image/png"/></media>
+	    <caption>一個新模組的「Module Status」（模組狀態）書籤。</caption>
+	  </figure>
+    </section>
+      
+
+    <section id="modules">
+      <title>編輯模組</title>
+      <para id="editmodulespara1">一旦您已經<link document="m13482" target-id="creatingmodules">建立</link>一個新的模組，或者<link document="m13482" target-id="addingexistingmodules">增加</link>一個已存在的模組至您的工作區域，您將需要編輯此模組以增加資料、檔案及圖片等。這些操作是以連結進行，以及由「Manage Files」（管理檔案）視窗或「Module Status」（模組狀態）書籤上的按鍵來進行操作。對於執行這些操作的建議，將在此模組裏做說明，以及下列的一些操作：
+	      
+	    <list id="sequecncelist" list-type="enumerated"><item>編輯<link target-id="edittext">CNXML</link>檔案。</item>
+	      <item><link target-id="createfileimage">增加</link>任何您認為與模組有關聯的檔案。</item>
+	      <item>編輯<link target-id="editmetadata">詮釋資料</link>，以輸入適合的搜尋文字及模組標題。</item>
+	      <item>編輯模組<link target-id="editroles">角色</link>。</item>
+	      <item>增加<link target-id="editlinks">連結</link>至該模組。</item>
+	      <item><link target-id="previewmodule">預視</link>模組的列印版本及線上版本。</item>
+	      <item><link target-id="submitmodule">發佈</link>模組。</item>
+	    </list>
+	    
+	    編輯模組的這些操作項目將在下列各段中討論。
+      </para>
+    </section>
+
+
+    <section id="edittext">
+      <title>編輯 CNXML 檔案</title>
+	<para id="edittextpara">對於模組的「Edit」（編輯）標籤顯示「index.cnxml」檔案的內容。此檔案包含出現在模組裏的文字，以及CNXML的指示說明，包含任何圖片、聲音、或其他出現在模組裏的檔案。預設是以Edit-In-Place（當場編輯）編輯器顯示資料及進行編輯。或者，您可以點擊<code>Switch to Editing Full Source（轉換至編輯全部原始檔）</code>，而以「Full Source」（全部原始檔）編輯器顯示及編輯資料。從這標籤您可以對檔案進行下列動作：
+
+	    <list id="editoptions"><item><link target-id="importsec" strength="3">輸入資料至index.cnxml檔案裏</link></item>
+	      <item><link target-id="exportsec" strength="3">輸出index.cnxml檔案至一個外部的XML編輯器</link></item>
+	      <item><link target-id="editinplacesec" strength="3">使用Edit-In-Place編輯器編輯index.cnxml檔案</link></item>
+	      <item><link target-id="editfullsrcsec" strength="3">使用Full Source編輯器編輯index.cnxml檔案</link></item>
+              <item><link target-id="exteditsec" strength="3">使用外部文件編輯器編輯index.cnxml檔案</link></item>
+            </list>
+
+	</para>
+	  
+	  <figure id="editmodule"><media id="id2399815" alt=""><image src="../../media/EditTabEIPx.png" mime-type="image/png"/></media>
+	    <caption>「Edit」（編輯）標籤顯示在Edit-In-Place編輯器模式之下的index.cnxml檔案資料。</caption>
+	  </figure>
+
+
+    <section id="importsec">
+      <title>輸入資料至index.cnxml檔案裏</title>
+        <para id="importcontentpara1">要輸入資料至index.cnxml檔案裏，請依下列步驟：
+	    
+	  <list id="importlist1" list-type="enumerated"><item>在<code>Import輸入</code>按鍵旁，請從下拉選單中選擇您所要輸入的檔案格式，可用的格式為：<link url="http://cnx.org/help/UsingMSWord">Microsoft Word</link>、OpenOffice Writer、<link document="m11160">XMLSpy/Authentic</link> 及 Plain XML。</item>
+	    <item>請點擊<code>Import輸入</code>按鍵，將會有一個視窗顯示一個文字方格，讓您填上想要輸入檔案的路徑名。</item>
+	    <item>請在文字方格裡鍵入檔案路徑名，或使用<code>Browse瀏覽</code>以在文字方格裡顯示檔案路徑名。</item>
+	    <item>請點擊<code>Import輸入</code>按鍵，您所指定檔案的資料將複製至您模組裏的index.cnxml檔案裏。
+	    <note id="id1971637" type="警告"><label>警告</label>當您在最後階段點擊<code>Import輸入</code>按鍵時，index.cnxml檔案的資料將會被輸入檔案的資料所覆蓋。</note></item>
+	  </list>
+	</para>
+      </section>	
+	
+
+    <section id="exportsec">	
+      <title>輸出index.cnxml檔案至一個外部的XML編輯器</title>
+        <para id="exportpara1">您可以輸出index.cnxml檔案，讓您可以使用編輯XML檔案的軟體套件進行編輯。index.cnxml檔案必須轉換至讓XML編輯器可以讀取。而且一旦您已經完成編輯，必須再次轉換檔案以改變編輯器的可讀性。Connexions的輸出及輸入功能，會自動增加及移除編輯器可讀性的改變。目前，Connexions只支援XML編輯器，使用<link url="http://www.altova.com">Altova</link> <term>xmlspy</term>® 編輯器，或Altova <term>authentic</term>® 編輯器。</para>
+
+        <para id="exportpara2">要輸出index.cnxml檔案至一個外部的XML編輯器，請依下列步驟：
+	    
+	  <list id="importexportlist1" list-type="enumerated"><item>在<code>Export輸出</code>按鍵旁，請從下拉選單中選擇您所要引出的檔案格式，可用的格式為：<link document="m11160">XMLSpy/Authentic</link> 及 Plain XML。
+	    </item>
+	    <item>請點擊<code>Export輸出</code>，將會顯示一個對話方格，詢問您是否要開啟此檔案或儲存至磁碟。</item>
+	    <item>請指定您所要儲存至磁碟的檔案。</item>
+	    <item>請指定您所要儲存檔案的路徑名。</item>
+	    <item>請開啟您的XML編輯器以編輯檔案。</item>
+	  </list>
+	</para>
+	    
+        <para id="exportpara3">要輸入檔案回去至Connexions裏，請依此模組中上方所提及內容，<link target-id="importsec">從Connexions外部輸入資料</link>的介紹。</para>
+    </section>
+
+
+    <section id="editinplacesec">
+      <title>使用Edit-In-Place編輯器編輯index.cnxml檔案</title>
+	<para id="eippara1">Edit-In-Place編輯器是在「Edit」（編輯）標籤上所預設的編輯器。您可以插入新的文字及媒體物件至一個模組裏，或使用此編輯器修正一個模組已存在的資料。您不必熟悉CNXML標籤以使用Edit-In-Place。當您在檔案裡輸入一個新的項目時，它會為您插入適合的CNXML標籤。此外，有說明文字，用以描述您所插入的項目或者編輯時的CNXML標籤。
+
+	 </para>
+	 
+     <section id="eipnewmodulesec">
+       <title>插入資料至一個空的模組裏</title>
+	 <para id="eippara2">要插入文字及媒體物件至一個空的新模組裏，請依下列步驟：
+	   
+	   <list id="eiplist1" list-type="enumerated"><item>在Edit-In-Place編輯器裏，請點擊在灰色方格裏的「Click To Insert Text」（點擊以插入文字）。
+	  <figure id="eipnewmodulefig"><media id="id2434917" alt=""><image src="../../media/EIPnewmodule.png" mime-type="image/png"/></media>
+	    <caption>Edi-In-Place編輯器裏的「Click To Insert Text」（點擊以插入文字）文字方格。</caption>
+	  </figure>
+	      灰色方格由一個藍色編輯方格所取代。</item>
+	     <item>請在藍色方格裏的「Insert Module Text Here」（在此插入文字）處鍵入您想要的文字。	     
+	  <figure id="eipinsertmodulefig"><media id="id1978048" alt=""><image src="../../media/EIPinsertmoduletext.png" mime-type="image/png"/></media>
+	    <caption>Edi-In-Place編輯器裏的「Insert Module Text Here」（在此插入文字）編輯方格。</caption>
+	  </figure>
+	     </item>
+	     <item>請點擊<code>Save儲存</code>以儲存您所鍵入的文字，藍色編輯方格將由一個灰色方格所取代，以顯示您的輸入。</item>
+	   </list>  
+	 </para>
+       </section>
+       
+       
+       <section id="eipeditmodulesec">
+         <title>使用Edit-In-Place編輯已存在的資料</title>
+	   <para id="eipeditpara1">要編輯一個模組的資料，請依下列步驟：
+	     
+	     <list id="eiplist2" list-type="enumerated"><item>請使用Edit-In-Place顯示您所要編輯的模組。
+	       </item>
+	       <item>請下拉以顯示您想要編輯項目的灰色文字方格處。</item>
+               <item>請點擊文字方格，灰色方格會由一個藍色編輯方格所取代，顯示項目文字。
+	     <figure id="eipeditmodulefig"><media id="id1978136" alt=""><image src="../../media/EIPeditcontent.png" mime-type="image/png"/></media>
+	       <caption>Edi-In-Place編輯器裏的藍色編輯方格。</caption>
+	     </figure>
+               </item>
+	       <item>請對此項目進行必要的更改。</item>
+	       <item>請點擊<code>Save儲存</code>以儲存輸入的文字，或者點擊<code>Cancel取消</code>以清除藍色編輯方格中輸入的文字。</item>
+               <item>請重複步驟2至5，以編輯您的項目。
+               </item>	       	  
+	     </list>  	 
+	     <note id="id1978186" type="注意"><label>注意</label>在灰色文字方格中，數學式子的顯示就像在模組中所顯示的樣子。在藍色編輯方格中，數學式子以MathML語言方式顯示；編輯式子必須轉變成MathML。</note>
+	   </para>  
+       </section>
+	       
+	     
+       <section id="eipadditemsec">
+         <title>使用Edit-In-Place增加資料項目</title>
+	   <para id="eipadditempara1">您可以使用Edit-In-Place增加新的資料項目至一個模組，您可以增加的項目形式有：文字段落、數列、期刊目錄、式子、作業、圖片、編碼、筆記、及例子等等。Edit-In-Place在項目旁會開啟及關閉CNXML標籤，將產生一個唯一的項目ID。要增加新項目，請依下列步驟：
+	     	     
+	     <list id="eipadditemlist" list-type="enumerated"><item>請使用Edit-In-Place顯示您所要編輯的模組。</item>
+	       <item>請下拉以顯示您想要插入資料項目的模組中位置，您可以藉由使用<code>Add Here此處增加</code>按鍵，在已存在項目的上方或下方處輸入新項目。</item>
+	       <item>在<code>Add Here此處增加</code>按鍵旁，請從下拉選單中選擇您所要輸入的項目形式，預設為「Paragraph」（文字段落）；這些項目有說明文字，可以從下拉選單中選擇「Other Elements」（其他項目）來讀取。</item> 
+	       <item>請點擊<code>Add Here此處增加</code>，對於您所選的項目將出現一個空的藍色編輯方格；您可以藉由在藍色方格右上角中點擊<code>Help editing xxx 編輯說明</code>，顯示您所選項目的說明文字，其中xxx是您所選項目的CNXML標籤。</item>
+	       <item>請在藍色編輯方格中鍵入適合的項目形式。</item> 
+	       <item>請在藍色編輯方格中點擊<code>Save儲存</code>以儲存輸入，或者點擊<code>Cancel取消</code>以清除輸入。</item>
+	       <item>請重複步驟2至6，以在模組中增加新的資料項目。</item>
+	     </list>
+	   </para>
+   </section>
+   </section>
+
+
+   <section id="editfullsrcsec">
+      <title>使用Full Source編輯器編輯index.cnxml檔案</title>
+	<para id="editonlinepara">您可以使用Full Source編輯器，在Connexions的index.cnxml檔案裏編輯資料及CNXML標籤；建議編輯的方法僅適用於快速變更內容。這是簡單的文字編輯器，並沒有商業文字編輯器進階的功能，例如拼字檢查及文字搜尋。要使用Full Source編輯器編輯檔案，請依下列步驟：
+	    
+	  <list id="editingonlinelist" list-type="enumerated"><item>請在「Edit」（編輯）標籤上點擊<code>Switch to Editing Full Source 轉換至編輯全部編碼源</code>，index.cnxml檔案裏的資料將會顯示在Full Source編輯器模式下。
+	  <figure id="fullsourceeditmode"><media id="id1978373" alt=""><image src="../../media/FullSourceEditorx.png" mime-type="image/png"/></media>
+	    <caption>在Full Source編輯器模式下，「Edit」（編輯）標籤顯示index.cnxml檔案裏的資料。</caption>
+	  </figure>
+	    </item>
+            <item>請下拉以顯示您想要插入資料項目的模組中位置。</item>
+	    <item>請點擊文字視窗開始編輯。</item>
+	    <item>請點擊<code>Save儲存</code>以儲存您的更改。</item>
+	  </list>
+	</para>
+	
+	
+        <para id="modules11">當您編輯index.cnxml檔案時，請適時點擊<code>Save儲存</code>以儲存您的更改。在每次您儲存您的更改時，頁面會讀取及讓您的CNXML審定動作生效。如果沒有CNXML標籤錯誤，您的審定是有效的，「Saved」（已儲存）會出現在標籤上方的資訊方格中。如果在您的CNXML審定中有錯誤，會列在檔案資料上方。
+	    </para>
+        
+        <note id="id1978438" type="注意"><label>注意</label>儲存及發佈是兩種截然不同的運作。當您在Full Source編輯器中儲存您的編輯更改時，您所進行的更改儲存在您的工作區域中；並不進入Connexions資料庫中。您必須發佈您的模組以進入至資料庫中，而可以讓連接至Connexions的觀看者存取。關於發佈的資訊，請看此模組中稍後的<link target-id="submitmodule">發佈模組</link>。</note> 
+
+
+    <section id="validatesec1">
+      <title>在Full Source編輯器裏檢查您的工作</title>
+            <para id="validatepara1">您發佈在Connexions資料庫裏的任何index.cnxml檔案，必須是一個有效的CNXML文件，以及檔案必須結構完整且沒有CNXML錯誤；如果有錯誤，當您點擊<code>Save儲存</code>時將會出現<link target-id="validatefig">每一個錯誤的敘述</link>。直到所有錯誤都已修正，您才可以儲存您的改變。</para>
+	    <figure id="validatefig"><media id="id1978504" alt=""><image src="../../media/validateerrorx.png" mime-type="image/png"/></media>
+	      <caption>在Full Source編輯器裏的檢查錯誤的例子。</caption>
+	    </figure>
+	    
+	<para id="validatepara2">錯誤的敘述出現在資料上方的資訊方格中。
+	    <note id="id1978529" type="警告"><label>警告</label>
+	      您不能在Connexions中發佈模組，直到所有的CNXML錯誤都已經訂正，且index.cnxml檔案是有效的。
+	    </note>
+	</para>    
+	  
+    </section>
+    </section>
+    
+    
+    <section id="exteditsec">
+      <title>使用外部文件編輯器編輯index.cnxml檔案</title>
+	<para id="externalpara">另一種編輯index.cnxml檔案的方法是使用一個外部文件編輯器，並不特別設計於用作XML編輯器。請注意，當您在「Files」（檔案）標籤上觀看模組時，一個小的鉛筆按鍵會出現在index.cnxml檔案檔名右方；請點擊此按鍵，以在一個外部文件編輯器上執行編輯index.cnxml檔案。此編輯方法是為您下載及上載index.cnxml檔案，但它只是一個文件編輯器，您必須手動輸入所有的CNXML標籤。如果您不熟悉CNXML，此方法較慢且笨拙；此方法在您使用之前，也需要您或您的系統管理員設定外部編輯器以作為<term>.cnxml</term>型式檔案的預設編輯器。此外，您或您的系統管理員必須在Windows環境中安裝Zope ExternalEditor，或者在Macintosh環境中安裝Zope EditManager。</para>
+    </section>
+    </section>
+
+
+    <section id="createfileimage">
+      <title>增加關聯的檔案至一個模組</title>
+	<para id="createfilepasra">除了index.cnxml檔案，一個模組可包含其他的檔案，例如與模組有關聯的圖片、檔案、及CNXML文件。您可以從「Files」（檔案）標籤增加這些檔案；在您增加至模組之前，這些檔案必須存在。您可以在額外的步驟中建立CNXML文件。當您增加這些項目時，您在Connexions裏已建立這些項目的存在。</para>
+	
+    <section id="filenamerestrictions">
+      <title>檔案管理要領</title>
+        <para id="filenamepara1">在您增加一個關聯檔案至一個模組前，請注意下列檔案及檔名的管理要領：
+
+            <list id="filenamelist1"><item>檔案大小必須小於10MB。</item>
+              <item>檔名的第一個字母不能是數字。例如，檔名為「1965mustangphoto.gif」將導致錯誤，請<link document="m13482" target-id="renamingfilesec">重新命名</link>檔名為「photo1965mustang.gif」以避免錯誤。</item>
+              <item>檔名不能包含埋入式空格。例如檔名為「eiffel tower.png」將導致錯誤，請<link document="m13482" target-id="renamingfilesec">重新命名</link>檔名為「eiffel_tower.png」或「eiffeltower.png」以避免錯誤。</item>
+              <item>請在檔名裏只能使用英文字母或數字、"."（點）、"-"（橫線）、及"_"（底線）等。</item>
+              <item><link document="m13497">多媒體檔案</link>必須有一個認可的MIME協定（Multipurpose Internet Mail Extension）型式。</item>
+            </list>  
+        </para>
+    </section>
+    
+    <section id="createfileimage2">
+      <title>增加一個圖片至一個模組</title>	
+      <para id="addimagepara1">要增加一個圖片至一個模組，請依下列步驟：
+	    
+	    <list id="addimagelist1" list-type="enumerated"><item>請點擊<code>Add New Item增加新項目</code>旁的文字方格中的向下箭頭，將會出現一個有效項目的下拉列表。</item>
+	      <item>請從下拉列表中選擇「Image」（圖片），並點擊<code>Add New Item增加新項目</code>，將會出現「Edit Image」（編輯圖片）標籤。</item>
+	      <item>請點擊<code>Browse瀏覽</code>，將會顯示「File Upload」（上傳檔案）對話方格。
+	      </item>
+	      <item>請選擇圖片檔案適合放置的位置，並點擊檔名。
+	      </item>
+	      <item>請點擊<code>Open開啟</code>，圖片檔名將會出現在<code>Browse瀏覽</code>旁的文字方格中。</item>
+	      <item>請點擊<code>Save儲存</code>以上傳圖片檔案至Connexions，將會顯示一個確認訊息及圖片預視。</item>
+	    </list>
+	</para>  
+    </section>
+
+
+    <section id="createfileimage3">
+      <title>增加一個檔案至一個模組</title>	
+	<para id="addfilepara1">要增加一個檔案至一個模組，請依下列步驟：
+	    
+	    <list id="addfilelist1" list-type="enumerated"><item>請點擊<code>Add New Item增加新項目</code>旁的文字方格中的向下箭頭，將會出現一個有效項目的下拉列表。</item>
+	      <item>請從下拉列表中選擇「File」（檔案），並點擊<code>Add New Item增加新項目</code>，將會出現「Edit File」（編輯檔案）標籤。</item>
+	      <item>請點擊<code>Browse瀏覽</code>，將會顯示「File Upload」（上傳檔案）對話方格。
+	      </item>
+	      <item>請選擇檔案適合放置的位置，並點擊檔名。</item>
+	      <item>請點擊<code>Open開啟</code>，檔案名稱將出現在<code>Browse瀏覽</code>旁的文字方格中。</item>
+	      <item>請點擊<code>Save儲存</code>以上傳檔案至Connexions，將會顯示一個確認訊息及檔案的資訊。</item>
+	    </list>
+	</para>
+    </section>
+
+
+    <section id="createfileimage4">
+      <title>增加一個CNXML文件至一個模組</title>	
+	<para id="addcnxmldocpara1">要增加一個CNXML文件至一個模組，請依下列步驟：
+	    
+	    <list id="addcnxmldoclist1" list-type="enumerated"><item>請點擊<code>Add New Item增加新項目</code>旁的文字方格中的向下箭頭，將會出現一個有效項目的下拉列表。</item>
+	      <item>請從下拉列表中選擇「CNXML Document」（CNXML文件），並點擊<code>Add New Item增加新項目</code>，將會出現「Edit CNXML File」（編輯CNXML檔案）標籤。</item>
+	      <item>請輸入資料至CNXML檔案，鍵入文字至「Edit Directly」（直接編輯）方格中，上傳一個檔案，或輸入一個檔案。</item>
+	      <item>請點擊<code>Save儲存</code>，將會顯示一個確認訊息及關於CNXML檔案的資訊。</item>
+	    </list>
+	  </para>
+    </section>
+
+
+    <section id="createfileimage5">
+      <title>在一個模組裏重新命名、剪貼、複製、以及移除項目</title>	
+        <para id="addcnxmldocpara2">您可以重新命名、剪下、複製、或移除任何項目至一個模組。這些操作在模組等級中完成，如同在工作區域中的等級。請看<link document="m13482" target-id="removingfiles">從一個工作區域移除項目</link>、<link document="m13482" target-id="renamingfilesec">在一個工作區域裏重新命名項目</link>、以及<link document="m13482" target-id="cuttingcoying">在一個工作區域裏剪貼或複製項目</link>，以瞭解如何在工作區域裏進行那些操作。</para>
+	  <note id="id1979049" type="注意"><label>注意</label>您不應該重新命名、剪下、複製、或貼上index.cnxml檔案。</note>
+    </section>
+  </section>
+
+
+    <section id="editmetadata">
+      <title>編輯詮釋資料</title>
+        <para id="editmetadatapara">為了能夠讓使用者在Connexions資料公共園地搜尋模組，Connexions必須有模組的一些相關資訊；因此您插入<link target-id="metadatafig">詮釋資料</link>至模組裏是<emphasis>非常重要</emphasis>的。</para>
+        
+          <figure id="metadatafig"><media id="id1979103" alt=""><image src="../../media/editmetadatax.png" mime-type="image/png"/></media>
+	    <caption>「Metadata」（詮釋資料）標籤裏輸入名稱、關鍵字及摘要的例子。
+	    </caption>
+	  </figure>
+	  
+        <para id="metadatapara2">要插入詮釋資料，請依下列步驟：
+            
+          <list id="metadatalist1" list-type="enumerated"><item>請點擊「Metadata」（詮釋資料）標籤以顯示出來。</item>
+            <item>請在「Name」（名稱）區域裏鍵入您所要給予模組的名稱，此名稱將會出現在Connexions裏的模組標題。
+            </item>
+            <item>請在「Keywords」（關鍵字）區域裏鍵入主題相關項目，讓使用者可以搜尋到模組，請在每一列上輸入一個項目。</item>
+            <item>請在「Abstract」（摘要）區域裏鍵入模組主題的一個簡短描述。請勿在摘要裏重複模組標題；摘要顯示在模組裏的標題下方，因此在摘要裏重述模組標題是多餘的。</item>
+            <item>請點擊<code>Save儲存</code>，將會顯示一個訊息說明詮釋資料已被更新，在視窗標題裏模組的名字會取代「New Module」（新模組）。</item>
+	    </list>
+        </para>
+    </section>
+
+
+    <section id="editroles">
+      <title>編輯模組角色</title>
+        <para id="rolespara">作為一個模組的建立者，預設中您擁有所有三個<link url="http://cnx.org/help/reference/roles/document_view">角色</link>：編輯者、資料維護者、及版權持有者。您可以授權給其他Connexions帳號持有者一個或多個角色，只要您想要讓他參與此模組。底部表格的<link target-id="rolesfig">「Roles」（角色）</link>標籤顯示使用者名稱及他們目前的角色。在「Author」（編輯者）、「Maintainer」（資料維護者）、或「Copyright Holder」（版權持有者）欄中的確認方格會指出被授權此角色的人。</para>
+
+	  <figure id="rolesfig"><media id="id1979229" alt=""><image src="../../media/rolesx.png" mime-type="image/png"/></media>
+	    <caption>「Roles」（角色）標籤。</caption>
+	  </figure>
+
+
+    <section id="editroles2">
+      <title>授權其他使用者角色</title>
+	 <para id="addingroles">
+	    要授權其他使用者<link url="http://cnx.org/help/reference/roles/document_view">角色</link>，請依下列步驟：
+	    
+	   <list id="editroleslist1" list-type="enumerated"><item>請點擊「Roles」（角色）標籤以顯示出來。</item>
+	     <item>請在<code>Search搜尋</code>旁的確認方格中鍵入您想要授權角色的使用者名字。</item>
+	     <item>請點擊<code>Search搜尋</code>，將會搜尋Connexions帳號裏符合搜尋字串的所有使用者出來。</item>
+	     <item>請選擇需要的使用者名稱旁的確認方格，並點擊<code>Add People增加人員</code>，將會有一個「Roles Pending Approval」（角色未定認可）表顯示在「Roles」（角色）表格下方。</item>  
+	     <item>請驗證「Author」（編輯者）、「Maintainer」（資料維護者）、或「Copyright Holder」（版權持有者）欄中的確認方格，以便確認您所要授權使用者的角色，預設狀況是所有確認方格都選定。</item>
+	     <item>如果需要，請去除您不想要授權的角色，點擊<code>Update Roles更新角色</code>。</item>
+	     <item>使用者在他下次登入至Connexions時，將會顯示一個要求以接受此角色。</item>
+	  </list>
+	</para>
+	  
+	<para id="collaboration">在授權或更新另一個使用者的角色時，這個變更並不會生效，直到其他使用者已經接受這個角色的變更；一旦使用者認可這變更，他們新的角色將會反映在「Roles」（角色）列表裏。請查閱<link target-id="requestsawaiting">認可角色要求</link>以獲得更多認可要求的資訊。
+	    
+	    <note id="id1979379" type="注意"><label>注意</label>
+	    在一個模組發佈前，所有未定角色的變更必須被接受或拒絕。
+	    </note>
+	 </para>
+    </section>
+
+
+    <section id="pending">
+      <title>觀看及進行未定角色要求</title>
+	
+	<para id="pendingpara">Connexions讓教育材料的共同合作更為容易，其中一個方法是分享一個模組或課程的創作權或持有權。如果另一個編輯者在他們的模組或課程中授權您一個角色，您可以與他們一起合作，<link target-id="collabbox">「Pending」（未定）</link>書籤將出現在您Connexions網頁的右上方。
+	 </para>
+
+	<figure id="collabbox"><media id="id1979432" alt=""><image src="../../media/collaborationbox.png" mime-type="image/png"/></media>
+	  <caption>一個角色要求的「Pending」（未定）書籤。</caption>
+	</figure>
+	
+	<para id="pendingpara2">請點擊<emphasis>Role Request角色要求</emphasis>連結，以顯示<link target-id="collab2">「Collaboration Requests」（共同合作要求）</link>視窗。從這視窗您可以：
+	  
+	  <list id="things"><item><link target-id="requestsawaitingsect">要求等候您的認可</link></item>
+	    <item><link target-id="requestsyouhavemadesect">您所發出的要求等候另一編輯者的認可</link></item>
+	    <item><link target-id="requestscompletedsect">完成要求</link></item>
+	  </list>
+	</para>
+
+	<figure id="collab2"><media id="id1979520" alt=""><image src="../../media/collaborationrequests.png" mime-type="image/png"/></media>
+	  <caption>「Collaboration Requests」（共同合作要求）視窗顯示一個要求等候您的認可，以及一個要求等候另一編輯者的認可。</caption>
+	</figure>
+
+	
+      <section id="requestsawaitingsect">
+	<title>要求等候您的認可</title>
+
+	<para id="requestsawaiting">如果另一個Connexions的編輯者在他們的模組或課程上授權您一個角色，成為編輯者、資料維護者、或版權持有者，將會在「Collaboration Requests」（共同合作要求）視窗的「Request Awaiting Your Approval」（要求等候您的認可）處下方出現一個入口。若要接受要求，請選擇在您希望接受要求的表格裏的確認方格，並點擊<code>Accept接受</code>。
+	</para>
+	
+	<para id="requestawaiting2">若要拒絕要求，請選擇在您希望拒絕要求的表格裏的確認方格，並點擊<code>Reject拒絕</code>。
+	  	  
+	<note id="id1979588" type="注意"><label>注意</label>
+	  如果您已被要求增加一個模組或課程成為版權持有者，在您接受要求之前，您必須選擇那個模組的確認方格以指示您同意此授權認可；在表格的「License」（授權）欄裏將提供一個連結至授權許可。
+	</note>
+	</para>
+      </section>
+
+
+      <section id="requestsyouhavemadesect">	
+        <title>您已發出要求</title>
+
+	<para id="requestsyouhavemade">如果您在您的一個模組或課程中已經要求某人增加角色，成為編輯者、資料維護者、或版權持有者，將會在「Collaboration Requests」（共同合作要求）視窗的「Request You Have Made」（您已發出要求）處下方出現一個入口，直到其他編輯者啟動它。您可以從這裏取消未定的要求。</para>
+       </section>	
+       
+	
+       <section id="requestscompletedsect">
+	 <title>完成要求</title>
+
+	 <para id="requestscompleted">任何您已經發出的要求，不管是被接受或被拒絕，都會列在「Collaboration Requests」（共同合作要求）視窗的「Request You Have Made -- Completed」（您已發出要求 – 完成）處。當您不再需要保留此記錄時，您可以刪除它。</para>
+	
+      </section>
+    </section>
+
+    </section>
+
+	
+    <section id="editlinks">
+      <title>增加連結至一個模組</title>
+        <para id="editlinkspara">要增加或編輯與一個模組有關的連結，請點擊編輯界面上的「Links」（連結）標籤，將會顯示<link target-id="editlinksfig">「Edit Links」（編輯連結）</link>視窗。
+	  
+        </para>
+        
+	  <figure id="editlinksfig"><media id="id1979698" alt=""><image src="../../media/editlinksx.png" mime-type="image/png"/></media>
+	    <caption>「Links」（連結）標籤。</caption>
+	  </figure>
+
+        <para id="editlinkspara2">從「Links」（連結）標籤，您可以：
+
+	    <list id="editlinkslist"><item><link target-id="addlinksect">增加新的連結</link></item>
+	      <item><link target-id="editlinksect">編輯已存在的連結</link></item>
+	      <item><link target-id="deletelinksect">刪除一個連結</link></item>
+	    </list>
+	    這些連結可以在「Links」（連結）標籤裏看到，顯示每一個模組。連結出現在特定的分類型式底下，例如，輔助的連結列在「Supplemental」（輔助）標題底下。</para>
+	    
+
+     <section id="addlinksect">
+        <title>增加新的連結</title>
+        <para id="editlinkspara3">要增加一個新連結至一個模組，請依下列步驟：
+	    
+	    <list id="addlinklist1" list-type="enumerated"><item>請在「Link Name」（連結名稱）區域裏鍵入連結的標籤。（必須的）
+	      </item>
+	      <item>藉由在「Module Id」（模組ID）區域裏鍵入一個模組的編號，或者在「Link URL」（連結網址）區域裏鍵入一個網址，以指定連結目的地。如果您輸入一個模組編號，您可以選擇一個版本。</item>
+	      <item>請在「Link Type」（連結型式）區域旁點擊向下箭頭，以及從下拉選單中選擇連結型式。</item>
+	      <item>請在「Link Strength」（連結強度）區域旁點擊向下箭頭，以及從下拉選單中選擇一個號碼，以選擇連結強度；5是最強的連結。</item>
+	      <item>請點擊<code>Add增加</code>以增加連結。</item>
+	    </list>
+	</para>
+      </section>
+      
+      
+      <section id="editlinksect">
+        <title>編輯已存在的連結</title>
+	  <para id="editlinkspara3a">如果模組已經含有連結，連結將出現在視窗的上半部。要編輯已存在的連結，請依下列步驟：
+	    
+	  <list id="editlinklist1" list-type="enumerated"><item>請更新「Name」（名稱）區域的資料，以改變連結標籤。</item>
+	    <item>請更新「URL」（網址）區域的資料，以改變連結網址。</item>
+            <item>請在「Link Type」（連結型式）區域旁點擊向下箭頭，以及從下拉選單中選擇另一個連結型式。</item>
+	    <item>請在「Link Strength」（連結強度）區域旁點擊向下箭頭，以及從下拉選單中選擇一個號碼，以選擇連結強度；5是最強的連結。</item>
+	    <item>請點擊<code>Update Links更新連結</code>以完成您的更改。</item>
+	  </list>
+        </para>
+      </section>
+      
+
+      <section id="deletelinksect">
+        <title>刪除一個連結</title>
+	<para id="deletelinkspara1">要刪除一個存在的連結，請在存在的連結列表中的「Delete」（刪除）欄裏選擇確認方格，然後點擊<code>Update Links更新連結</code>以刪除連結。
+	    </para>
+    </section>
+    </section>
+
+
+    <section id="previewmodule">
+      <title>預視模組</title>
+	<para id="previewpara">編輯模組之後，您應該預視模組以確認您所要出現在模組上的東西。您可以依下列方式從「Preview」（預視）標籤觀看模組：
+
+	  <list id="previewlist"><item><link target-id="onlinepreview" strength="3">線上預視模組</link></item>
+	    <item><link target-id="previewprint" strength="3">預視模組的一個列印版本(PDF file)</link></item>
+	    <item><link target-id="viewchanges">觀看更改總結</link></item>
+	    <item><link target-id="onlinecodesource">觀看模組審定編碼源</link></item>
+	  </list></para>
+
+    <section id="onlinepreview">
+      <title>線上預視模組</title>
+	<para id="onlinepreviewpara">要線上觀看一個模組，請依下列步驟：
+	    
+	  <list id="onlinepreviewlist1" list-type="enumerated"><item>請點擊「Preview」（預視）標籤，將會顯示「Preview」（預視）視窗。
+	    </item>
+	    <item>請點擊<emphasis>Online Preview 線上預視</emphasis>連結。這顯示模組的一個線上版本，類似於發佈後模組的線上版本。預視和發佈版本之間的不同，是預視版本在開頭並不含有連結及標籤，模組末端沒有連結。當您想要顯示時，請檢視模組資料及進行驗證。</item>
+	    <item>請使用您瀏覽器的「Back」（上一頁）功能，以回到「Preview」（預視）視窗。
+	    </item>
+	  </list>  
+	</para>
+    </section>
+    
+    
+    <section id="previewprint">
+      <title>預視模組的一個列印版本</title>
+        <para id="previewprintpara">一個模組的列印版本的格式，與線上版本不同。此差異性是必要的，因為線上媒介及列印媒介並不相同。要觀看一個模組的列印版本，請依下列步驟：
+	    
+	  <list id="printpreviewlist1" list-type="enumerated"><item>請點擊「Preview」（預視）標籤，將會顯示「Preview」（預視）視窗。</item>
+	    <item>請點擊按<emphasis>Print Preview預視列印</emphasis>連結，將會出現一個「Opening index.pdf」（開啟index.pdf）對話方格。</item>
+	    <item>請使用一個PDF觀看軟體來開啟檔案，並點擊<code>OK同意</code>，將會顯示模組的列印版本。</item>
+	    <item>請檢視顯示的模組及驗證文字及圖片顯示，是否是您想要的。</item>
+	    <item>您可以使用您的PDF瀏覽器的列印選項列印此PDF檔案。</item>
+	    <item>請關閉PDF觀看軟體。</item>
+	  </list>  
+	</para>
+	
+    </section>
+    
+    
+     <section id="viewchanges">
+	<title>觀看更改總結</title>
+	  <para id="changespara1">編輯一個已存在的模組時，您可以觀看最後發佈模組版本以及您目前編輯版本之間的差異總結。請點擊<emphasis>Changes更改</emphasis>連結以觀看<link target-id="changesummaryfig">更改總結</link>。當您要檢查一個很久以前的模組而不記得您做過什麼更改時，這個選項相當有用。</para>
+	  
+	   <figure id="changesummaryfig"><media id="id1980220" alt=""><image src="../../media/changesummary.png" mime-type="image/png"/></media>
+	     <caption>「Changes to」（更改）總結。</caption>
+	   </figure>
+	   
+	  <para id="changespara2">「Change To」（更改）摘要列出模組的更改，包含角色的指定，以及任何已更改檔案的名稱，增加的檔案，以及移除的檔案。請點擊檔名以顯示更改的簡短描述。</para>
+	   
+
+    </section>
+    
+    
+    <section id="onlinecodesource">
+      <title>預視編碼源</title>
+	<para id="onlinecodesourcepara">有時候觀看一個模組的編碼源是較為方便的。要觀看模組的編碼源，請點擊在「Module Status」（模組狀態）書籤裏的「View」（觀看）標題底下的<emphasis>Source編碼源</emphasis>連結，將會顯示已經儲存的最新編碼源。
+	    
+	  <note id="id1980279" type="注意"><label>注意</label>
+	  當您嘗試找尋一個編碼錯誤時，此功能相當有用。
+	  </note>
+	</para>
+    </section>
+    
+    
+    </section>
+
+    
+    <section id="discardmodule">
+      <title>拋棄您的更改</title>
+	<para id="discardpara">當您希望將編輯的模組回到原來的狀態時，此狀態是在您開始編輯它之前，此情況可能會發生。如要拋棄您的更改，請點擊在「Module Status」（模組狀態）書籤裏的「Actions」（動作）標題底下的<emphasis>Discard拋棄</emphasis>連結，模組將會返回到您開啟它時的狀態。
+	<note id="id1980321" type="注意"><label>注意</label>
+	  如果模組是新的且從未發佈過，您輸入Discard時所有的資料將消失，模組將變成空白。
+	</note>
+      </para>
+    </section>
+
+
+    <section id="submitmodule">
+      <title>發佈模組</title>
+ 	<para id="submittext">要讓您的模組或您所做的更改能夠使任何人在網路上可以觀看，您必須將模組發佈在Connexions裏。要發佈一個模組，請依下列步驟：
+	  
+	  <list id="submitmodulelist1" list-type="enumerated"><item>請點擊「Publish」（發佈）標籤，將會顯示<link target-id="publishfig">「Publish Module」（發佈模組）</link>視窗。在您發佈此模組之前，此視窗含有提示列供您參考。</item>
+	    <item>請在「Description of Changes」（更改說明）文字方格裏鍵入您對於模組所做工作的簡短描述。</item>
+	    <item>請點擊<code>Publish發佈</code>，您對於模組所做的工作將輸入至Connexions資料公共園地。一旦進入資料公共園地，在網路上的任何人都可以觀看此模組。</item>
+	  </list>
+	</para>
+	
+	<figure id="publishfig"><media id="id1980408" alt=""><image src="../../media/publishx.png" mime-type="image/png"/></media>
+	  <caption>「Publish」（發佈）標籤。</caption>
+	</figure>
+
+	<para id="submittext2">一個新的模組並沒有編輯上的更改，因此在「Description of Changes」（更改說明）文字方格裏您必須輸入一個註解，例如「Created a new module」（建立一個新模組）。</para>
+
+	<note id="id1980436" type="注意"><label>注意</label>發佈一個模組的動作，不同於在編輯階段點擊<code>Save儲存</code>按鍵，當您儲存您的更改時，只有您以及可以存取您工作群組的人可以看到您的更改。當您發佈一個模組時，整個世界都可以在網路上看到您的工作。
+	</note>
+	
+    </section>
+
+
+  </content>
+</document>

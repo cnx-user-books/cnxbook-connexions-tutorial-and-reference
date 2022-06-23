@@ -1,0 +1,48 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Reporting a Connexions Bug (中文說明 - Chinese)</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>1a9660d2-2430-49e0-b9ce-d714dabe4df5</md:uuid>
+</metadata>
+  <content>
+    <section id="bugintro">
+    <title>傳送一個錯誤報導</title> 
+
+    <para id="bug1">在任何軟體套件裏，您都可能遇到功能上或文件裏的瑕疵。請將這些瑕疵或<term>錯誤</term>，使用<emphasis>Report a Bug報導錯誤</emphasis>連結告知提醒Connexions團隊，此連結位在<link url="http://cnx.org/">Connexions首頁</link>及Connexions其他網頁的個人工具列裏。
+    </para>
+
+    <para id="bug2">要報導一個錯誤訊息，請依下列步驟：
+
+      <list id="buglist" list-type="enumerated"><item>請點擊<emphasis>Report a Bug報導錯誤</emphasis>連結，將顯示<link url="http://mountainbunker.org/bugReport">錯誤報導傳送表格（Bug Report Submission Form）</link>。</item>
+	<item>請輸入您的名稱。</item>
+	<item>請輸入您的電子信箱。</item>
+	<item>如果錯誤是出現在存取一個模組時，請輸入模組編號ID，這是一組號碼，例如m99999。如果您不知道模組號碼，請觀看此模組及顯示「About」（關於）或「History」（歷史）頁面，模組的編號將會列在那些頁面上。</item>
+	<item>請指明錯誤的性質，請在「Type」（鍵入）區域裏點擊向下箭頭，以及從下拉目錄中選擇適當的輸入。</item>
+	<item>請說明錯誤所造成的影響，請在「Severity」（嚴重）區域裏點擊向下箭頭，以及從下拉目錄中選擇適當的輸入。</item>
+	<item>請在「Task Title」（任務標題）區域裏輸入錯誤的單列扼要提示。</item>
+	<item>請在「Description」（說明）區域裏輸入錯誤情況的解釋；包括您所做的動作，以及系統的動作所導致的錯誤情況。如果可能的話，請包括可再次產生此錯誤的逐項步驟的指示說明。</item>
+	<item>請點擊<code>Submit Bug傳送錯誤</code>以將錯誤輸入至Connexions追蹤系統裏。</item>
+      </list>
+    
+      <code>Reset重置</code>將清除您在表格上所做的輸入。
+	
+    </para>
+    </section>
+
+    <section id="bugtips">
+     <title>關於傳送錯誤報導的要領</title> 
+
+    <para id="para1">這裡有一些關於傳送錯誤報導的要領，將可幫助我們更快修正錯誤。
+      
+
+      <list id="list2"><item>首先，在您獲得相關資訊之前請勿關閉<term>error message錯誤訊息</term>顯示，包括您的錯誤報導。因為錯誤的訊息包含重要的資訊，如果您留下問題而進入<link url="http://mountainbunker.org/bugReport">錯誤報導傳送表格</link>頁面，或一個<link url="http://cnx.org/help/">輔助</link>頁面，請在您的瀏覽器上使用Back上一頁功能以顯示錯誤訊息。</item>
+
+	<item>請包括一個錯誤頁面的副本。如果錯誤是顯示一個動作上的錯誤訊息，請複製此訊息文字，將它貼在錯誤報導裏；甚至於包括錯誤訊息的HTML原始文件內容為佳，我們的一些系統在HTML註釋裏會包含重要的資訊。當錯誤訊息顯示時，請點擊您滑鼠右鍵，依據您所使用的瀏覽器選擇<code>View Source</code>或<code>View Page Source</code>檢視原始檔，以顯示此頁面的HTML檔，然後您可以複製此HTML資訊，以及貼至錯誤報導裏。</item>
+
+	<item>更多的資訊將更有幫助。對於像Connexions這樣的新系統，完整的錯誤描述將非常有用；如果您的錯誤是在一個特定的模組，請提供模組名稱；如果您的錯誤出現在編輯界面，請提供您所工作的工作群組或模組；如果您使用課程編輯者（Course Composer），請提及您正在工作的課程，等等；包含錯誤出現頁面的確切網址。如果可以的話，請說明您所正在處理的工作。
+	</item>
+      </list>
+      </para>
+    </section>
+  
+  </content>
+  
+</document>

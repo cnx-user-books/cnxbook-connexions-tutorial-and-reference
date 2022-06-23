@@ -1,0 +1,70 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>衍生副本</title>
+  <metadata>
+  <md:content-id>m13498</md:content-id><md:title>衍生副本</md:title>
+  <md:abstract>使用「Derive Copy」（衍生副本）功能的介紹。</md:abstract>
+  <md:uuid>2fc3b5c7-b76f-4788-9f7e-df883fa40237</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://creativecommons.org/licenses/by/1.0/" strength="3">Creative Commons License</link>
+      <link url="http://cnx.rice.edu/content/col10151/latest/" strength="3">Connexions Tutorial and Reference</link>
+      <link url="http://cnx.rice.edu/content/m11817/latest/" strength="2">Suggested Edit</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+   <section id="intro">
+      <title>簡介</title>
+
+      <para id="intropara">Connexions裏的Derive Copy（衍生副本）功能，可以讓您對任何已發佈的模組建立一個衍生性質的著作。從一個已存在模組的副本開始衍生著作，讓您對其內容進行修改，然後發佈成為您自己的模組。Derive Copy（衍生副本）的步驟不是一個共同合作的方式。如果您想要對一個已存在模組的一個編輯者建議進行修改的內容，可以使用Suggest Edits（建議編輯）功能。
+	
+	<note id="id1166932774839" type="警告"><label>警告</label>
+	在您建立衍生著作時，任何您所建立的著作是一個原創版本的快速翻拍步驟。如果過了一段時間之後原創的模組進行更新，您所製作的副本將無法反映那些更新的變化。
+	</note>
+      </para>
+
+      <para id="intro2">衍生著作是在<link url="http://creativecommons.org/licenses/by/2.0/">CREATIVE COMMONS公共授權條款（"CCPL"或"授權條款"）</link>之下獲得允許的，適用於所有Connexions的資料。當您發佈一個衍生副本時，Connexions將會自動增加一個歸屬說明，用以指明原創著作及其編輯者，這是受CREATIVE COMMONS公共授權條款的適法性需要。
+      </para>
+    </section>
+
+    <section id="uses">
+      <title>用途</title>
+      
+      <para id="usespara">衍生副本功能有兩個主要的用途：
+
+	<list id="useslist"><item>利用一個已存在的模組作為一個模版，以建立一個新模組。例如，您所找到的一個已存在的模組，是與您所要建立的模組具有類似的結構；您可以建立一個衍生副本，當作您新模組的一個出發點。
+	  </item>
+	  <item>所要建立的一個模組類似於一個已存在的模組，但內容有所變更。例如，您找到一個您想要使用在您新課程裏的一個已存在模組，但您想對那個模組進行一些更改，而您並沒有權限去修改那個模組。您與原創編輯者聯繫，向他提出您所需要的改變<link document="m13499">建議</link>之後，原創編輯者並不同意您所提出的建議，因為您所提出的建議使模組內容所涵蓋的領域產生變更，而那並不符合模組的原意。您深感您應該對其進行變更以公諸於世，因此您可以建立一個模組的衍生副本，補上您的更改，然後發佈成您自己的模組。
+	  </item>
+	</list>
+      </para>
+    </section>
+
+    <section id="createderive">
+      <title>建立一個衍生副本</title>
+
+      <para id="createderivepara">在您的工作空間或一個工作群組裏，您可以從模組編輯者建立一個衍生副本。
+
+	<list id="derivecopylist" list-type="enumerated"><item>請在資料公共園地裏<link url="http://cnx.org/content/search?words=">搜尋</link>您所要複製的模組。</item>
+	  <item>請增加此模組至您的工作空間或工作群組。</item>
+	  <item>請點擊模組標題以開啟模組編輯者。</item>
+	  <item>請在「Status」（狀態）書籤裏的「Actions」（動作）標題下方點擊<code>Derive Copy 衍生副本</code>，將會顯示「Derive a Copy from」（衍生一個副本）視窗。
+	  </item>
+	  <item>請選擇視窗底部的確認方格，以簽署您同意於適用Content Commons Attribution license（資料公共園地授權許可）到您的新模組。
+	  </item>
+	  <item>請點擊<code>Yes, Create Copy（同意，建立副本）</code>，模組編輯者將會顯示「File」（檔案）標籤，列出衍生副本；這時在您的工作空間或工作群組裏，此新的模組處於已建立的狀態。
+	  </item>
+	</list>
+
+	  新模組裏所有的資料與原創模組裏的資料一模一樣；除了角色之外，詮釋資料是相同的。角色的資料，除了原模組所列出的帳號之外，也顯示您成為編輯者、資料維護者、以及版權持有者。您可以編輯此模組所需的資料、檔案、多樣資料、角色、以及連結，如同您所建立的任何模組。您可能需要提出一個要求以移除原創編輯者，但是他們也將必須要認可這樣的要求，如同其他任何的角色改變。</para>
+	<para id="para3derive">當您發佈您的衍生副本模組時，Connexions將自動增加一個說明到模組裏，指出原創模組及編輯者的歸屬權；此說明係連結至原創模組，因此讀者可以觀看您的衍生副本所依據的原來模組。
+	  
+	</para>
+    </section>
+  </content>
+  
+</document>

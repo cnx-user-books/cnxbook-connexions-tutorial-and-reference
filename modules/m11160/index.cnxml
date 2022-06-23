@@ -1,0 +1,14 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+	<title>Editing CNXML with Altova's Authentic</title>
+	<metadata>
+  <md:content-id>m11160</md:content-id><md:title>Editing CNXML with Altova's Authentic</md:title>
+  <md:abstract>The Authentic XML editor from Altova allows you to quickly and easily edit CNXML files.</md:abstract>
+  <md:uuid>f5a03524-a1fc-4f18-84c6-d5b02acc89ac</md:uuid>
+</metadata>
+
+<content>
+
+<note id="eip-548" type="retired"><title>Altova Authentic Not Currently Supported</title>Due to changes introduced in recent versions of Altova Authentic and updates to the CNXML language with version 0.6, we are not currently able to support this method for creating and maintaining Connexions content.  We hope to be able to reintroduce support in the near future.  We apologize for any inconvenience.  If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</note>
+
+	</content>
+</document>

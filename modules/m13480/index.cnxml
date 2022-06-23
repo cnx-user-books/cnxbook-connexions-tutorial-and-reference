@@ -1,0 +1,117 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+	<title>觀看 Connexions 資料</title>
+	<metadata>
+  <md:content-id>m13480</md:content-id><md:title>觀看 Connexions 資料</md:title>
+  <md:abstract>如何在 Connexions 裏觀看課程及模組的相關說明。</md:abstract>
+  <md:uuid>abd12d92-7171-481a-8264-6487c9badc95</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.rice.edu/content/m10338/latest/" strength="3">Connexions Roadmap</link>
+      <link url="http://cnx.rice.edu/content/col10151/latest/" strength="3">Connexions Tutorial and Reference</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+
+<note id="deprecated-translate" type="warning">
+<para id="p1">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  The current (English-language) version of this module can be located at <link document="m11837">http://cnx.org/content/m11837/latest/</link>.   If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</para>
+<para id="p2">If you would like to assist Connexions by helping us update this module with an appropriate translation from the current English version, please contact us at <link url="mailto:cnx@cnx.org">cnx@cnx.org</link> as we would appreciate your help with improving our support for non-English-speaking users.</para>
+</note>
+
+		<para id="ov1">請查閱<link document="m13477">Connexions入門</link>模組，以瞭解Connexions的概觀。
+
+      </para>
+	<section id="search">
+	<title>搜尋資料公共園地</title>
+	<para id="sp1">您可以使用Connexions網頁右上方的<code>Search搜尋</code>按鍵及文字方格，在<term>Content Commons資料公共園地</term>裏搜尋一個特定模組或課程。請在搜尋文字方格裏鍵入一個名稱、關鍵字、課程標題、模組標題、字串、或物件編號，點擊<code>Search搜尋</code>。Connexions將顯示符合您所輸入的所有模組及課程，要觀看一個模組或課程，請點擊其標題。
+	</para>
+	</section>
+
+	<section id="navsec">
+	<title>使用路徑圖導覽 Connexions 課程</title>
+	<para id="navapara">Connexions路徑圖會協助您在Connexions裏找尋及觀看資料，這時您必須使用Mozilla瀏覽器以開啟路徑圖。<link document="m13479">路徑圖指導</link>裏會有一個關於路徑圖功能的描述，以及如何使用它。</para>
+	</section>
+
+	<section id="navwo">
+	<title>不使用路徑圖導覽 Connexions 課程</title>
+	<para id="openp0">路徑圖不是Connexions裏唯一的導覽方式，如果您使用一個不支援路徑圖的瀏覽器存取Connexions，您仍然可以使用其他導覽工具，以您的方式觀看課程。</para>
+
+	<section id="openrm">
+	<title>開啟一個課程</title>
+	<para id="openp1">請在Connexions網頁右上角點擊課程連結，以顯示Connexions視窗上的課程。您也可以藉由選擇「Content」（資料）標籤（在<emphasis>You are here: 您位在：</emphasis>導覽列的上方）以顯示視窗，以及從頁面中央選擇「Courses」（課程）標籤。此標籤將列出所有已經發佈在資料公共園地裏的課程。對於每個課程，標籤將在不同欄位裏顯示課程標題、機構名稱、以及課程指導者名稱。請點擊課程標題以顯示課程。
+</para>
+	
+	<figure id="studentig1"><media id="id12897030" alt=""><image src="../../media/NoRoadmap1x.png" mime-type="image/png"/></media>
+	<caption>Connexions 課程。</caption>
+</figure>
+	
+	</section>
+
+	<section id="navwithout">
+	<title>在一個課程裏導覽</title>
+	<para id="navwopara1">當您第一次打開課程時，將會顯示課程標題頁面。此頁面包含兩個控制板：一個是<emphasis>Course Content課程資料</emphasis>控制板，含有此課程裏的一個資料列表，列出各節及模組名稱；另外一個控制板顯示<emphasis>Start Course開始課程</emphasis>連結，以及課程資訊，例如教學機構、課程指導者、貢獻的編輯者、以及課程的一個簡短描述。請點擊<emphasis>Start Course開始課程</emphasis>以顯示完整的課程，將會從第一個模組開始。
+</para>
+	
+	<para id="navwo2">當您在一個課程裏顯示一個模組時，您可以藉由點擊右上角的<emphasis>‹‹PREV‹‹上一個</emphasis>或<emphasis>NEXT››下一個››</emphasis>連結，以便在課程裏移動到前一個模組或後一個模組。在一個課程裏的每一個模組，您可以再次顯示課程標題頁面，只要點擊模組右上角的<emphasis>Table of Contents資料列表</emphasis>連結。
+	  </para>
+	
+	<figure id="prevnextlinks"><media id="id10593126" alt=""><image src="../../media/PrevNextLink.png" mime-type="image/png"/></media>
+	<caption>在一個課程裏連結至之前或之後的模組。</caption>
+</figure>
+	
+	<note id="id13133144" type="注意"><label>注意</label><emphasis>‹‹PREV‹‹上一個</emphasis>或<emphasis>NEXT››下一個››</emphasis>連結，以及<emphasis>Table of Contents資料列表</emphasis>連結，只會在您從一個課程中進入一個模組時才會出現；如果您從瀏覽器直接存取一個模組，將不會出現此連結。
+	</note>	
+	</section>
+	</section>
+	
+	<section id="findlinksect">
+	<title>觀看相關材料</title>
+	<para id="viewrelpara1">您可以使用出現在模組資料左側的「Related Material」（相關材料）控制板中的連結，以觀看模組的相關材料，控制板包括：
+                <list id="relatedlist1"><item>例子的連結、輔助材料、或者由模組編輯者所提供的先修材料。這些連結的重要性，是以連結名稱左側方格的條紋數目所顯現。這些連結可能是Connexions裏的材料，或者是Connexions外部網頁。</item>
+	<item>其他模組，含有類似於目前模組資料的模組名稱。請點擊一個模組名稱，以顯示該模組。</item>
+	<item>任何其他包含此模組的課程。請點擊一個課程名稱，以顯示該課程。</item>
+</list>
+</para>
+	<figure id="relatedmaterialfig"><media id="id8394897" alt=""><image src="../../media/RelatedMaterial.png" mime-type="image/png"/></media>
+	<caption>連結至相關材料。</caption>
+</figure>
+	</section>
+	
+	<section id="displaystyle1">
+	<title>改變頁面風格</title>
+	<para id="style12">您可以在「Personalize」（個人化）方格裏選擇一個<term>style風格</term>型式，以改變資料顯現頁面的圖案顏色及格式，預設的資料顯現頁面風格是<emphasis>Summer Sky藍天</emphasis>。有幾種風格以供選擇，包括<emphasis>Playland陽光草坪</emphasis>，是設計給較年輕的Connexions使用者。
+        </para>
+	<figure id="pagestylefig"><media id="id5853392" alt=""><image src="../../media/PageStyles.png" mime-type="image/png"/></media>
+	<caption>風格選擇方格。</caption>
+</figure>
+	</section>
+	
+	<section id="editinplacesec">
+	<title>進行快速編輯</title>
+	<para id="editinplacepara1">如果您有當時所觀看模組的編輯權限，您可以使用<emphasis>Edit In Place當場編輯</emphasis>連結，以便簡易快速地進行編輯。請查閱關於<link url="http://cnx.org/technology/EditingTools/editInPlace.html">Edit in Place</link>的Connexions頁面以獲得更多資訊。
+	</para>
+	</section>	
+	
+	<section id="aboutlink">
+	<title>關於模組的顯示資訊</title>
+	<para id="aboutlink1">要顯示模組的<term>metadata詮釋資料</term>，請在模組的底部點擊<emphasis>More about this content更多相關資料</emphasis>以獲得連結。詮釋資料是關於模組的一個非內容資訊，例如模組編號、授權許可型式、版本號碼、建立日期、修改日期、編輯者、資料維護者、版權持有者、模組名稱、關鍵字、以及摘要。</para>
+	</section>
+	
+	<section id="history">
+	<title>觀看模組修改歷史</title>
+	<para id="histmod1">要觀看一個模組的修改歷史，請點擊模組底部的<emphasis>Version History版本歷史</emphasis>連結，以顯示模組的History歷史網頁連結。在發佈一個新模組的時候，Connexions會指定一個修改編號以對應於模組版本。如果有需要更新模組，編輯者可以進行檢查、編輯、以及再次發佈模組，會有一個遞增的修正編號將指定給更新過的版本。Connexions儲存所有的修改資訊，您可以在模組的History歷史網頁上進行觀看。
+      </para>
+	</section>
+	
+	<section id="print">
+	<title>列印一個模組</title>
+	<para id="printmod">要產生一個您可以列印的模組PDF檔案，請點擊出現在模組右上角的<emphasis>Print(PDF)列印</emphasis>連結。有時候因為學習上的需要，您可能需要一個材料的列印副本，您可以在任一模組產生一個PDF檔案，PDF檔案的格式會有頁碼、頁首、頁尾、以及頁首編號。由於是使用一個PDF檔案進行列印，您必須在您的電腦上安裝可以列印PDF檔案的軟體。</para>
+
+	<para id="print1">如果您需要一整個課程的紙本列印，請與Connexions計劃團隊聯繫。在Connexions未來更新的工具，您將可以列印一整個課程而不需要Connexions計劃團隊的協助。</para>
+	</section>
+	</content>
+</document>

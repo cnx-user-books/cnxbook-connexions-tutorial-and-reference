@@ -1,0 +1,364 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>增加多媒體物件</title>
+  <metadata>
+  <md:content-id>m13497</md:content-id><md:title>增加多媒體物件</md:title>
+  <md:abstract>解釋如何將各種型式的多媒體物件增加至您的 Connexions 資料裏，包含一些常見的多媒體物件舉例說明。</md:abstract>
+  <md:uuid>5749bcda-5cc3-451f-8a9d-1081575cefec</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://www.duke.edu/websrv/file-extensions.html" strength="2">MIME Type List</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+
+<note id="deprecated-translate" type="warning">
+<para id="p1">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  The current (English-language) version of this module can be located at <link document="m12660">http://cnx.org/content/m12660/latest/</link>.   If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</para>
+<para id="p2">If you would like to assist Connexions by helping us update this module with an appropriate translation from the current English version, please contact us at <link url="mailto:cnx@cnx.org">cnx@cnx.org</link> as we would appreciate your help with improving our support for non-English-speaking users.</para>
+</note>
+
+    <section id="intro">
+      <title>簡介</title>
+      <para id="intropara1">Connexions模組可以包含多種不同型式的多媒體，此模組將解釋您如何可以將下列的多媒體物件型式增加至一個模組裏：
+	
+	<list id="l1"><item><link target-id="images">圖片</link></item>
+	  <item><link target-id="flash">Flash 物件</link></item>
+	  <item><link target-id="movies">影片</link></item>
+	  <item><link target-id="java">Java 程式</link></item>
+	  <item><link target-id="audiofiles">聲音檔案</link>  </item>
+	  <item><link target-id="labview">LabVIEW 圖形化程式示範</link></item>
+	</list>
+      </para>
+      <para id="intropara2">任何可以放在網頁裏的多媒體物件型式，都可以藉由使用CNXML的<code>media（媒體）</code>標籤將其放置在Connexions模組裏。請查閱<cite><cite-title>CNXML Language Specification（CNXML語言說明）</cite-title></cite>裏關於<link url="http://cnx.org/technology/cnxml/0.5/spec/#media">媒體</link>標籤的描述，以獲得更多資訊。唯一的要求是該物件必須具有一個可用的MIME (Multipurpose Internet Mail Extension)協定型式。MIME協定是一個可以讓資料傳輸的通訊協定，例如聲音或影片，透過網際網路而不需要轉譯成一個ASCII格式。請查閱<link url="http://www.ietf.org/rfc/rfc1341.txt?number=1341">MIME
+	Types</link>以獲得更多資訊。此模組包含CNXML輸入的例子，以及它們不同的多媒體物件顯示的結果。
+ </para>
+      
+    <section id="importnotes">
+       <title>增加多媒體的重要注意事項</title>
+       	<para id="importpara1">當您要將多媒體增加至您的模組時，請注意下列事項：
+
+       	  <list id="importlist"><item>
+	      此模組裏所展示的CNXML例子，是特別指定在此模組所使用的媒體工具，如果您將其複製到您的模組裏，請編輯適合您情況下的CNXML。</item> <!-- <item>All material within Connexions
+       	  is licensed under the <link
+       	  src="http://creativecommons.org/licenses/by/2.0/">Creative
+       	  Commons Attribution license</link>. Any multimedia objects
+       	  you add to your module must be in the public domain or under
+       	  the Creative Commons Attribution license.</item> -->
+       	  <item>
+	      您所要放置在模組裏的媒體物件，其<code>type（型式）</code>屬性必須符合MIME型式。例如，如果您所增加的一個圖片檔案是Portable Networks Graphics（.png附屬檔名）格式，type型式屬性必須是<code>image/png</code>，其輸入會像下面的例子：
+	  	<code id="id16553697" display="block">
+	  	 
+	  	    &lt;media type="image/png" src="mypicture.png"/&gt;
+	  	
+	  	</code>
+	  </item>
+	  <item>您可以使用任何型式的媒體物件，只要它是可用的MIME型式。</item> 
+          <item>如果您在增加一個多媒體物件時需要協助，或者您關於未列在此模組裏的一個物件有相關的問題時，請聯繫Connexions技術支援，<link url="mailto:techsupport@cnx.rice.edu">techsupport@cnx.rice.edu</link> 。
+       	  </item>
+       	  <item>
+	      您可以使用<link target-id="paramsect">param（參數）</link>標籤以控制多媒體物件的選項或參數。</item>
+       	  </list>
+	</para>
+      </section>
+    </section>
+    
+    <section id="images">
+      <title>圖片</title>
+      <para id="imagepara1">使用在Connexions模組裏符合MIME型式的圖片檔案型式為：
+	
+	<list id="l4">
+	  <item>eps - media type="application/postscript"</item>
+	  <item>png - media type="image/png" </item>
+	  <item>jpeg - media type="image/jpeg"</item>
+	  <item>gif - media type="image/gif"</item>
+	</list>
+	以上所列並不包含所有的型式，任何可用的<link url="http://www.duke.edu/websrv/file-extensions.html">MIME type</link>型式的圖片都可以使用在模組裏。
+      </para>
+      <para id="imagepara2">要把圖片放置在您的模組裏，請在您的模組的index.cnxml檔案裏插入CNXML輸入，類似於下列的例子：	
+	<code id="id22418287" display="block">
+         
+	  &lt;figure id="figure-01"&gt;
+	    &lt;name&gt;插圖範例&lt;/name&gt;
+	    &lt;media type="image/png" src="envelope-taller.png"/&gt;
+	    &lt;caption&gt;一個圖像的顯示。&lt;/caption&gt;
+	  &lt;/figure&gt; 
+	
+	</code>
+      </para>
+      
+      <para id="imagepara3">media媒體標籤裏的<code>src</code>屬性，是給定圖片的位置或來源，將其放置在您想要讓其出現在模組裏的地方。如果您已經將檔案上傳至您的模組裏，屬性可以是一個檔名；或者如果一個圖片檔案儲存在網際網路上的其他地方，屬性可以是一個完整的URL網址。
+	
+      </para>
+      
+      <para id="imagepara3a">上方CNXML例子的<link target-id="figure-01">實際顯示</link>為：
+
+	 <figure id="figure-01"><title>插圖範例</title>
+	  <media id="id22391081" alt=""><image src="../../media/envelope-taller.png" mime-type="image/png"/></media>
+	  <caption>一個圖像的顯示。</caption>
+	</figure>
+       </para>
+       
+       <para id="imagepara4">您可以使用<code>subfigure標籤</code>把兩個圖片放置在相同的figure（插圖）裏。當您有兩個相關圖片，而想要將其並列放置或者上下放置時，這個標籤相當有用；要在同一個插圖裏顯示兩個圖片，請在您的模組的index.cnxml檔案裏插入CNXML的輸入，類似於下列的例子：
+	
+	<code id="id15206353" display="block">
+         
+     &lt;figure id="figure-2" orient="horizontal"&gt;
+        &lt;subfigure id="subfigure-1"&gt;
+          &lt;name&gt;較大圖像及信封&lt;/name&gt;
+          &lt;media type="image/png" src="envelope-taller.png"/&gt;
+          &lt;caption&gt;
+          子插圖1。
+          &lt;/caption&gt;
+        &lt;/subfigure&gt;
+        &lt;subfigure id="subfigure-2"&gt;
+          &lt;name&gt;較小圖像及信封&lt;/name&gt;
+          &lt;media type="image/png" src="envelope.png"/&gt;
+          &lt;caption&gt;
+            子插圖2。            
+          &lt;/caption&gt;
+        &lt;/subfigure&gt;
+ 	&lt;caption&gt;在一個插圖裏水平顯示兩個圖片。&lt;/caption&gt;
+     &lt;/figure&gt;
+	  
+	</code>
+      </para>
+      
+      <para id="imagepara5">上方CNXML例子的<link target-id="figure-2">實際顯示</link>為：
+	
+	<figure id="figure-2" orient="horizontal"><subfigure id="subfigure-1">
+          <title>較大圖像及信封</title>
+          <media id="id15058255" alt=""><image src="../../media/envelope-taller.png" mime-type="image/png"/></media>
+          <caption>
+          子插圖1。
+          </caption>
+        </subfigure>
+        <subfigure id="subfigure-2">
+          <title>較小圖像及信封</title>
+          <media id="id7499549" alt=""><image src="../../media/envelope.png" mime-type="image/png"/></media>
+          <caption>
+            子插圖2。            
+          </caption>
+	  </subfigure>
+	  <caption>在一個插圖裏水平顯示兩個圖片。</caption>
+	</figure>
+      </para>
+      
+      <para id="imagepara6"><code>orient（方向）</code>屬性值可以是<code>horizontal（水平）</code>或<code>vertical（垂直）</code>，以及定義圖片如何安排在插圖（figure）裏。
+</para>
+
+      <section id="print">
+	<title>模組的線上版本及列印版本所包含的圖片</title>
+	<para id="printp">如果您模組裏面圖片的大小，符合您線上觀看時的大小，但當您列印此模組時卻顯得太大時；Connexions讓您可以在模組裏插入一個附加的圖片檔案，讓其格式及大小符合列印版本所需。<code>eps</code>格式的圖片檔案，是使用在Connexions模組列印版本裏較佳的格式。如果您的模組包含相同圖片的<code>eps</code>檔案及<code>png</code>檔案；當Connexions產生一個列印版本的PDF檔時，Connexions會使用<code>eps</code>檔案；而如果在線上顯示模組時，會使用<code>png</code>檔案。
+	  </para>  
+	<para id="printp2">底下是說明如何在您的模組裏為列印版本插入附加的圖片檔案：
+	  
+	  <list id="printlist" list-type="enumerated"><item>請建立您的圖片檔案的一個<code>eps</code>格式版本，這個圖片應調整成適合的大小。</item>
+	    <item>請在index.cnxml檔案裏插入這個<code>eps</code>檔案的一個<code>media type（媒體型式）</code>輸入，位在線上顯示的圖片檔案輸入上方。此圖片檔案應該有相同的名稱，而副檔名應該指定其檔案型式。例如，image1.png是給線上使用的，而image1.eps是給列印使用的。</item>
+    	    <item>請增加<code>eps</code>圖片檔案至此模組。</item>
+	  </list>
+	  底下是需要包含附加圖片所需的CNXML編碼的一個例子：
+	  <code id="id9926013" display="block">
+	   
+	    &lt;figure id='printimage'&gt;
+	     &lt;media type='application/postscript' src='image.eps'&gt;
+	      &lt;media type='image/png' src='image.png'/&gt;
+             &lt;/media&gt;
+            &lt;/figure&gt;
+	    
+	  </code>
+	  <note id="id22484845" type="注意"><label>注意</label>在index.cnxml檔案裏，列印圖片（<code>eps</code>）的輸入必須出現在線上圖片（<code>png</code>）的輸入上方；線上圖片的輸入應該縮排，以及被嵌入在另一個圖片輸入裏面。
+
+	  </note>
+	</para>
+      </section>
+      
+      <section id="clickable">
+	<title>建立一個圖片連結至一個較大的版本</title>
+	<para id="linked">您也可以顯示一個圖片，讓它被點擊後顯示成一個較大版本的圖片。底下是其處理的方法：
+	  <list id="tlist" list-type="enumerated"><item>請建立您的圖片檔案的一個縮圖版本。</item>
+	    <item>請將原圖大小及縮圖大小的圖片插入至一個<code>media type（媒體型式）</code>輸入，如下列例子所示。</item>
+	    <item>請增加原圖大小及縮圖的圖片檔案至模組裏。
+	    </item>
+	  </list>
+	  底下是含有一個縮圖圖片連結至一個原圖版本所需的CNXML編碼例子：
+	  <code id="id7220636" display="block">
+	   
+	    &lt;figure id='thumbnail'&gt;
+	     &lt;media type='image/png' src='TajMahal_medium.jpg'&gt;
+	      &lt;param name='thumbnail' value='TajMahal_Thumb.jpg'/&gt;
+             &lt;/media&gt;
+            &lt;/figure&gt;
+	    
+	  </code>
+	上方CNXML例子的<link target-id="thumbnail">實際顯示</link>為：
+	   <figure id="thumbnail"><media id="id22351730" alt=""><image src="../../media/TajMahal_medium.jpg" mime-type="image/jpeg" thumbnail="TajMahal_Thumb.jpg"/></media>
+	    <caption><link url="http://www.flickr.com/photos/babasteve/">Steve
+	  Evans</link>所攝泰姬瑪哈陵的照片。在Creative Commons Attribution License授權許可之下刊載。</caption>
+	  </figure>
+	</para>
+      </section>
+    </section>
+
+    <section id="flash">
+      <title>Flash 物件</title>
+      <para id="flpara">您可以在您的模組裏插入一個Flash物件，底下是包含一個Flash物件所需的CNXML編碼例子：
+	<code id="id10774790" display="block">
+         &lt;figure id='flashfig'&gt;
+	  &lt;media type="application/x-shockwave-flash" src="flash.swf"&gt;
+	    &lt;param name='height' value='250'/&gt;
+            &lt;param name='width'  value='250'/&gt;
+          &lt;/media&gt;
+	  &lt;caption&gt;Flash物件範例："Welcome to Connexions"。&lt;/caption&gt;
+         &lt;/figure&gt;
+	  
+	</code>
+	出現在您模組裏的<link target-id="flashfig">Flash物件</link>，類似於一個影片或一個圖片所出現的方式。
+          <figure id="flashfig"><media id="id14290974" alt=""><flash src="flash2.swf" mime-type="application/x-shockwave-flash" height="250" width="250"/></media>
+	  <caption>Flash物件範例："Welcome to Connexions"。</caption>
+          </figure>
+      </para>
+	<note id="id22399554" type="注意"><label>注意</label>上方例子是鑲嵌在<code>figure</code>標籤裏面，可以使用圖片說明解釋Falsh物件的意義，此<code>figure</code>標籤並不需要在模組裏包含這些媒體物件。</note>
+    </section>
+
+    <section id="movies">
+      <title>影片</title>
+      <para id="movieslist">底下是您可以包含在您模組裏的一些影片型式，您可以插入這些型式，以及其他任何可以插入至一個網頁的影片型式。
+	
+      <list id="l2">
+	<item>quicktime</item>
+	<item>mpeg</item>
+      </list>
+      </para>
+      <para id="moviep">可以藉由如同下列的編碼方式將影片增加至您的模組：
+	<code id="id16869740" display="block">
+        
+	&lt;figure id='moviefig2'&gt;
+	  &lt;media type="video/mpeg" src="Building_on_the_Past.mpg"&gt;
+	    &lt;param name="width" value="450"/&gt;
+	    &lt;param name="height" value="400"/&gt;
+	    &lt;param name="autoplay" value="false"/&gt;
+	  &lt;/media&gt;
+	  &lt;caption&gt;Creative Commons 影片："Building on the Past"，請點擊Play（播放）按鍵以開始觀看。&lt;/caption&gt;
+	&lt;/figure&gt;
+	  	  
+	</code>
+	上方CNXML例子的<link target-id="moviefig2">實際顯示</link>為：
+	<figure id="moviefig2"><media id="id10842873" alt=""><video src="Building_on_the_Past.mpg" mime-type="video/mpeg" height="400" width="450" autoplay="false"/></media>
+	  <caption>Creative Commons 影片："Building on the Past"，請點擊Play（播放）按鍵以開始觀看。</caption>
+	</figure>
+      </para>
+	<note id="id5826009" type="注意"><label>注意</label>上方例子是鑲嵌在<code>figure</code>標籤裏面，可以使用圖片說明解釋影片的意義，此<code>figure</code>標籤並不需要在模組裏包含這些媒體物件。</note>
+    </section>
+
+    <section id="java">
+      <title>Java 程式</title>
+      <para id="javap">可以藉由如同下列的編碼方式將Java（爪哇）程式增加至您的模組：
+	
+	<code id="id14898708" display="block">
+        
+	&lt;figure id="javafig"&gt;
+          &lt;media type="application/x-java-applet" src="PhasorDemo.class"&gt;
+            &lt;param name="width" value="430"/&gt;
+            &lt;param name="height" value="500"/&gt;
+	  &lt;/media&gt;
+          &lt;caption&gt;一個複變數正弦曲線的3D動畫，請點擊Run（執行）按鍵以開啟動畫。&lt;/caption&gt;
+        &lt;/figure&gt;
+	  
+	</code>
+	上方CNXML例子的<link target-id="javafig">實際顯示</link>為：
+	<figure id="javafig">
+	  <media id="id5182899" alt=""><java-applet src="PhasorDemo.class" mime-type="application/x-java-applet" height="500" width="430" code="PhasorDemo.class"/></media>
+	  <caption>一個複變數正弦曲線的3D動畫，請點擊Run（執行）按鍵以開啟動畫。</caption>
+        </figure>
+
+如果上方動畫並沒有出現，您可能需要安裝或更新Java外掛程式在您的電腦上，請至<link url="http://java.com">java.com</link>下載Java外掛程式的最新版本。</para>
+	<note id="id18928525" type="注意"><label>注意</label>上方例子是鑲嵌在<code>figure</code>標籤裏面，可以使用圖片說明解釋Java Applet的意義，此<code>figure</code>標籤並不需要在模組裏包含這些媒體物件。</note>
+    </section>
+
+    <section id="audiofiles">
+      <title>聲音檔案</title>
+      <para id="audiop">聲音檔案例如mp3、real audio、及wav檔案，可以快速及容易地插入至您的模組裏。要在您的文件裡包含聲音檔案，請在您的index.cnxml文件裏上傳對應的聲音檔案及類似下方的編碼：
+	<code id="id11081552" display="block">
+         
+      	 &lt;figure id='musicscale'&gt;
+      	  &lt;media type="audio/x-wav" src="chromatic_slurred.wav"/&gt;
+      	  &lt;caption&gt;由Michael Lawrence所吹奏單簧管的半音音階。&lt;/caption&gt;
+         &lt;/figure&gt;
+	  
+	</code>	  
+      </para>
+      <para id="parascale">上方CNXML例子的<link target-id="musicscale">實際顯示</link>為：
+	 <figure id="musicscale"><media id="id22512266" alt=""><audio src="chromatic_slurred.wav" mime-type="audio/x-wav"/></media>
+	  <caption>由Michael Lawrence所吹奏單簧管的半音音階。</caption>
+         </figure>
+      </para>
+	<note id="id9425899" type="注意"><label>注意</label>上方例子是鑲嵌在<code>figure</code>標籤裏面，可以使用圖片說明解釋聲音檔案的意義，此<code>figure</code>標籤並不需要在模組裏包含這些媒體物件。</note>
+    </section>
+
+    <section id="labview">
+      <title>LabVIEW 圖形化程式示範</title>
+      <para id="labviewp">有關於在您的模組裏包含LabVIEW圖形化程式示範的相關資訊，請查閱<link document="m11601">Creating LabVIEW demonstrations for Connexions</link>。
+      </para>
+    </section>
+    
+    <section id="paramsect">
+      <title>媒體型式參數</title>
+      <para id="parampara1">一些多媒體物件需要一些選項或參數以適當地顯示出來，您可以藉由<code>param（參數）</code>標籤傳遞資訊至多媒體物件，此標籤在<code>media（媒體）</code>標籤裏，而不需要變更<code>media（媒體）</code>標籤。請查閱<emphasis>CNXML Language Specification（CNXML語言說明書）</emphasis>裏有關<link url="http://cnx.org/technology/cnxml/0.5/spec/#param">param</link>標籤的描述，以獲得更多資訊。
+	</para>
+      
+      <para id="parampara2">底下是一個影片（mpg）物件的<code>param（參數）</code>標籤輸入的例子：
+ 
+      	<code id="id10832784" display="block">
+      	 
+      	 &lt;media type="video/mpeg" src="testmovie.mpg"&gt;
+       	   &lt;param name="width" value="300"/&gt;
+      	   &lt;param name="height" value="300"/&gt;
+      	 &lt;/media&gt;
+      	  	  
+      	</code>
+      	<note id="id10146989" type="注意"><label>注意</label>您應該對任何影片、Flash物件、或Java程式設定高度（height）及寬度（width）參數，使它們在線上以適合的大小顯示；預設使用的高度及寬度單位為pixels畫素，在上方例子中，影片顯示成300 pixel乘以300 pixel的方格。
+      	</note>
+      </para>
+      
+      <para id="parampara3">不同的多媒體物件型式，支援及對應於不同的參數，一些相異的多媒體物件型式所使用到的一些參數例子如下：
+      
+      <list id="paramlist">
+      <item>Images (image/*): height, width, title, alt</item>
+      <item>Flash (application/x-shockwave-flash): height, width, base</item>
+      <item>Video (video/*): height, width, classid, codebase, autostart</item>
+      <item>Java Applets (application/x-java-applet): height, width, 
+      code, codebase, archive</item>
+      <item>Audio (audio/*): title, volume</item>
+      <item>LabVIEW (application/x-labview): viinfo 
+      (See <link document="m11601">Creating LabVIEW demonstrations for Connexions</link> 
+      for more information.)</item>
+      </list>
+      <note id="id16880780" type="注意"><label>注意</label>
+      <code>param（參數）</code>標籤，允許您指定插入至XHMTL文件的一個物件在電腦運作時的設定。
+      </note>
+      </para>
+      
+      <section id="paramsect2">
+	<title>param（參數）及替換圖片</title>
+      <para id="parampara4">如果您使用嵌入式的media（媒體）標籤以提供一個替換圖片顯示，例如一個照片出現在模組的列印版本，以取代出現在線上版本的一個影片；請在替換圖片的被嵌入的<code>media媒體</code>輸入之前，插入原本圖片的<code>param（參數）</code>輸入，如同下列例子所示：
+        
+      	<code id="id15038759" display="block">
+      	 
+         &lt;media type="video/mov" src="howto.mov"&gt;
+           &lt;param name="height" value="250" /&gt;
+           &lt;param name="width" value="250" /&gt;
+           &lt;media type="image/png" src="novideo.png /&gt;
+         &lt;/media&gt; 
+      	  	  
+      	</code>
+      </para>
+      </section>
+    </section>
+    
+  </content>
+  
+</document>

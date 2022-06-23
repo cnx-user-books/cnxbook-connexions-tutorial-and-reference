@@ -1,0 +1,124 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Using Mathematica to Output MathML</title>
+  <metadata>
+  <md:content-id>m11032</md:content-id><md:title>Using Mathematica to Output MathML</md:title>
+  <md:abstract>This module shows how to use Mathematica to output content MathML for use in Connexions modules.</md:abstract>
+  <md:uuid>003fd432-487f-4851-9658-081f31291c63</md:uuid>
+</metadata>
+
+<content>
+
+<note id="depricated" type="warning">This module contains Connexions documentation which is out-of-date.  The contents of this module are provided here for historical purposes only and <emphasis>should not be considered accurate</emphasis> for the current version of the Connexions website.  Please visit the <link url="/help">help page</link> for up-to-date information about the Connexions website, including support for viewing and authoring content and the CNXML language. If you have any additional questions or cannot find the answer to your question, please contact <link url="mailto:techsupport@cnx.org">techsupport@cnx.org</link> and we will be happy to assist in any way we can.</note>
+
+    <section id="intro">
+      <title>Introduction</title>
+      <para id="para1">
+	In short, <link url="http://www.wolfram.com/">Mathematica</link> is a powerful math program that can be used to
+	manipulate, evaluate, and solve mathematical equations. One of
+	the features new to recent versions of Mathematica is the ability to output
+	MathML. This includes the support of content MathML as
+	well as presentation MathML. This document will show you how
+	to use Mathematica to output content MathML to input into
+	<link url="http://cnx.rice.edu/technology/cnxml/">CNXML</link>
+	documents.
+        <note id="id25993052" type="warning">
+            This method of creating content MathML only works in Mathematica 4.2 and above.  We recommend you use at least version 5.0.
+          </note>
+
+      </para>
+    </section>
+    
+    <section id="notebook">
+      <title>Mathml Content Notebook</title>
+
+      <para id="nb_para">
+	I have created a simple MathML notebook that anyone can use to
+	set up Mathematica to output content MathML. The sample notebook is available as <link resource="content_mathml.nb">a download from this module</link>.
+      </para>
+      
+      <section id="using">
+	<title>Using the Notebook</title>
+
+	<para id="using_p">
+	  There are a few steps you will have to follow to use the
+	  notebook:
+
+	  <list id="steps_list" list-type="enumerated">
+	    <item>Start Mathematica</item>
+	    <item>Load the content_MathML.nb by clicking the
+	    <code>file -&gt; open..</code> menu option.</item>
+	    <item>Evaluate the notebook by clicking the
+	    <code>Kernel -&gt; Evaluation -&gt; Evaluate
+	    Notebook</code> menu option.
+	    </item>
+	  </list>
+          Evaluating the notebook actually sets the options that we need. If you do not evalute the notebook, the options will not be set.	
+	  Once you have followed these steps and ensured that there
+	  are no errors, you can proceed to the next step.
+         <note id="id26187254" type="note">
+           This document does not have any operating-system-specific info. For example, there will be no info on how to start Mathematica since this varies depending on what operating system the user is working with.
+          </note>
+        
+	</para>
+      </section>
+
+      <section id="creating_matml">
+	<title>Exporting Content Mathml</title>
+	<para id="createMathML">
+	  Follow the instructions below to use Mathematica palettes:
+
+	  <list id="palettes" list-type="enumerated">
+	    <item>Open the palette by clicking the <code>File -&gt;
+	    Palettes-&gt; Basic Input</code> menu option. (If it is not already open on startup.)</item>
+	    <item>Build the equation you wish to export into MathML
+	    using the palette.</item>
+	  </list>
+	  </para>
+	
+	<para id="export_p">
+	  Now that you have created the equation using whatever method
+	  you have chosen, it is time to export the equation as
+	  MathML.
+
+	  <list id="export" list-type="enumerated">
+            <item>Highlight the equation you wish to export</item>
+	    <item>Copy the equation as MathML by clicking the
+	      <code>edit -&gt; copy as -&gt; MathML</code> menu
+	      option.(This will put the equation into a buffer that you will not see!)</item>
+	    <item>Paste the equation in the appropriate place in your
+	      CNXML document</item>
+	  </list>
+	  
+	  That's it! You now have content MathML embedded into your
+	  CNXML document.
+	</para>
+      </section>
+
+      <section id="lookfor">
+	<title>Problems to Look Out For</title>
+	<para id="prob1">
+	  There may be a few differences in the format of the math
+	  that comes out of Mathematica. Following is a list of
+	  possible problems to look out for. This list will be updated
+	  as problems are found.
+	  
+	<list id="prob_list">
+	  <item>If you plan to have your equations numbered you will
+	    need to have the MathML inside of an <link document="m9006" target-id="equation">equation</link> tag.
+	  </item>
+          <item>When exporting an equation that has a radical, the exported math will not use the root tag, but instead will export math with a power. For example, if you attempt to export the square root of two, the resulting MathML will be two to the one-half power.
+          </item>
+          <item>You may need to delete the extraneous <code>xmlns:mathematica</code> and <code>mathematica:form</code> attributes from the MathML output.</item>
+          
+	</list>
+
+	  If you encounter a problem contact techsupport@cnx.rice.edu.
+	</para>
+      </section>
+    </section>
+	      
+	  
+
+  </content>
+  
+</document>
