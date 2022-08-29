@@ -1,15 +1,16 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="zh">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="zh" authors="Connexions ,Adan Galvan ,Brent Hendricks ,Mark Husband">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
     <md:content-id>col10340</md:content-id>
-    <md:title>Connexions Tutorial and Reference (中文指導及參考 - Chinese)</md:title>
+    <md:title>Connexions Tutorial and Reference (&#x4E2D;&#x6587;&#x6307;&#x5C0E;&#x53CA;&#x53C3;&#x8003; - Chinese)</md:title>
     <md:language>zh</md:language>
     <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License</md:license>
     <md:uuid>002ebbc0-ba56-4197-93be-7b6de42b402c</md:uuid>
-<md:slug>connexions-tutorial-and-reference-zhong-wen-zhi-dao-ji-can-kao-chinese</md:slug>
-</metadata>
+    <md:slug>connexions-tutorial-and-reference-zhong-wen-zhi-dao-ji-can-kao-chinese</md:slug>
+  </metadata>
   <col:content>
     <col:subcollection>
-      <md:title>Connexions 概述</md:title>
+      <md:title>Connexions &#x6982;&#x8FF0;</md:title>
       <col:content>
         <col:module document="m13477"/>
         <col:module document="m13478"/>
@@ -18,13 +19,13 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>Connexions 路徑圖</md:title>
+      <md:title>Connexions &#x8DEF;&#x5F91;&#x5716;</md:title>
       <col:content>
         <col:module document="m13479"/>
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>資料內容的工作進行</md:title>
+      <md:title>&#x8CC7;&#x6599;&#x5167;&#x5BB9;&#x7684;&#x5DE5;&#x4F5C;&#x9032;&#x884C;</md:title>
       <col:content>
         <col:module document="m13482"/>
         <col:module document="m13489"/>
@@ -35,7 +36,7 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>XML 及 CNXML</md:title>
+      <md:title>XML &#x53CA; CNXML</md:title>
       <col:content>
         <col:module document="m9002"/>
         <col:module document="m10159"/>
@@ -46,21 +47,21 @@
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>其他作業用語言</md:title>
+      <md:title>&#x5176;&#x4ED6;&#x4F5C;&#x696D;&#x7528;&#x8A9E;&#x8A00;</md:title>
       <col:content>
         <col:module document="m9008"/>
         <col:module document="m10138"/>
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>編輯 XML</md:title>
+      <md:title>&#x7DE8;&#x8F2F; XML</md:title>
       <col:content>
         <col:module document="m11160"/>
         <col:module document="m11032"/>
       </col:content>
     </col:subcollection>
     <col:subcollection>
-      <md:title>附錄</md:title>
+      <md:title>&#x9644;&#x9304;</md:title>
       <col:content>
         <col:module document="m13505"/>
         <col:module document="m10275"/>
