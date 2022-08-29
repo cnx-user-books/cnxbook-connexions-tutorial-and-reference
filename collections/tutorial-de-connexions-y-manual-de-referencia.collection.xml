@@ -1,3 +1,40 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" type="Course">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col10358</md:content-id>  <md:title>Tutorial de Connexions y manual de referencia</md:title>      <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License 2.0</md:license>  <md:language>es-es</md:language>        <md:uuid>261ca2f7-6e99-40ac-8e4b-4829e91109e0</md:uuid>
-<md:slug>tutorial-de-connexions-y-manual-de-referencia</md:slug>
-</metadata>  <col:content>                        <col:subcollection>        <md:title>Visión general de Connexions</md:title>                                <col:content>                    <col:module document="m13637"/>                            <col:module document="m13647"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Trabajar con el contenido</md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>XML y CNXML</md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Otros lenguajes</md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Editar XML</md:title>                                <col:content>                  </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Apéndices</md:title>                                <col:content>                  </col:content>      </col:subcollection>      </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" type="Course" authors="Connexions ,Adan Galvan ,Brent Hendricks ,Mark Husband">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10358</md:content-id>
+    <md:title>Tutorial de Connexions y manual de referencia</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License 2.0</md:license>
+    <md:language>es-es</md:language>
+    <md:uuid>261ca2f7-6e99-40ac-8e4b-4829e91109e0</md:uuid>
+    <md:slug>tutorial-de-connexions-y-manual-de-referencia</md:slug>
+  </metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Visi&#xF3;n general de Connexions</md:title>
+      <col:content>
+        <col:module document="m13637"/>
+        <col:module document="m13647"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Trabajar con el contenido</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>XML y CNXML</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Otros lenguajes</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Editar XML</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Ap&#xE9;ndices</md:title>
+      <col:content>                  </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>
