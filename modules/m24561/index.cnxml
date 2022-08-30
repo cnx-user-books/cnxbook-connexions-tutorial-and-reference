@@ -91,7 +91,7 @@ Explain the different sections, when it's enabled, how things get inserted, and 
     <image mime-type="image/png" src="../../media/math-tree.png"/>
   </media>
 <caption><m:math> <m:apply>   <m:eq/>   <m:apply>     <m:plus/>     <m:apply>       <m:times/>       <m:ci>a</m:ci>       <m:apply>         <m:power/>         <m:ci>x</m:ci>         <m:cn>2</m:cn>       </m:apply>     </m:apply>     <m:apply>       <m:times/>       <m:ci>b</m:ci>       <m:ci>x</m:ci>     </m:apply>     <m:ci>c</m:ci>   </m:apply>   <m:cn>0</m:cn> </m:apply> </m:math> as a tree</caption></figure></section><section id="color"><title>Colors</title>
-<para id="eip-594"><title>Color notation (legend)</title><m:math display="display">
+<para id="eip-594"><title>Color notation (legend)</title><m:math>
   <m:mrow style="font-size:large;">
     <m:mrow style="border:1px solid #9999ff;">
       <m:mphantom>
@@ -551,7 +551,7 @@ In the above example, the context would highlight precisely the math that ended 
   <row>
     <entry morerows="0">Templates</entry>
     <entry><code>sum=n*(n-1)/2</code></entry>
-    <entry><m:math display="display">
+    <entry><m:math>
   <m:apply>
     <m:eq/>
     <m:apply>
